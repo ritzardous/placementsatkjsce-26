@@ -1,10 +1,12 @@
 # Placement Stats KJSCE
 
-Original 2026 dashboard migrated to React + TypeScript, cloud Firebase Authentication, and Cloud Firestore. Public statistics require no login or Express server.
+React + TypeScript with cloud Firebase Authentication and Cloud Firestore. Public landing → Google-only login → Home with three placement years and separate community destinations. No Express server is required.
 
 Preserves overview, company/branch views, candidate search, timeline, insights, source notes, styling, and hash navigation. Baseline: 100 announcements, 311 selections, 299 unique students, 82 companies. Source counters remain separate from calculated totals.
 
 Follow [4amchanges.md](4amchanges.md) for cloud permissions, import, React startup, and testing. Use `npm install`, configure `.env` from `.env.example`, publish rules, seed/verify, then `npm run dev`.
+
+For this structural release, follow [access setup and testing](docs/access-structure.md): redeploy the frontend and publish the updated Google-only Firestore rules together. Existing cloud datasets do not need reimporting. Company Procedures has an approved-content Browse empty state and a searchable campus recruiter directory under Contribute; forms, moderation and consented alumni profiles are upcoming.
 
 ```powershell
 npm test
@@ -18,4 +20,4 @@ AY 2024–25 (class of 2025) is also available through the year selector: 360 re
 
 AY 2026–27 (class of 2027) is available at `/#2027/overview`, explicitly marked **LIVE · Placements ongoing**: 22 announcements, 121 selections/distinct roll numbers, 19 companies. Latest supplied email: 8 October 2026. This is a reviewed cloud snapshot, not automatic email ingestion; registration total and mixed numerical CTC remain unavailable. See [the 2027 source audit and update steps](docs/2027-data-audit.md). Rebuild with `npm run data:build-2027`; seed/verify commands accept `--year 2027`.
 
-Follow [the deployment guide](<deployment guide.md>) to publish this React + Firebase app through GitHub and a new Vercel project. Deployment has not been performed yet. 2027 data and community features are deferred. See [architecture](docs/architecture.md), [operations](docs/operations.md), [migration report](docs/migration-report.md), and [future plan](plan.md).
+Follow [the deployment guide](<deployment guide.md>) for Vercel setup. The owner reported the previous app deployed; this structural frontend update still needs redeployment. All three years' data are already published in cloud Firestore. See [architecture](docs/architecture.md), [operations](docs/operations.md), [migration report](docs/migration-report.md), and [future plan](plan.md).

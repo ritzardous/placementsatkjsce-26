@@ -1,5 +1,7 @@
 # 2026 Firebase migration report
 
+> Historical report for the original migration. Current Google-only access and community navigation are described in [access-structure.md](access-structure.md).
+
 - Preserved source: `legacy/index.html`; fixture: `data/placements-2026.json`; baseline: `legacy-baseline.json`.
 - Baseline: 100 announcements, 311 selections, 299 unique students, 82 companies, five branches, 99 announcements with numeric CTC, latest confirmed source counter 310.
 - Firebase replaces the historical Express/Mongo serving implementation. Existing external Mongo data has not been deleted.

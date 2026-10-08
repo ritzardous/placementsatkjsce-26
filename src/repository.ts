@@ -4,7 +4,9 @@ import { chunkId, manifestSchema, parseDashboard, versionSchema } from '../share
 import type { DashboardResponse } from '../shared/statistics';
 
 export async function loadDashboard(year: number): Promise<DashboardResponse> {
-  const { db } = getFirebase();
+  const { db, auth } = getFirebase();
+  const token = await auth.currentUser?.getIdTokenResult();
+  if (token?.signInProvider !== 'google.com' || token.claims.email_verified !== true) throw new Error('Sign in with Google to access placement data.');
   const manifestDocument = await getDocFromServer(doc(db, 'batches', String(year)));
   if (!manifestDocument.exists()) throw new Error('No published data for this batch. Run the Firestore seed command in 4amchanges.md.');
   const manifest = manifestSchema.parse(manifestDocument.data());

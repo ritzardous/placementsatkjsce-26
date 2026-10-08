@@ -36,6 +36,11 @@ export function firebaseMessage(error: unknown) {
   if (code.includes('auth/email-already-in-use')) return 'This email already has an account. Sign in instead.';
   if (code.includes('auth/weak-password')) return 'Choose a password with at least 6 characters.';
   if (code.includes('auth/operation-not-allowed')) return 'Enable this sign-in provider in Firebase Authentication.';
+  if (code.includes('auth/popup-blocked')) return 'Your browser blocked Google sign-in. Allow popups for this site, then try again.';
+  if (code.includes('auth/account-exists-with-different-credential')) return 'This email has an existing account with another sign-in method. Contact the app owner to link Google to that account; do not create a second account.';
+  if (code.includes('auth/network-request-failed')) return 'Google sign-in could not connect. Check your connection and try again.';
+  if (code.includes('auth/user-disabled')) return 'This account has been disabled. Contact the app owner.';
+  if (code.includes('auth/user-token-expired') || code.includes('auth/invalid-user-token')) return 'Your session has expired. Sign in with Google again.';
   if (code.includes('auth/unauthorized-domain')) return 'Add this website domain to Firebase Authentication authorized domains.';
   if (code.includes('auth/popup-closed-by-user') || code.includes('auth/cancelled-popup-request')) return 'Sign-in was cancelled. You can try again.';
   if (code.includes('auth/too-many-requests')) return 'Too many attempts. Please wait and try again.';

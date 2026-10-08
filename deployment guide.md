@@ -1,5 +1,7 @@
 # Deploy Placement Stats KJSCE
 
+**Updating the already deployed app with the new landing/login structure?** Redeploy the frontend, confirm Google sign-in on your actual hostname, then publish the new `firestore.rules`. Use [these five quick activation steps](docs/access-structure.md#activate-on-the-deployed-app). No batch reimport or new environment keys are needed.
+
 **Already done:** the repository is disconnected from the old Vercel project. Leave that project as it is.
 
 Follow these steps in order. Reuse Firebase project **`placement-stats-kjsce`** and its imported data.
@@ -70,17 +72,19 @@ Open [Firebase Console](https://console.firebase.google.com/project/placement-st
 2. Paste the hostname only, e.g. `placements-kjsce.vercel.app` — no `https://` or `/`.
 3. Save. Keep `VITE_FIREBASE_AUTH_DOMAIN` as `placement-stats-kjsce.firebaseapp.com`.
 
-Email/Password and Google should already be enabled. If a provider is disabled, enable it under **Authentication → Sign-in method**.
+Google must be enabled under **Authentication → Sign-in method**. The new app offers Google-only login. Do not delete existing users or change other provider settings without auditing affected accounts.
 
 ## 5. Test and share
 
 Open the new production URL in an incognito window:
 
 - [ ] It opens publicly without a Vercel login screen.
-- [ ] Both years load: **2025 = 360 selections / 323 students**; **2026 = 311 selections / 299 students**.
+- [ ] The public landing opens; Google login leads to Home and the three year choices.
+- [ ] After login, all years load: **2025 = 360 selections / 323 students**; **2026 = 311 selections / 299 students**; **2027 = 121 selections, LIVE**.
 - [ ] Company logos, search, company details, and mobile layout work.
 - [ ] Google sign-in and sign-out work.
-- [ ] Refreshing `/#2025/companies` works.
+- [ ] Refreshing `/#2025/companies` works after login; signed-out deep links request Google sign-in and return to that destination.
+- [ ] Updated Firestore rules deny anonymous batch document reads. Contribute lists recruiters; future procedures and contacts are clearly marked upcoming.
 
 If those pass, share the new URL. **No Firestore re-import, Firebase Hosting deployment, or GitHub Firebase secrets are needed for this website release.**
 

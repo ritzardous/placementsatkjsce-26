@@ -3,11 +3,11 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: Cloud operation (publish deploys rules and imports the selected batch)
+        description: Cloud operation (rules updates access only; publish also imports the selected batch)
         required: true
         default: verify
         type: choice
-        options: [verify, publish, set-role]
+        options: [verify, rules, publish, set-role]
       year:
         description: Graduation year (2025 is AY 2024-25)
         default: '2026'

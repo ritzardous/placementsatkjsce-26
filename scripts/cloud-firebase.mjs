@@ -7,7 +7,7 @@ const action = process.env.FIREBASE_ACTION;
 const projectId = process.env.FIREBASE_PROJECT_ID;
 const year = process.env.FIREBASE_BATCH_YEAR ?? '2026';
 if (!['2025', '2026', '2027'].includes(year)) throw new Error('Choose a supported graduation year.');
-if (!['publish', 'verify', 'set-role'].includes(action)) throw new Error('Choose publish, verify, or set-role in the Firebase cloud workflow.');
+if (!['publish', 'verify', 'rules', 'set-role'].includes(action)) throw new Error('Choose publish, verify, rules, or set-role in the Firebase cloud workflow.');
 if (!projectId || !/^[a-z][a-z0-9-]{4,28}[a-z0-9]$/.test(projectId) || projectId.startsWith('demo-')) throw new Error('Configure a real FIREBASE_PROJECT_ID in the protected GitHub environment.');
 if (!process.env.GITHUB_ACTIONS) throw new Error('This command is intended for the manually dispatched GitHub Actions workflow.');
 let credential;
@@ -36,7 +36,8 @@ try {
     await run(['node_modules/tsx/dist/cli.mjs', 'scripts/deploy-rules.ts', ...target]);
     await run(['node_modules/tsx/dist/cli.mjs', 'scripts/seed-firestore.ts', '--year', year, ...target]);
     await run(['node_modules/tsx/dist/cli.mjs', 'scripts/verify-firestore.ts', '--year', year, ...target]);
-  } else if (action === 'verify') await run(['node_modules/tsx/dist/cli.mjs', 'scripts/verify-firestore.ts', '--year', year, ...target]);
+  } else if (action === 'rules') await run(['node_modules/tsx/dist/cli.mjs', 'scripts/deploy-rules.ts', ...target]);
+  else if (action === 'verify') await run(['node_modules/tsx/dist/cli.mjs', 'scripts/verify-firestore.ts', '--year', year, ...target]);
   else {
     const uid = process.env.FIREBASE_AUTH_UID;
     const role = process.env.FIREBASE_AUTH_ROLE;

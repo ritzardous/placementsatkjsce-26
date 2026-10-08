@@ -1,12 +1,14 @@
 import { test, expect } from '@playwright/test';
+import { signInGoogle } from './auth-helper';
 import { readFileSync } from 'node:fs';
 import { batch2026, datasetSchema } from '../../shared/dataset';
 import { buildStatistics } from '../../shared/statistics';
 
 const dataset = datasetSchema.parse(JSON.parse(readFileSync('data/placements-2026.json', 'utf8')));
 const payload = { metadata: dataset.metadata, statistics: buildStatistics(dataset, batch2026) };
-test.beforeEach(() => {
+test.beforeEach(async ({ page }) => {
   if (process.env.E2E_FIREBASE !== 'true') throw new Error('Run npm run test:firebase for isolated seeded Firestore/Auth emulator tests.');
+  await signInGoogle(page);
 });
 
 test('ongoing 2027 season stays explicit across routes, reload, refresh and year changes', async ({ page }) => {
@@ -33,7 +35,7 @@ test('ongoing 2027 season stays explicit across routes, reload, refresh and year
   await expect(page.locator('.live-badge')).toHaveCount(0);
 });
 test('year switching keeps 2025 links, refresh, missing data and campus filters isolated from 2026', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/#overview');
   await expect(page.getByRole('heading', { name: /Placement Stats/ })).toBeVisible();
   await page.getByRole('combobox', { name: 'Placement year' }).selectOption('2025');
   await expect(page.getByRole('heading', { name: /KJSCE '25/ })).toBeVisible();
@@ -64,7 +66,7 @@ test('year switching keeps 2025 links, refresh, missing data and campus filters 
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 test('overview renders legacy totals, chart series, and fits viewport', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/#overview');
   await expect(page.getByRole('heading', { name: /Placement Stats/ })).toBeVisible();
   await expect(page.locator('.stat').filter({ hasText: 'Unique B.Tech students placed' }).locator('.stat-value')).toHaveText('299');
   await expect(page.locator('.stat').filter({ hasText: 'Candidate selections recorded' }).locator('.stat-value')).toHaveText('311');
@@ -115,7 +117,7 @@ test('branches, timeline and insights render without browser exceptions', async 
   expect(errors).toEqual([]);
 });
 test('Firestore loading error displays retry and recovers using real emulator data', async ({ page }) => {
-  await page.route('**/src/repository.ts', route => route.fulfill({
+  await page.route(/\/src\/repository\.ts(?:\?t=\d+)?$/, route => route.fulfill({
     contentType: 'application/javascript',
     body: `export async function loadDashboard(year) {
       if (!window.retryEnabled) throw new Error('Temporary Firestore outage');
@@ -123,25 +125,10 @@ test('Firestore loading error displays retry and recovers using real emulator da
       return real.loadDashboard(year);
     }`,
   }));
-  await page.goto('/');
+  await page.goto('/#overview');
+  await page.reload();
   await expect(page.getByRole('heading', { name: 'Placement data unavailable' })).toBeVisible();
   await page.evaluate(() => { Object.assign(window, { retryEnabled: true }); });
   await page.getByRole('button', { name: 'Try again' }).click();
-  await expect(page.getByRole('heading', { name: /Placement Stats/ })).toBeVisible();
-});
-test('Firebase email sign-up, account persistence and sign-out work without gating statistics', async ({ page }) => {
-  await page.goto('/');
-  await expect(page.getByRole('heading', { name: /Placement Stats/ })).toBeVisible();
-  await page.getByRole('button', { name: 'Sign in', exact: true }).click();
-  await page.getByRole('button', { name: 'Create an account', exact: true }).click();
-  await page.getByLabel('Email', { exact: true }).fill(`student-${test.info().project.name}-${Date.now()}@example.test`);
-  await page.getByLabel('Password', { exact: true }).fill('TestPassword123!');
-  await page.getByRole('button', { name: 'Create account', exact: true }).click();
-  await expect(page.getByRole('button', { name: 'Account', exact: true })).toBeVisible();
-  await page.reload();
-  await page.getByRole('button', { name: 'Account', exact: true }).click();
-  await expect(page.getByText('Please verify your email before future contribution features.')).toBeVisible();
-  await page.getByRole('button', { name: 'Sign out', exact: true }).click();
-  await expect(page.getByRole('button', { name: 'Sign in', exact: true })).toBeVisible();
   await expect(page.getByRole('heading', { name: /Placement Stats/ })).toBeVisible();
 });

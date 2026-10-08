@@ -3,7 +3,7 @@
 - **Purpose:** Build on the deployed React + Firebase dashboard with a public landing page, Google-only access, and a community archive of company recruitment experiences.
 - **Audience:** The agent implementing the next release and the owner reviewing each milestone.
 - **Execution:** Follow the phases in order, check off verified work, and record decisions and unresolved dependencies at the end of this document.
-- **Current request:** Update the plan only. This document does not authorize immediate implementation, production changes, or contacting alumni.
+- **Current request:** Implement the structural base: public landing → Google-only login → authenticated Home with year choices and separate community navigation. Full contributions, moderation, alumni data and production deployment are later work.
 - **Architecture:** React + TypeScript + Vite on Vercel; Firebase Authentication and cloud Firestore. Keep normal dashboard reads independent of an Express/Render backend. Use managed Firebase services for privileged community actions where required.
 - **Latest product decision:** The landing page is public. Google sign-in is required to enter the statistics, company procedures, and alumni contact areas. This replaces the previous plan for free anonymous dashboard browsing and optional email/password login.
 
@@ -13,7 +13,7 @@
 - [x] Graduation year **2026 / AY 2025–26** implemented with the original dashboard functionality.
 - [x] Graduation year **2025 / AY 2024–25** added from the college report and two supplied email threads.
 - [x] Graduation year **2027 / AY 2026–27** added from the supplied ongoing email thread, with explicit LIVE/ongoing status, source date, and reviewed-update messaging. Preserve this behavior when adding the landing page and login flow.
-- [x] Both datasets published to Firestore with source references, validation, and reconciliation.
+- [x] All three datasets published to Firestore with source references, validation, and reconciliation.
 - [x] Company logos added with uniform square containers, readable backgrounds, and initials fallbacks.
 - [x] New application deployed, as reported by the owner. Record the actual production hostname during implementation; do not assume the suggested Vercel project name was used.
 - Preserve existing search, filters, charts, sorting, company details, branches, candidate rosters, timelines, insights, and mobile layouts.
@@ -51,32 +51,32 @@
 
 ### Landing page
 
-- [ ] Build a distinct landing layout outside the dashboard shell.
-- [ ] Lead with a clear benefit, such as: **Know the numbers. Understand the rounds. Learn from alumni.**
-- [ ] Explain the three product pillars in simple language:
+- [x] Build a distinct landing layout outside the dashboard shell.
+- [x] Lead with a clear benefit, such as: **Know the numbers. Understand the rounds. Learn from alumni.**
+- [x] Explain the three product pillars in simple language:
   - Clear, unbiased placement statistics with source references, calculation methods, and visible data gaps.
   - Verified alumni LinkedIn profiles, organized by company, to help students find relevant people.
   - Reviewed recruitment experiences describing tests, interviews, preparation, and outcomes from people who participated.
-- [ ] Explain that statistics are organized by graduating batch while company procedures form a separate archive across years.
-- [ ] Include a prominent **Continue with Google** button near the top and after the feature explanation.
-- [ ] Include truthful product previews, coverage information, and a short explanation of how verification works.
-- [ ] Label alumni contacts and procedures as **Coming soon** until usable verified content exists. Do not advertise access to all alumni or all procedures unless that coverage has actually been established.
-- [ ] Distinguish moderated experiences from official company instructions. A reviewed account of a past drive is not a guarantee of the next drive's process.
-- [ ] Use the existing visual identity and company assets; support mobile, keyboard navigation, readable contrast, and reduced-motion preferences.
-- [ ] Include concise privacy and contribution guidelines covering Google identity, public attribution choices, and private verification evidence.
+- [x] Explain that statistics are organized by graduating batch while company procedures form a separate archive across years.
+- [x] Include a prominent **Continue with Google** button near the top and after the feature explanation.
+- [x] Include truthful product previews, coverage information, and a short explanation of how verification works.
+- [x] Label alumni contacts and procedures as **Coming soon** until usable verified content exists. Do not advertise access to all alumni or all procedures unless that coverage has actually been established.
+- [x] Distinguish moderated experiences from official company instructions. A reviewed account of a past drive is not a guarantee of the next drive's process.
+- [x] Use the existing visual identity and company assets; support mobile, keyboard navigation, readable contrast, and reduced-motion preferences.
+- [x] Include concise privacy and contribution guidelines covering Google identity, public attribution choices, and private verification evidence.
 
 ### Authentication and access enforcement
 
-- [ ] Introduce one shared authentication state used by routing, navigation, data fetching, and account controls.
-- [ ] Replace password registration, password login, and reset-password UI with Google sign-in.
-- [ ] Audit existing email/password users before disabling that provider. Provide a safe Google linking/migration path for affected accounts; preserve their user IDs and roles where applicable.
+- [x] Introduce one shared authentication state used by routing, navigation, data fetching, and account controls.
+- [x] Replace password registration, password login, and reset-password UI with Google sign-in.
+- [x] Audit existing email/password users before disabling that provider. Provide a safe Google linking/migration path for affected accounts; preserve their user IDs and roles where applicable.
 - [ ] Require an authenticated Google identity for protected data and actions. Enforce the policy in Firestore rules and trusted server actions, not just route guards.
-- [ ] Update the currently public batch/version/chunk reads to the intended authenticated access policy while preserving active-version restrictions and client write denial.
-- [ ] Keep private imports, source records, drafts, and moderation records inaccessible to ordinary readers.
-- [ ] During authentication initialization, show a neutral loading state; do not briefly display protected content or start its reads.
-- [ ] Signed-out users opening a protected link see the landing/sign-in flow and return to the intended internal route after success.
-- [ ] Handle popup cancellation, blocked popups, account conflicts, expired sessions, and provider failures with useful messages. Prevent duplicate login attempts.
-- [ ] On logout, unsubscribe from protected reads and clear protected application state and any app-controlled caches. Do not introduce persistent offline caching of protected data without an explicit access design.
+- [x] Update the currently public batch/version/chunk reads to the intended authenticated access policy while preserving active-version restrictions and client write denial.
+- [x] Keep private imports, source records, drafts, and moderation records inaccessible to ordinary readers.
+- [x] During authentication initialization, show a neutral loading state; do not briefly display protected content or start its reads.
+- [x] Signed-out users opening a protected link see the landing/sign-in flow and return to the intended internal route after success.
+- [x] Handle popup cancellation, blocked popups, account conflicts, expired sessions, and provider failures with useful messages. Prevent duplicate login attempts.
+- [x] On logout, unsubscribe from protected reads and clear protected application state and any app-controlled caches. Do not introduce persistent offline caching of protected data without an explicit access design.
 - [ ] Confirm the actual production hostname is authorized in Firebase Authentication; keep web SDK configuration separate from Admin SDK credentials.
 
 ### Acceptance checks
@@ -84,20 +84,20 @@
 - [ ] An incognito visitor sees the landing page and cannot load protected Firestore documents through a direct SDK request.
 - [ ] Google login, reload persistence, logout, and protected deep-link return work on desktop and mobile.
 - [ ] Email/password login is no longer offered; existing-account handling is documented and verified before provider changes.
-- [ ] Existing year-specific dashboards still render and calculate identically after login.
-- [ ] No new public response exposes private source data or verification evidence.
+- [x] Existing year-specific dashboards still render and calculate identically after login.
+- [x] No new public response exposes private source data or verification evidence.
 
 ## 4. Phase 2 — Authenticated home and year distinction
 
-- [ ] Add an authenticated home with year cards for 2025, 2026, and the ongoing 2027 season, plus a visually separate **Company Procedures** entry.
-- [ ] Each year card shows graduation year, academic-year label, and sourced coverage/status; do not assume every dataset is complete or final.
-- [ ] Keep the existing dashboard layout inside the selected year for familiarity.
-- [ ] Show the selected year prominently in the statistics header and provide an easy way to switch.
-- [ ] Scope statistics filters and data to the selected year; reset incompatible filters when switching.
-- [ ] Keep hash routing initially unless a deliberate route migration is needed. Define landing/home/procedures/contact/contribution/admin routes centrally.
-- [ ] Preserve existing `#2025/...` and legacy 2026 links, routing them through authentication when necessary. Verify that new route names do not collide with the existing statistics `#companies` route.
-- [ ] Give the main navigation clear entries for Home, Placement Statistics, Company Procedures, Alumni Contacts, and My Contributions; show Admin only to authorized users.
-- [ ] Test reload, browser back/forward, invalid routes, and mobile navigation.
+- [x] Add an authenticated home with year cards for 2025, 2026, and the ongoing 2027 season, plus a visually separate **Company Procedures** entry.
+- [x] Each year card shows graduation year, academic-year label, and sourced coverage/status; do not assume every dataset is complete or final.
+- [x] Keep the existing dashboard layout inside the selected year for familiarity.
+- [x] Show the selected year prominently in the statistics header and provide an easy way to switch.
+- [x] Scope statistics filters and data to the selected year; reset incompatible filters when switching.
+- [x] Keep hash routing initially unless a deliberate route migration is needed. Define landing/home/procedures/contact/contribution/admin routes centrally.
+- [x] Preserve existing `#2025/...` and legacy 2026 links, routing them through authentication when necessary. Verify that new route names do not collide with the existing statistics `#companies` route.
+- [x] Give the main navigation clear entries for Home, Placement Statistics, Company Procedures, Alumni Contacts, and My Contributions; show Admin only to authorized users.
+- [x] Test reload, browser back/forward, invalid routes, and mobile navigation.
 
 ## 5. Phase 3 — Company directory across both years
 
@@ -271,3 +271,12 @@
 - **Inputs to confirm during relevant phases:** Actual production hostname; existing password-account migration needs; initial reviewer account IDs; billing readiness if privileged managed services require it; alumni consent and verification evidence.
 - **Default choices:** Signed-in Google users can read and submit; college affiliation is not inferred from an email address; contributors need not have been selected; published anonymity is optional; roles remain trusted; no fabricated source data or testimonials.
 - **Record here as work proceeds:** Completed checks, chosen route/schema names, alias decisions, unresolved source gaps, service dependencies, and rollout/rollback outcomes.
+
+## Structural base implementation — 8 October 2026
+
+- Implemented public landing, Google-only shared session, guarded legacy/deep routes, year-choice Home, cross-area navigation and truthful upcoming community destinations.
+- Company Procedures: Browse has no entries until approved content exists; Contribute offers a searchable source-backed campus recruiter directory across 2025/2026/2027. Forms, admin approval, publication and alumni records remain unimplemented.
+- Firestore rules changed in source to verified Google reads only; private records and publication writes remain denied. **Live rules and the frontend have not been deployed by this task.** Server enforcement acceptance is pending publication.
+- Read-only account audit: 2 Google accounts, 0 password-only users. No accounts, roles or provider settings changed.
+- Automated Google sessions, persistence, logout, protected deep links, old dashboards and access rules pass isolated tests. Actual owner Google OAuth and production hostname/rules activation remain manual.
+- Activation and test steps: [docs/access-structure.md](docs/access-structure.md).

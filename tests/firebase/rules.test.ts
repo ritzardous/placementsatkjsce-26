@@ -18,14 +18,24 @@ before(async () => {
   env = await initializeTestEnvironment({ projectId: 'demo-placementstats', firestore: { host: '127.0.0.1', port: 8080, rules: readFileSync('firestore.rules', 'utf8') } });
 });
 after(async () => { await env?.cleanup(); });
-test('anonymous readers can get only active public manifest/version/chunks', async () => {
-  const db = env.unauthenticatedContext().firestore();
+const googleClaims = { email_verified: true, firebase: { sign_in_provider: 'google.com' as const } };
+test('only verified Google sessions can read active published manifests, versions and chunks', async () => {
+  const db = env.authenticatedContext('google-reader', googleClaims).firestore();
   await assertSucceeds(getDoc(doc(db, 'batches/2026')));
   await assertSucceeds(getDoc(doc(db, `batches/2026/versions/${version}`)));
   await assertSucceeds(getDoc(doc(db, `batches/2026/versions/${version}/views/chunk-0000`)));
   await assertFails(getDocs(collection(db, 'batches')));
   await assertFails(getDoc(doc(db, 'batches/2026/versions/inactive/views/chunk-0000')));
   await assertFails(getDoc(doc(db, `batches/2026/versions/${version}/views/private-notes`)));
+});
+test('anonymous, password, custom and unverified Google sessions cannot read placement data', async () => {
+  const contexts = [env.unauthenticatedContext(), env.authenticatedContext('password-reader', { email_verified: true, firebase: { sign_in_provider: 'password' } }), env.authenticatedContext('custom-reader', { email_verified: true, firebase: { sign_in_provider: 'custom' } }), env.authenticatedContext('unverified-reader', { ...googleClaims, email_verified: false })];
+  for (const context of contexts) {
+    const db = context.firestore();
+    await assertFails(getDoc(doc(db, 'batches/2026')));
+    await assertFails(getDoc(doc(db, `batches/2026/versions/${version}`)));
+    await assertFails(getDoc(doc(db, `batches/2026/versions/${version}/views/chunk-0000`)));
+  }
 });
 test('private originals and future submissions cannot be read by clients', async () => {
   const publicDb = env.unauthenticatedContext().firestore();
@@ -35,8 +45,8 @@ test('private originals and future submissions cannot be read by clients', async
   await assertFails(getDoc(doc(publicDb, 'experiences/anything')));
 });
 test('owners can write allowed profile fields, but cannot impersonate others or assign roles', async () => {
-  const alice = env.authenticatedContext('rules-alice').firestore();
-  const bob = env.authenticatedContext('rules-bob').firestore();
+  const alice = env.authenticatedContext('rules-alice', googleClaims).firestore();
+  const bob = env.authenticatedContext('rules-bob', googleClaims).firestore();
   const guest = env.unauthenticatedContext().firestore();
   await assertSucceeds(setDoc(doc(alice, 'users/rules-alice'), { displayName: 'Alice' }));
   await assertSucceeds(getDoc(doc(alice, 'users/rules-alice')));
