@@ -1,0 +1,17 @@
+{
+  "sourceSHA256": "fb451a549ce1ef35be8b3c4c533e732ae9b0772026911c4e8be60ba06d8c6507",
+  "announcements": 100,
+  "selections": 311,
+  "reportedHires": 311,
+  "uniqueStudents": 299,
+  "companies": 82,
+  "branches": [
+    "COMP",
+    "EXCP",
+    "EXTC",
+    "IT",
+    "MECH"
+  ],
+  "missingCTC": 1,
+  "latestReportedCounter": 310
+}

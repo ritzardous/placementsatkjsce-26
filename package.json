@@ -1,0 +1,59 @@
+{
+  "name": "placementstats-kjsce",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "dev:web": "vite --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && vite build",
+    "start": "vite preview --host 127.0.0.1",
+    "db:seed": "tsx scripts/seed-firestore.ts",
+    "db:verify": "tsx scripts/verify-firestore.ts",
+    "auth:set-role": "tsx scripts/set-role.ts",
+    "test:firebase": "firebase emulators:exec --config firebase.test.json --only auth,firestore --project demo-placementstats \"node scripts/run-firebase-tests.mjs\"",
+    "cloud:firebase": "node scripts/cloud-firebase.mjs",
+    "test": "tsx --test tests/*.test.ts",
+    "test:e2e": "playwright test",
+    "db:rules": "tsx scripts/deploy-rules.ts",
+    "auth:verify": "tsx scripts/verify-auth.ts",
+    "data:build-2025": "tsx scripts/build-2025-dataset.ts"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.6",
+    "firebase": "^12.19.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "^5.0.2",
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "firebase-admin": "^14.5.0",
+    "firebase-tools": "^15.32.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.3"
+  },
+  "overrides": {
+    "@grpc/grpc-js": "1.14.5",
+    "@opentelemetry/core": "2.12.0",
+    "basic-ftp": "6.2.2",
+    "firebase-tools": {
+      "chokidar": "4.0.3"
+    },
+    "gaxios": {
+      "uuid": "11.1.1"
+    },
+    "@firebase/app-compat": "0.5.19",
+    "@firebase/app": "0.16.3"
+  }
+}

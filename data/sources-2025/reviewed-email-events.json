@@ -1,0 +1,2393 @@
+[
+  {
+    "id": 1,
+    "company": "Edelweiss Global Markets",
+    "company_key": "edelweiss-global-markets",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      1
+    ],
+    "declared_date": "2024-07-23",
+    "date_text": "Date of Result Declared - 23 - July - 2024",
+    "ctc_value_lpa": 16.0,
+    "ctc_text": "CTC - INR 16.00 LPA",
+    "type": "Financial Services",
+    "roll_numbers": [
+      "16010121088",
+      "16010121010",
+      "16010122806"
+    ],
+    "role": "Software Developers",
+    "candidate_roles": {}
+  },
+  {
+    "id": 2,
+    "company": "Godrej Consumer Products Limited",
+    "company_key": "godrej-consumer-products-limited",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      1,
+      2
+    ],
+    "declared_date": "2024-07-24",
+    "date_text": "Date of Result Declared - 24 - July - 2024",
+    "ctc_value_lpa": 12.0,
+    "ctc_text": "CTC - INR 12.00 LPA",
+    "type": "FMCG",
+    "roll_numbers": [
+      "16010121199",
+      "16010121051",
+      "16010121120"
+    ],
+    "role": "Entry Level Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 3,
+    "company": "Stonex",
+    "company_key": "stonex",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      2
+    ],
+    "declared_date": "2024-08-05",
+    "date_text": "Date of Result Declared - 05 - Aug - 2024",
+    "ctc_value_lpa": 10.0,
+    "ctc_text": "CTC - INR 10.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121210",
+      "16010121226",
+      "16010421131",
+      "16010121095",
+      "16010421056",
+      "16010121009",
+      "16010121221",
+      "16010321079"
+    ],
+    "role": "Trainee Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 4,
+    "company": "ConnectWise",
+    "company_key": "connectwise",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      2,
+      3
+    ],
+    "declared_date": "2024-08-06",
+    "date_text": "Date of Result Declared - 06 - Aug - 2024",
+    "ctc_value_lpa": 10.0,
+    "ctc_text": "CTC - INR 10.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121032",
+      "16010421099",
+      "16010121137",
+      "16010121073",
+      "16010421055",
+      "16010421025"
+    ],
+    "role": "Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 5,
+    "company": "IDFY",
+    "company_key": "idfy",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      3
+    ],
+    "declared_date": "2024-08-13",
+    "date_text": "Date of Result Declared - 13 - Aug - 2024",
+    "ctc_value_lpa": 10.0,
+    "ctc_text": "CTC - INR 10.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121096",
+      "16010121211"
+    ],
+    "role": "Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 6,
+    "company": "ION",
+    "company_key": "ion",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      3,
+      4
+    ],
+    "declared_date": "2024-08-21",
+    "date_text": "Date of Result Declared - 21 - Aug - 2024",
+    "ctc_value_lpa": 17.3,
+    "ctc_text": "CTC - INR 17.30 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121221",
+      "16010121007",
+      "16010121191"
+    ],
+    "role": "Software Developer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 7,
+    "company": "Barclays",
+    "company_key": "barclays",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      4
+    ],
+    "declared_date": "2024-08-20",
+    "date_text": "Date of Result Declared - 20 - Aug - 2024",
+    "ctc_value_lpa": 12.67,
+    "ctc_text": "CTC - INR 12.67 LPA",
+    "type": "Universal Bank",
+    "roll_numbers": [
+      "16010121205",
+      "16010121108",
+      "16010421080",
+      "16010121013"
+    ],
+    "role": "Technology Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 8,
+    "company": "Mehery Soccom Pvt Ltd",
+    "company_key": "mehery-soccom-pvt-ltd",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      4,
+      5
+    ],
+    "declared_date": "2024-08-23",
+    "date_text": "Date of Result Declared - 23 - Aug - 2024",
+    "ctc_value_lpa": 10.02,
+    "ctc_text": "CTC - INR 10.02 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121005"
+    ],
+    "role": "Jr. Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 9,
+    "company": "JPMC",
+    "company_key": "jpmc",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      5
+    ],
+    "declared_date": "2024-08-27",
+    "date_text": "Date of Result Declared - 27 - Aug - 2024",
+    "ctc_value_lpa": 19.75,
+    "ctc_text": "CTC - INR 19.75 LPA",
+    "type": "BFSI",
+    "roll_numbers": [
+      "16010121186",
+      "16010421082"
+    ],
+    "role": "Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 10,
+    "company": "JPMC",
+    "company_key": "jpmc",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      5,
+      6
+    ],
+    "declared_date": "2024-08-27",
+    "date_text": "Date of Result Declared - 27 - Aug - 2024",
+    "ctc_value_lpa": 19.75,
+    "ctc_text": "CTC - INR 19.75 LPA",
+    "type": "BFSI",
+    "roll_numbers": [
+      "16010421063"
+    ],
+    "role": "Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 11,
+    "company": "ION",
+    "company_key": "ion",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      6
+    ],
+    "declared_date": "2024-08-30",
+    "date_text": "Date of Result Declared - 30 Aug - 2024",
+    "ctc_value_lpa": 17.3,
+    "ctc_text": "CTC - INR 17.30 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010321004"
+    ],
+    "role": "Technical Analyst",
+    "candidate_roles": {}
+  },
+  {
+    "id": 12,
+    "company": "Godrej Capital",
+    "company_key": "godrej-capital",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      6
+    ],
+    "declared_date": "2024-08-30",
+    "date_text": "Date of Result Declared - 30 Aug - 2024",
+    "ctc_value_lpa": 12.0,
+    "ctc_text": "CTC - INR 12.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010421020",
+      "16010421119",
+      "16010421138"
+    ],
+    "role": "Engineering Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 13,
+    "company": "Interactive Broker",
+    "company_key": "interactive-broker",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      6,
+      7
+    ],
+    "declared_date": "2024-08-30",
+    "date_text": "Date of Result Declared - 30 Aug - 2024",
+    "ctc_value_lpa": 12.28,
+    "ctc_text": "CTC - INR 12.28 LPA",
+    "type": "Other (Brokerage)",
+    "roll_numbers": [
+      "16010121004"
+    ],
+    "role": "Junior Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 14,
+    "company": "Seclore",
+    "company_key": "seclore",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      7
+    ],
+    "declared_date": "2024-09-02",
+    "date_text": "Date of Result Declared - 02 - Sep - 2024",
+    "ctc_value_lpa": 13.0,
+    "ctc_text": "CTC - INR 13.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121022"
+    ],
+    "role": "Trainee Product Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 15,
+    "company": "Arcon",
+    "company_key": "arcon",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      7,
+      8
+    ],
+    "declared_date": "2024-09-05",
+    "date_text": "Date of Result Declared - 05 - Sep - 2024",
+    "ctc_value_lpa": 10.0,
+    "ctc_text": "CTC - INR 10.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010421053",
+      "16010121215"
+    ],
+    "role": "Business Analyst",
+    "candidate_roles": {}
+  },
+  {
+    "id": 16,
+    "company": "Gupshup Technology",
+    "company_key": "gupshup-technology",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      8
+    ],
+    "declared_date": "2024-09-19",
+    "date_text": "Date of Result Declared - 19 - Sep - 2024",
+    "ctc_value_lpa": 16.0,
+    "ctc_text": "CTC - INR 16.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121168",
+      "16010121022",
+      "16010121025",
+      "16010121004"
+    ],
+    "role": "Software Developer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 17,
+    "company": "ICICI Lombard",
+    "company_key": "icici-lombard",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      8,
+      9
+    ],
+    "declared_date": "2024-09-19",
+    "date_text": "Date of Result Declared - 19 - Sep - 2024",
+    "ctc_value_lpa": 8.29,
+    "ctc_text": "CTC - INR 8.29 LPA",
+    "type": "BFSI",
+    "roll_numbers": [
+      "16010421034"
+    ],
+    "role": "Data Analyst / Data Scientist",
+    "candidate_roles": {}
+  },
+  {
+    "id": 18,
+    "company": "Sharekhan limited",
+    "company_key": "sharekhan-limited",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      9
+    ],
+    "declared_date": "2024-10-04",
+    "date_text": "Date of Result Declared - 04 - Oct - 2024",
+    "ctc_value_lpa": 10.0,
+    "ctc_text": "CTC - INR 10.00 LPA",
+    "type": "Brokerage",
+    "roll_numbers": [
+      "16010121166",
+      "16010121016",
+      "16010421068"
+    ],
+    "role": "Associate",
+    "candidate_roles": {}
+  },
+  {
+    "id": 19,
+    "company": "Jaro Education",
+    "company_key": "jaro-education",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      9,
+      10
+    ],
+    "declared_date": "2024-10-04",
+    "date_text": "Date of Result Declared - 04 Oct - 2024",
+    "ctc_value_lpa": 8.48,
+    "ctc_text": "CTC - INR 8.48 LPA",
+    "type": "Education",
+    "roll_numbers": [
+      "16010121055",
+      "16010321117",
+      "16010321806",
+      "16010521068"
+    ],
+    "role": "Graduate Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 20,
+    "company": "Deloitte India",
+    "company_key": "deloitte-india",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      10,
+      11
+    ],
+    "declared_date": "2024-10-10",
+    "date_text": "Date of Result Declared - 10 - Oct - 2024",
+    "ctc_value_lpa": 7.6,
+    "ctc_text": "CTC - INR 7.6 LPA",
+    "type": "Consultancy",
+    "roll_numbers": [
+      "16010421069",
+      "16010121192",
+      "16010121206",
+      "16010321116",
+      "16010121201",
+      "16010421103",
+      "16010121169",
+      "16010121177",
+      "16010521100",
+      "16010121104",
+      "16010421123",
+      "16010321059",
+      "16010121033",
+      "16010121198",
+      "16010121042",
+      "16010421007",
+      "16010121184",
+      "16010121034",
+      "16010121065",
+      "16010321068",
+      "16010121195"
+    ],
+    "role": "",
+    "candidate_roles": {
+      "16010421069": "Analyst - Human Capital",
+      "16010121192": "Analyst - Human Capital",
+      "16010121206": "Analyst - PDI & ADMM",
+      "16010321116": "Analyst - PDI & ADMM",
+      "16010121201": "Analyst - PDI & ADMM",
+      "16010421103": "Analyst - PDI & ADMM",
+      "16010121169": "Analyst - PDI & ADMM",
+      "16010121177": "Analyst - PDI & ADMM",
+      "16010521100": "Analyst - PDI & ADMM",
+      "16010121104": "Analyst - PDI & ADMM",
+      "16010421123": "Analyst - PDI & ADMM",
+      "16010321059": "Analyst - PDI & ADMM",
+      "16010121033": "Analyst - PDI & ADMM",
+      "16010121198": "Analyst - PDI & ADMM",
+      "16010121042": "Analyst - PDI & ADMM",
+      "16010421007": "Analyst - PDI & ADMM",
+      "16010121184": "Analyst - PDI & ADMM",
+      "16010121034": "Analyst - PDI & ADMM",
+      "16010121065": "Analyst - Service Now",
+      "16010321068": "Analyst - Service Now",
+      "16010121195": "Analyst - Service Now"
+    }
+  },
+  {
+    "id": 21,
+    "company": "Tresvista",
+    "company_key": "tresvista",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      11,
+      12
+    ],
+    "declared_date": "2024-10-10",
+    "date_text": "Date of Result Declared - 10 - Oct - 2024",
+    "ctc_value_lpa": 10.07,
+    "ctc_text": "CTC - INR 10.07 LPA",
+    "type": "Financial Services",
+    "roll_numbers": [
+      "16010421065",
+      "16010121011"
+    ],
+    "role": "Analyst",
+    "candidate_roles": {}
+  },
+  {
+    "id": 22,
+    "company": "KPMG",
+    "company_key": "kpmg",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      12
+    ],
+    "declared_date": "2024-10-14",
+    "date_text": "Date of Result Declared - 14 - Oct - 2024",
+    "ctc_value_lpa": 6.0,
+    "ctc_text": "CTC - INR 6.00 LPA",
+    "type": "Consultancy",
+    "roll_numbers": [
+      "16010421112",
+      "16010421124",
+      "16010121224",
+      "16010121015",
+      "16010121084",
+      "16010221023",
+      "16010221008",
+      "16010121014",
+      "16010321083",
+      "16010321010",
+      "16010221006",
+      "16010421081",
+      "16010121195"
+    ],
+    "role": "Analyst",
+    "candidate_roles": {}
+  },
+  {
+    "id": 23,
+    "company": "Deloitte India",
+    "company_key": "deloitte-india",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      12,
+      13
+    ],
+    "declared_date": "2024-10-15",
+    "date_text": "Date of Result Declared - 15 - Oct - 2024",
+    "ctc_value_lpa": 6.71,
+    "ctc_text": "CTC - INR 6.71 LPA",
+    "type": "Consultancy",
+    "roll_numbers": [
+      "16010121080",
+      "16010121222",
+      "16010121087",
+      "16010121143",
+      "16010121173",
+      "16010121068",
+      "16010421035",
+      "16010421043",
+      "16010421064",
+      "16010321039",
+      "16010121185",
+      "16010321088"
+    ],
+    "role": "Consultant Audit: IT Data & Analytics",
+    "candidate_roles": {}
+  },
+  {
+    "id": 24,
+    "company": "Oracle",
+    "company_key": "oracle",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      13
+    ],
+    "declared_date": "2024-10-17",
+    "date_text": "Date of Result Declared - 17 - Oct - 2024",
+    "ctc_value_lpa": 9.34,
+    "ctc_text": "CTC - INR 9.34 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121076",
+      "16010121070",
+      "16010321005",
+      "16010121138",
+      "16010121056",
+      "16010121026"
+    ],
+    "role": "Associate Consultant",
+    "candidate_roles": {}
+  },
+  {
+    "id": 25,
+    "company": "IdeaForge Technology Ltd.",
+    "company_key": "ideaforge-technology-ltd",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      13,
+      14
+    ],
+    "declared_date": "2024-10-18",
+    "date_text": "Date of Result Declared - 18 - Oct - 2024",
+    "ctc_value_lpa": 12.0,
+    "ctc_text": "CTC - INR 12.00 LPA",
+    "type": "Research & Product Development",
+    "roll_numbers": [
+      "16010221041"
+    ],
+    "role": "R&D Software & Electronics",
+    "candidate_roles": {}
+  },
+  {
+    "id": 26,
+    "company": "Loylty Rewardz Mngt Pvt Ltd",
+    "company_key": "loylty-rewardz-mngt-pvt-ltd",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      14
+    ],
+    "declared_date": "2024-10-18",
+    "date_text": "Date of Result Declared - 18 - Oct - 2024",
+    "ctc_value_lpa": 7.0,
+    "ctc_text": "CTC - INR 7.00 LPA",
+    "type": "Not provided",
+    "roll_numbers": [
+      "16010121194",
+      "16010421009",
+      "16010121144",
+      "16010421113",
+      "16010421134",
+      "16010122816",
+      "16010121225",
+      "16010121132",
+      "16010321107"
+    ],
+    "role": "Software Developer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 27,
+    "company": "Mukand Ltd. (Bajaj Group)",
+    "company_key": "mukand-ltd-bajaj-group",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      14,
+      15
+    ],
+    "declared_date": "2024-10-24",
+    "date_text": "Date of Result Declared - 24 - Oct - 2024",
+    "ctc_value_lpa": 5.5,
+    "ctc_text": "CTC - INR 5.50 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010521063",
+      "16010521042",
+      "16010521069",
+      "16010521020",
+      "16010522813",
+      "16010521015",
+      "16010521046"
+    ],
+    "role": "Graduate Engineer Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 28,
+    "company": "GreyLabs AI (AHG Technologies Private Limited)",
+    "company_key": "greylabs-ai-ahg-technologies-private-limited",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      15
+    ],
+    "declared_date": "2024-10-28",
+    "date_text": "Date of Result Declared - 28 - Oct - 2024",
+    "ctc_value_lpa": 14.0,
+    "ctc_text": "CTC - INR 14.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121170"
+    ],
+    "role": "Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 29,
+    "company": "Capgemini",
+    "company_key": "capgemini",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      15,
+      16
+    ],
+    "declared_date": "2024-11-11",
+    "date_text": "Date of Result Declared - 11 - Nov - 2024",
+    "ctc_value_lpa": 5.75,
+    "ctc_text": "CTC - INR 5.75 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121184"
+    ],
+    "role": "Analyst",
+    "candidate_roles": {}
+  },
+  {
+    "id": 30,
+    "company": "Capgemini",
+    "company_key": "capgemini",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      16
+    ],
+    "declared_date": "2024-11-11",
+    "date_text": "Date of Result Declared - 11 - Nov - 2024",
+    "ctc_value_lpa": 4.25,
+    "ctc_text": "CTC - INR 4.25 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010421043",
+      "16010421092",
+      "16010421075",
+      "16010121132",
+      "16010121065",
+      "16010421069",
+      "16010121198",
+      "16010421110",
+      "16010321070"
+    ],
+    "role": "Analyst",
+    "candidate_roles": {}
+  },
+  {
+    "id": 31,
+    "company": "Deloitte India",
+    "company_key": "deloitte-india",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      16,
+      17
+    ],
+    "declared_date": "2024-10-15",
+    "date_text": "Date of Result Declared - 15 - Oct - 2024",
+    "ctc_value_lpa": 7.6,
+    "ctc_text": "CTC - INR 7.60 LPA",
+    "type": "Consultancy",
+    "roll_numbers": [
+      "16010421038",
+      "16010321067",
+      "16010321076",
+      "16010421046",
+      "16010521087"
+    ],
+    "role": "",
+    "candidate_roles": {
+      "16010421038": "ServiceNow - Analyst",
+      "16010321067": "HRT - Analyst",
+      "16010321076": "HRT - Analyst",
+      "16010421046": "HRT - Analyst",
+      "16010521087": "HRT - Analyst"
+    }
+  },
+  {
+    "id": 32,
+    "company": "Oracle",
+    "company_key": "oracle",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      17
+    ],
+    "declared_date": "2024-10-30",
+    "date_text": "Date of Result Declared - 30 - Oct - 2024",
+    "ctc_value_lpa": 9.34,
+    "ctc_text": "CTC- INR 9.34 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121115",
+      "16010121147"
+    ],
+    "role": "Associate Consultant",
+    "candidate_roles": {}
+  },
+  {
+    "id": 33,
+    "company": "Google",
+    "company_key": "google",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      17,
+      18
+    ],
+    "declared_date": "2024-11-12",
+    "date_text": "Date of Result Declared - 12 - Nov - 2024",
+    "ctc_value_lpa": 51.72,
+    "ctc_text": "CTC- INR 51.72 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121010"
+    ],
+    "role": "Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 34,
+    "company": "Accenture",
+    "company_key": "accenture",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      18
+    ],
+    "declared_date": "2024-12-02",
+    "date_text": "Date of Result Declared - 02 - Dec - 2024",
+    "ctc_value_lpa": 4.5,
+    "ctc_text": "CTC- 4. 5 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010421130",
+      "16030723012"
+    ],
+    "role": "Associate Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 35,
+    "company": "LogisticsNow",
+    "company_key": "logisticsnow",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      18,
+      19
+    ],
+    "declared_date": "2024-12-05",
+    "date_text": "Date of Result Declared - 05 - Dec - 2024",
+    "ctc_value_lpa": 7.5,
+    "ctc_text": "CTC- INR 7.5 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010421032",
+      "16010121160",
+      "16010121212"
+    ],
+    "role": "",
+    "candidate_roles": {
+      "16010421032": "Full Stack Developer",
+      "16010121160": "Business Data Analyst",
+      "16010121212": "Customer Success Associate"
+    }
+  },
+  {
+    "id": 36,
+    "company": "Sumitomo",
+    "company_key": "sumitomo",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      19
+    ],
+    "declared_date": "2024-12-10",
+    "date_text": "Date of Result Declared - 10 - Dec - 2024",
+    "ctc_value_lpa": 7.2,
+    "ctc_text": "CTC- INR 7.2 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010522805",
+      "16010521004"
+    ],
+    "role": "Graduate Engineer Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 37,
+    "company": "ICICI Prudential",
+    "company_key": "icici-prudential",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      19,
+      20
+    ],
+    "declared_date": "2024-12-10",
+    "date_text": "Date of Result Declared - 10 - Dec - 2024",
+    "ctc_value_lpa": 9.2,
+    "ctc_text": "CTC- INR 9.2 LPA",
+    "type": "BFSI",
+    "roll_numbers": [
+      "16010121027",
+      "16010121163",
+      "16010421067"
+    ],
+    "role": "Management Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 38,
+    "company": "Quantanite",
+    "company_key": "quantanite",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      20
+    ],
+    "declared_date": "2024-12-13",
+    "date_text": "Date of Result Declared - 13 - Dec - 2024",
+    "ctc_value_lpa": 5.5,
+    "ctc_text": "CTC- INR 5.5 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121083",
+      "16010421077"
+    ],
+    "role": "Junior AI Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 39,
+    "company": "Bluestar",
+    "company_key": "bluestar",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      20,
+      21
+    ],
+    "declared_date": "2024-12-16",
+    "date_text": "Date of Result Declared - 16 - Dec - 2024",
+    "ctc_value_lpa": 6.42,
+    "ctc_text": "CTC- INR 6.42 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010521032",
+      "16010522819",
+      "16010221037"
+    ],
+    "role": "Graduate Engineer Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 40,
+    "company": "Worley",
+    "company_key": "worley",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      21
+    ],
+    "declared_date": "2024-12-26",
+    "date_text": "Date of Result Declared - 26 - Dec - 2024",
+    "ctc_value_lpa": 5.8,
+    "ctc_text": "CTC- INR 5.8 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010521038"
+    ],
+    "role": "GET",
+    "candidate_roles": {}
+  },
+  {
+    "id": 41,
+    "company": "Loylty Rewardz Mngt Pvt Ltd",
+    "company_key": "loylty-rewardz-mngt-pvt-ltd",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      21
+    ],
+    "declared_date": "2024-12-27",
+    "date_text": "Date of Result Declared - 27 Dec - 2024",
+    "ctc_value_lpa": 7.0,
+    "ctc_text": "CTC- INR 7.0 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010421051",
+      "16010122804",
+      "16010321020"
+    ],
+    "role": "Front End Developer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 42,
+    "company": "Aurion Pro",
+    "company_key": "aurion-pro",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      21,
+      22
+    ],
+    "declared_date": "2024-12-12",
+    "date_text": "Date of Result Declared - 12 - Dec - 2024",
+    "ctc_value_lpa": 10.0,
+    "ctc_text": "CTC- INR 10.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121218",
+      "16010121200",
+      "16010221029",
+      "16010421141"
+    ],
+    "role": "Data Scientist",
+    "candidate_roles": {}
+  },
+  {
+    "id": 43,
+    "company": "Aurion Pro",
+    "company_key": "aurion-pro",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      22
+    ],
+    "declared_date": "2024-12-12",
+    "date_text": "Date of Result Declared - 12 - Dec - 2024",
+    "ctc_value_lpa": 7.0,
+    "ctc_text": "CTC- INR 7.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010421083",
+      "16010121197",
+      "16010121020"
+    ],
+    "role": "Software Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 44,
+    "company": "Atrina Tech",
+    "company_key": "atrina-tech",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      22,
+      23
+    ],
+    "declared_date": "2025-01-08",
+    "date_text": "Date of Result Declared - 08 - Jan - 2025",
+    "ctc_value_lpa": 5.0,
+    "ctc_text": "CTC- INR 5.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010422804"
+    ],
+    "role": "Operations Associates",
+    "candidate_roles": {}
+  },
+  {
+    "id": 45,
+    "company": "Orange Business",
+    "company_key": "orange-business",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      23
+    ],
+    "declared_date": "2025-01-08",
+    "date_text": "Date of Result Declared - 08 - Jan - 2025",
+    "ctc_value_lpa": 6.5,
+    "ctc_text": "CTC- INR 6.50 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010421122",
+      "16010321051"
+    ],
+    "role": "Graduate Engineer Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 46,
+    "company": "Hike Education",
+    "company_key": "hike-education",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      23,
+      24
+    ],
+    "declared_date": "2025-01-13",
+    "date_text": "Date of Result Declared - 13 - Jan - 2025",
+    "ctc_value_lpa": 6.42,
+    "ctc_text": "CTC- INR 7.02 LPA ( M.Tech)",
+    "type": "EdTech",
+    "roll_numbers": [
+      "16010521066",
+      "16031223003",
+      "16030723009"
+    ],
+    "role": "Business Development Manager",
+    "candidate_roles": {}
+  },
+  {
+    "id": 47,
+    "company": "SBI General Insurance",
+    "company_key": "sbi-general-insurance",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      24
+    ],
+    "declared_date": "2025-01-17",
+    "date_text": "Date of Result Declared - 17 - Jan - 2025",
+    "ctc_value_lpa": 6.0,
+    "ctc_text": "CTC- INR 6.00 LPA",
+    "type": "BFSI",
+    "roll_numbers": [
+      "16010422811",
+      "16010421085",
+      "16010121119",
+      "16010121214",
+      "16010421106",
+      "16010421072",
+      "16010321090",
+      "16010321097"
+    ],
+    "role": "IT Digital Solutions Manager",
+    "candidate_roles": {}
+  },
+  {
+    "id": 48,
+    "company": "LogisticsNow",
+    "company_key": "logisticsnow",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      24,
+      25
+    ],
+    "declared_date": "2025-01-20",
+    "date_text": "Date of Result Declared - 20 - Jan - 2025",
+    "ctc_value_lpa": 7.5,
+    "ctc_text": "CTC- INR 7.50 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010421129"
+    ],
+    "role": "Associate Software Developer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 49,
+    "company": "Godrej and Boyce",
+    "company_key": "godrej-and-boyce",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      25
+    ],
+    "declared_date": "2025-01-21",
+    "date_text": "Date of Result Declared -21 - Jan - 2025",
+    "ctc_value_lpa": 7.75,
+    "ctc_text": "CTC- INR 7.75 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010522811",
+      "16010521054",
+      "16010521033"
+    ],
+    "role": "Graduate Engineer Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 50,
+    "company": "FileAgo",
+    "company_key": "fileago",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      25,
+      26
+    ],
+    "declared_date": "2025-01-21",
+    "date_text": "Date of Result Declared - 21 - Jan - 2025",
+    "ctc_value_lpa": 8.4,
+    "ctc_text": "CTC- INR 8.4 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010421062",
+      "16010321115"
+    ],
+    "role": "",
+    "candidate_roles": {
+      "16010421062": "IT Consultant",
+      "16010321115": "Tech Support"
+    }
+  },
+  {
+    "id": 51,
+    "company": "Nilkamal",
+    "company_key": "nilkamal",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      26
+    ],
+    "declared_date": "2025-01-22",
+    "date_text": "Date of Result Declared - 22 - Jan - 2025",
+    "ctc_value_lpa": 4.5,
+    "ctc_text": "CTC- INR4.5 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010521057"
+    ],
+    "role": "Graduate Engineer Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 52,
+    "company": "Tata Motors Insurance Broking And Advisory Services Limited",
+    "company_key": "tata-motors-insurance-broking-and-advisory-services-limited",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      26,
+      27
+    ],
+    "declared_date": "2025-01-23",
+    "date_text": "Date of Result Declared - 23 - Jan - 2025",
+    "ctc_value_lpa": 5.05,
+    "ctc_text": "CTC- INR 5.05 LPA",
+    "type": "Consultancy",
+    "roll_numbers": [
+      "16010521104"
+    ],
+    "role": "Graduate Engineer Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 53,
+    "company": "Godrej and Boyce",
+    "company_key": "godrej-and-boyce",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      27
+    ],
+    "declared_date": "2025-01-30",
+    "date_text": "Date of Result Declared - 30 - Jan - 2025",
+    "ctc_value_lpa": 7.75,
+    "ctc_text": "CTC- INR 7.75 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010221065"
+    ],
+    "role": "Graduate Engineer Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 54,
+    "company": "Signpost India Pvt Ltd",
+    "company_key": "signpost-india-pvt-ltd",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      27,
+      28
+    ],
+    "declared_date": "2025-02-06",
+    "date_text": "Date of Result Declared -6 - Feb - 2025",
+    "ctc_value_lpa": 6.0,
+    "ctc_text": "CTC- INR 6.00 LPA",
+    "type": "Advertising",
+    "roll_numbers": [
+      "16010422807",
+      "16010421040"
+    ],
+    "role": "Management Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 55,
+    "company": "L&T Technology Services",
+    "company_key": "l-t-technology-services",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      28
+    ],
+    "declared_date": "2025-02-11",
+    "date_text": "Date of Result Declared - 11 - Feb - 2025",
+    "ctc_value_lpa": 4.0,
+    "ctc_text": "CTC- INR 4.00 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010321073"
+    ],
+    "role": "Graduate Engineer Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 56,
+    "company": "JSW",
+    "company_key": "jsw",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      28
+    ],
+    "declared_date": "2025-02-12",
+    "date_text": "Date of Result Declared - 12 - Feb - 2025",
+    "ctc_value_lpa": 8.0,
+    "ctc_text": "CTC- INR 8.00 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010521037"
+    ],
+    "role": "Graduate Engineer Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 57,
+    "company": "Oberoi Realty",
+    "company_key": "oberoi-realty",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      28,
+      29
+    ],
+    "declared_date": "2025-02-12",
+    "date_text": "Date of Result Declared - 12 - Feb - 2025",
+    "ctc_value_lpa": 5.0,
+    "ctc_text": "CTC- INR 5.00 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010522814"
+    ],
+    "role": "MEP Design - HVAC",
+    "candidate_roles": {}
+  },
+  {
+    "id": 58,
+    "company": "Toyo Engineering",
+    "company_key": "toyo-engineering",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      29
+    ],
+    "declared_date": "2025-02-17",
+    "date_text": "Date of Result Declared - 17 - Feb - 2025",
+    "ctc_value_lpa": 5.64,
+    "ctc_text": "CTC- INR 5.64 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010522815",
+      "16010521036",
+      "16010521039"
+    ],
+    "role": "Graduate Engineer Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 59,
+    "company": "Mindgate Solutions Private limited",
+    "company_key": "mindgate-solutions-private-limited",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      29,
+      30
+    ],
+    "declared_date": "2025-02-21",
+    "date_text": "Date of Result Declared - 21 - Feb - 2025",
+    "ctc_value_lpa": 7.0,
+    "ctc_text": "CTC- INR 7.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010122826",
+      "16010421024"
+    ],
+    "role": "Trainee Software Developer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 60,
+    "company": "Toyo Engineering",
+    "company_key": "toyo-engineering",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      30
+    ],
+    "declared_date": "2025-02-24",
+    "date_text": "Date of Result Declared - 24 - Feb - 2025",
+    "ctc_value_lpa": 5.64,
+    "ctc_text": "CTC- INR 6.19 LPA ( M.Tech)",
+    "type": "Core",
+    "roll_numbers": [
+      "16010521105",
+      "16031223006"
+    ],
+    "role": "Graduate Engineer Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 61,
+    "company": "Toyo Engineering",
+    "company_key": "toyo-engineering",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      30,
+      31
+    ],
+    "declared_date": "2025-02-24",
+    "date_text": "Date of Result Declared - 24 - Feb - 2025",
+    "ctc_value_lpa": 5.64,
+    "ctc_text": "CTC- INR 5.64 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010521047"
+    ],
+    "role": "Graduate Engineer Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 62,
+    "company": "Grindwell Norton Limited, Saint-Gobain Group",
+    "company_key": "grindwell-norton-limited-saint-gobain-group",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      31
+    ],
+    "declared_date": "2025-02-27",
+    "date_text": "Date of Result Declared - 27 - Feb - 2025",
+    "ctc_value_lpa": 4.6,
+    "ctc_text": "CTC- INR 4.60 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010521019"
+    ],
+    "role": "Graduate Engineer Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 63,
+    "company": "RSM Astute Consulting",
+    "company_key": "rsm-astute-consulting",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      31,
+      32
+    ],
+    "declared_date": "2025-02-27",
+    "date_text": "Date of Result Declared - 27 - Feb - 2025",
+    "ctc_value_lpa": 5.0,
+    "ctc_text": "CTC- INR 5.00 LPA",
+    "type": "Consultancy",
+    "roll_numbers": [
+      "16010321052"
+    ],
+    "role": "Assurance and Advisory",
+    "candidate_roles": {}
+  },
+  {
+    "id": 64,
+    "company": "R.K.CONTROL INSTRUMENTS PVT.LTD",
+    "company_key": "r-k-control-instruments-pvt-ltd",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      32
+    ],
+    "declared_date": "2025-03-03",
+    "date_text": "Date of Result Declared - 03 - March 2025",
+    "ctc_value_lpa": 7.0,
+    "ctc_text": "CTC- INR 7.00 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010521026",
+      "16010521102",
+      "16010521040",
+      "16010521106"
+    ],
+    "role": "",
+    "candidate_roles": {
+      "16010521026": "Graduate Engineer Trainee - Design",
+      "16010521102": "Graduate Engineer Trainee - Design",
+      "16010521040": "Graduate Engineer Trainee - Design",
+      "16010521106": "Graduate Engineer Trainee - Application"
+    }
+  },
+  {
+    "id": 65,
+    "company": "Oracle Financial Software Services Ltd.",
+    "company_key": "oracle-financial-software-services-ltd",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      32,
+      33
+    ],
+    "declared_date": "2025-03-27",
+    "date_text": "Date of Result Declared - 27 - March 2025",
+    "ctc_value_lpa": 9.34,
+    "ctc_text": "CTC- INR 9. 34 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010421010",
+      "16010121061",
+      "16010421028",
+      "16010121107",
+      "16010121145",
+      "16010121114"
+    ],
+    "role": "Associate Consultant",
+    "candidate_roles": {}
+  },
+  {
+    "id": 66,
+    "company": "Neebal Technology",
+    "company_key": "neebal-technology",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      33
+    ],
+    "declared_date": "2025-04-01",
+    "date_text": "Date of Result Declared - 01 - Apr - 2025",
+    "ctc_value_lpa": 7.0,
+    "ctc_text": "CTC- INR 7.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121121"
+    ],
+    "role": "Trainee Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 67,
+    "company": "Mehery Soccom Pvt Ltd",
+    "company_key": "mehery-soccom-pvt-ltd",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      33,
+      34
+    ],
+    "declared_date": "2025-04-02",
+    "date_text": "Date of Result Declared - 02 - Apr - 2025",
+    "ctc_value_lpa": 10.02,
+    "ctc_text": "CTC- INR 10.02 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121187",
+      "16010421133"
+    ],
+    "role": "Jr. Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 68,
+    "company": "TATA Power",
+    "company_key": "tata-power",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      34
+    ],
+    "declared_date": "2025-04-14",
+    "date_text": "Date of Result Declared 14 - Apr - 2025",
+    "ctc_value_lpa": 6.97,
+    "ctc_text": "CTC- INR 6.97 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010121179"
+    ],
+    "role": "Graduate Engineer Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 69,
+    "company": "Aurion Pro",
+    "company_key": "aurion-pro",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      34,
+      35
+    ],
+    "declared_date": "2025-04-15",
+    "date_text": "Date of Result Declared - 15 -Apr - 2025",
+    "ctc_value_lpa": 10.0,
+    "ctc_text": "CTC- INR 10.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010321013",
+      "16010321058"
+    ],
+    "role": "Data Scientist",
+    "candidate_roles": {}
+  },
+  {
+    "id": 70,
+    "company": "RMC India",
+    "company_key": "rmc-india",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      35
+    ],
+    "declared_date": "2025-04-16",
+    "date_text": "Date of Result Declared - 16 -Apr - 2025",
+    "ctc_value_lpa": 5.0,
+    "ctc_text": "CTC- INR 5.00 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010521060",
+      "16010521101"
+    ],
+    "role": "GET - Commercial",
+    "candidate_roles": {}
+  },
+  {
+    "id": 71,
+    "company": "K 12 Techno Pvt. Ltd",
+    "company_key": "k-12-techno-pvt-ltd",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      35
+    ],
+    "declared_date": "2025-04-17",
+    "date_text": "Date of Result Declared - 17 -Apr - 2025",
+    "ctc_value_lpa": 6.0,
+    "ctc_text": "CTC- INR 6.00 LPA",
+    "type": "Other",
+    "roll_numbers": [
+      "16031223011"
+    ],
+    "role": "School Manager",
+    "candidate_roles": {}
+  },
+  {
+    "id": 72,
+    "company": "Godrej Industries Limited",
+    "company_key": "godrej-industries-limited",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      35,
+      36
+    ],
+    "declared_date": "2025-04-24",
+    "date_text": "Date of Result Declared - 24 - Apr - 2025",
+    "ctc_value_lpa": 12.0,
+    "ctc_text": "CTC- INR 12.00 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010421126"
+    ],
+    "role": "Senior Executive - Gen AI Lab",
+    "candidate_roles": {}
+  },
+  {
+    "id": 73,
+    "company": "S&P Global.",
+    "company_key": "s-p-global",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      36
+    ],
+    "declared_date": "2025-04-25",
+    "date_text": "Date of Result Declared - 25 - Apr - 2025",
+    "ctc_value_lpa": 9.0,
+    "ctc_text": "CTC- INR 9.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121092"
+    ],
+    "role": "Software Engineer (Backend)",
+    "candidate_roles": {}
+  },
+  {
+    "id": 74,
+    "company": "Sequretek",
+    "company_key": "sequretek",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      36,
+      37
+    ],
+    "declared_date": "2025-04-28",
+    "date_text": "Date of Result Declared - 28 - Apr - 2025",
+    "ctc_value_lpa": 4.0,
+    "ctc_text": "CTC- INR 4.00 LPA",
+    "type": "IT - Security",
+    "roll_numbers": [
+      "16031023005",
+      "16031023011"
+    ],
+    "role": "Associate Consultant",
+    "candidate_roles": {}
+  },
+  {
+    "id": 75,
+    "company": "Bandhan Asset Management Company",
+    "company_key": "bandhan-asset-management-company",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      37,
+      38
+    ],
+    "declared_date": "2025-05-08",
+    "date_text": "Date of Result Declared - 08 - May - 2025",
+    "ctc_value_lpa": 5.0,
+    "ctc_text": "CTC- INR 5.00 LPA",
+    "type": "Other - Investment Service",
+    "roll_numbers": [
+      "16034423012"
+    ],
+    "role": "IT Executive - Data Analytics",
+    "candidate_roles": {}
+  },
+  {
+    "id": 76,
+    "company": "Purplle",
+    "company_key": "purplle",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      38
+    ],
+    "declared_date": "2025-05-12",
+    "date_text": "Date of Result Declared - 12 -May - 2025",
+    "ctc_value_lpa": 8.0,
+    "ctc_text": "CTC- INR 8.00 LPA",
+    "type": "Other - Retail",
+    "roll_numbers": [
+      "16010121093"
+    ],
+    "role": "Senior Executive - Digital Marketing",
+    "candidate_roles": {}
+  },
+  {
+    "id": 77,
+    "company": "Segumento",
+    "company_key": "segumento",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      38
+    ],
+    "declared_date": "2025-05-14",
+    "date_text": "Date of Result Declared - 14 - May - 2025",
+    "ctc_value_lpa": 6.0,
+    "ctc_text": "CTC- INR 6.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010321044"
+    ],
+    "role": "Business Development Executive",
+    "candidate_roles": {}
+  },
+  {
+    "id": 78,
+    "company": "Indospace",
+    "company_key": "indospace",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      38,
+      39
+    ],
+    "declared_date": "2025-05-14",
+    "date_text": "Date of Result Declared - 14 - May - 2025",
+    "ctc_value_lpa": 7.0,
+    "ctc_text": "CTC- INR 7.00 LPA",
+    "type": "Other - Logistics",
+    "roll_numbers": [
+      "16034423006"
+    ],
+    "role": "Management Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 79,
+    "company": "Quantum Data Engines",
+    "company_key": "quantum-data-engines",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      39
+    ],
+    "declared_date": "2025-05-18",
+    "date_text": "Date of Result Declared - 18 - May - 2025",
+    "ctc_value_lpa": 4.0,
+    "ctc_text": "CTC- INR 4.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010421105",
+      "16030723018",
+      "16010121111"
+    ],
+    "role": "Associate - Product Development",
+    "candidate_roles": {}
+  },
+  {
+    "id": 80,
+    "company": "HDFC Life",
+    "company_key": "hdfc-life",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      39,
+      40
+    ],
+    "declared_date": "2025-05-20",
+    "date_text": "Date of Result Declared - 20 - May - 2025",
+    "ctc_value_lpa": 9.5,
+    "ctc_text": "CTC- INR 9.50 LPA",
+    "type": "BFSI",
+    "roll_numbers": [
+      "16010121031",
+      "16010121161",
+      "16010421139",
+      "16010321098"
+    ],
+    "role": "",
+    "candidate_roles": {
+      "16010121031": "Software Engineer/System Engineer",
+      "16010121161": "Software Engineer/System Engineer",
+      "16010421139": "Data Engineer",
+      "16010321098": "Data Engineer"
+    }
+  },
+  {
+    "id": 81,
+    "company": "HDFC Life",
+    "company_key": "hdfc-life",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      40
+    ],
+    "declared_date": "2025-05-22",
+    "date_text": "Date of Result Declared - 22 - May - 2025",
+    "ctc_value_lpa": 9.5,
+    "ctc_text": "CTC- INR 9.50 LPA",
+    "type": "BFSI",
+    "roll_numbers": [
+      "16010121019"
+    ],
+    "role": "Software Engineer/System Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 82,
+    "company": "HDFC Life",
+    "company_key": "hdfc-life",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      40,
+      41
+    ],
+    "declared_date": "2025-05-30",
+    "date_text": "Date of Result Declared - 30 - May - 2025",
+    "ctc_value_lpa": 9.5,
+    "ctc_text": "CTC- INR 9.50 LPA",
+    "type": "BFSI",
+    "roll_numbers": [
+      "16010421014",
+      "16010421076",
+      "16010121001"
+    ],
+    "role": "Software Engineer/System Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 83,
+    "company": "Colgate",
+    "company_key": "colgate",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      41
+    ],
+    "declared_date": "2025-05-30",
+    "date_text": "Date of Result Declared - 30 - May - 2025",
+    "ctc_value_lpa": 7.56,
+    "ctc_text": "CTC- INR 7.56 LPA",
+    "type": "FMCG",
+    "roll_numbers": [
+      "16034423002"
+    ],
+    "role": "Campus Associate",
+    "candidate_roles": {}
+  },
+  {
+    "id": 84,
+    "company": "Ericsson India",
+    "company_key": "ericsson-india",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      41,
+      42
+    ],
+    "declared_date": "2025-05-27",
+    "date_text": "Date of Result Declared - 27 - May - 2025",
+    "ctc_value_lpa": 7.5,
+    "ctc_text": "CTC- INR 7.50 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010421001"
+    ],
+    "role": "Graduate Engineer - Software Support",
+    "candidate_roles": {}
+  },
+  {
+    "id": 85,
+    "company": "Browserstack",
+    "company_key": "browserstack",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      42,
+      43
+    ],
+    "declared_date": "2025-06-03",
+    "date_text": "Date of Result Declared - 03 - June - 2025",
+    "ctc_value_lpa": 14.56,
+    "ctc_text": "CTC- INR 14. 56 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121070",
+      "16010121216",
+      "16010421064"
+    ],
+    "role": "Software Development Engineer in Test",
+    "candidate_roles": {}
+  },
+  {
+    "id": 86,
+    "company": "Pravaayu",
+    "company_key": "pravaayu",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      43
+    ],
+    "declared_date": "2025-06-04",
+    "date_text": "Date of Result Declared - 04 - June - 2025",
+    "ctc_value_lpa": 6.0,
+    "ctc_text": "CTC- INR 6.00 LPA",
+    "type": "Healthcare",
+    "roll_numbers": [
+      "16010121106"
+    ],
+    "role": "Executive Associate to Founder",
+    "candidate_roles": {}
+  },
+  {
+    "id": 87,
+    "company": "Accelya Group",
+    "company_key": "accelya-group",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      43
+    ],
+    "declared_date": "2025-06-05",
+    "date_text": "Date of Result Declared - 05 - June - 2025",
+    "ctc_value_lpa": 7.0,
+    "ctc_text": "CTC- INR 7.00 LPA",
+    "type": "Not provided",
+    "roll_numbers": [
+      "16010421132"
+    ],
+    "role": "Software Development - AI/ML",
+    "candidate_roles": {}
+  },
+  {
+    "id": 88,
+    "company": "Nouryon Chemicals",
+    "company_key": "nouryon-chemicals",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      43,
+      44
+    ],
+    "declared_date": "2025-06-09",
+    "date_text": "Date of Result Declared - 9 - June - 2025",
+    "ctc_value_lpa": 15.5,
+    "ctc_text": "CTC- INR 15.50 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010121149",
+      "16010121202",
+      "16010421006"
+    ],
+    "role": "Management Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 89,
+    "company": "Toyo Engineering",
+    "company_key": "toyo-engineering",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      44
+    ],
+    "declared_date": "2025-06-10",
+    "date_text": "Date of Result Declared - 10 - June - 2025",
+    "ctc_value_lpa": 6.14,
+    "ctc_text": "CTC- INR 6.14 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010321094"
+    ],
+    "role": "Trainee Engineer - IT Department",
+    "candidate_roles": {}
+  },
+  {
+    "id": 90,
+    "company": "Holcim Global Digital Hub",
+    "company_key": "holcim-global-digital-hub",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      44,
+      45
+    ],
+    "declared_date": null,
+    "date_text": "",
+    "ctc_value_lpa": 6.0,
+    "ctc_text": "CTC - 6.00 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010121167"
+    ],
+    "role": "Project Manager - IT",
+    "candidate_roles": {}
+  },
+  {
+    "id": 91,
+    "company": "Cimpress",
+    "company_key": "cimpress",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      45
+    ],
+    "declared_date": "2025-06-12",
+    "date_text": "Date of Result Declared - 12 - June - 2025",
+    "ctc_value_lpa": 12.0,
+    "ctc_text": "CTC - 12.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010122801",
+      "16010121090",
+      "16010121041"
+    ],
+    "role": "Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 92,
+    "company": "HSBC",
+    "company_key": "hsbc",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      45,
+      46
+    ],
+    "declared_date": "2025-06-13",
+    "date_text": "Date of Result Declared - 13 - June - 2025",
+    "ctc_value_lpa": 9.4,
+    "ctc_text": "CTC - 9.40 LPA",
+    "type": "BFSI",
+    "roll_numbers": [
+      "16010121167",
+      "16010321102"
+    ],
+    "role": "Data Analyst",
+    "candidate_roles": {}
+  },
+  {
+    "id": 93,
+    "company": "HSBC",
+    "company_key": "hsbc",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      46
+    ],
+    "declared_date": "2025-06-13",
+    "date_text": "Date of Result Declared - 13 - June - 2025",
+    "ctc_value_lpa": 9.4,
+    "ctc_text": "CTC - 9.40 LPA",
+    "type": "BFSI",
+    "roll_numbers": [
+      "16034423007"
+    ],
+    "role": "Data Analyst",
+    "candidate_roles": {}
+  },
+  {
+    "id": 94,
+    "company": "Dolat Capital",
+    "company_key": "dolat-capital",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      46,
+      47
+    ],
+    "declared_date": "2025-06-17",
+    "date_text": "Date of Result Declared - 17 - June - 2025",
+    "ctc_value_lpa": 8.0,
+    "ctc_text": "CTC - 8.00 LPA",
+    "type": "BFSI",
+    "roll_numbers": [
+      "16010121223"
+    ],
+    "role": "Software Developer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 95,
+    "company": "Purplle",
+    "company_key": "purplle",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      47
+    ],
+    "declared_date": "2025-06-18",
+    "date_text": "Date of Result Declared - 18 - June - 2025",
+    "ctc_value_lpa": 13.0,
+    "ctc_text": "CTC - 13.00 LPA",
+    "type": "Other",
+    "roll_numbers": [
+      "16010121118"
+    ],
+    "role": "SDE Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 96,
+    "company": "Mahindra & Mahindra",
+    "company_key": "mahindra-mahindra",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      47,
+      48
+    ],
+    "declared_date": "2025-06-25",
+    "date_text": "Date of Result Declared - 25 - June - 2025",
+    "ctc_value_lpa": 4.2,
+    "ctc_text": "CTC - 4.20 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010521097",
+      "16010221033",
+      "16010521027",
+      "16010522804",
+      "16010321049"
+    ],
+    "role": "Graduate Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 97,
+    "company": "CitiusTech",
+    "company_key": "citiustech",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      48
+    ],
+    "declared_date": "2025-06-26",
+    "date_text": "Date of Result Declared - 26 - June - 2025",
+    "ctc_value_lpa": 5.0,
+    "ctc_text": "CTC - 5.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121047",
+      "16010122802",
+      "16010121071"
+    ],
+    "role": "Trainee Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 98,
+    "company": "EDRA Labs",
+    "company_key": "edra-labs",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      48
+    ],
+    "declared_date": "2025-06-27",
+    "date_text": "Date of Result Declared - 27 - June - 2025",
+    "ctc_value_lpa": 17.1,
+    "ctc_text": "CTC - 17.10 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010421063"
+    ],
+    "role": "Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 99,
+    "company": "RBL bank",
+    "company_key": "rbl-bank",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      48,
+      49
+    ],
+    "declared_date": "2025-06-27",
+    "date_text": "Date of Result Declared - 27 - June - 2025",
+    "ctc_value_lpa": 9.22,
+    "ctc_text": "CTC - 9.22 LPA",
+    "type": "BFSI",
+    "roll_numbers": [
+      "16010321061"
+    ],
+    "role": "Technology Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 100,
+    "company": "Commtel",
+    "company_key": "commtel",
+    "source_file": "25batchemailthread.pdf",
+    "pages": [
+      49
+    ],
+    "declared_date": "2025-06-28",
+    "date_text": "Date of Result Declared - 28 - June - 2025",
+    "ctc_value_lpa": 5.0,
+    "ctc_text": "CTC - 5.00 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010321032",
+      "16010320061"
+    ],
+    "role": "Graduate Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 101,
+    "company": "Nouryon Chemicals",
+    "company_key": "nouryon-chemicals",
+    "source_file": "25batchemailthread-2.pdf",
+    "pages": [
+      1
+    ],
+    "declared_date": "2025-06-30",
+    "date_text": "Date of Result Declared - 30 - June - 2025",
+    "ctc_value_lpa": 15.5,
+    "ctc_text": "CTC - 15.50 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010221024"
+    ],
+    "role": "Management Trainee - Logistics Analyst",
+    "candidate_roles": {}
+  },
+  {
+    "id": 102,
+    "company": "Global Payex Technologies Pvt. Ltd.",
+    "company_key": "global-payex-technologies-pvt-ltd",
+    "source_file": "25batchemailthread-2.pdf",
+    "pages": [
+      1,
+      2
+    ],
+    "declared_date": "2025-07-01",
+    "date_text": "Date of Result Declared - I - July - 2025",
+    "ctc_value_lpa": 4.08,
+    "ctc_text": "CTC - 4.08 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010321022"
+    ],
+    "role": "Trainee Business Analyst",
+    "candidate_roles": {}
+  },
+  {
+    "id": 103,
+    "company": "Morning Star",
+    "company_key": "morning-star",
+    "source_file": "25batchemailthread-2.pdf",
+    "pages": [
+      2
+    ],
+    "declared_date": "2025-07-03",
+    "date_text": "Date of Result Declared - 3 - July - 2025",
+    "ctc_value_lpa": 7.5,
+    "ctc_text": "CTC - 7.50 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010121040",
+      "16010321121",
+      "16010122822",
+      "16010321031",
+      "16010121018",
+      "16010121028"
+    ],
+    "role": "Associate Software Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 104,
+    "company": "Nouryon Chemicals",
+    "company_key": "nouryon-chemicals",
+    "source_file": "25batchemailthread-2.pdf",
+    "pages": [
+      2,
+      3
+    ],
+    "declared_date": "2025-07-06",
+    "date_text": "Date of Result Declared - 6 - July - 2025",
+    "ctc_value_lpa": 15.5,
+    "ctc_text": "CTC - 15.50 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010121172"
+    ],
+    "role": "Management Trainee - Cyber Security",
+    "candidate_roles": {}
+  },
+  {
+    "id": 105,
+    "company": "Eventstrat LabsPrivateLimited",
+    "company_key": "eventstrat-labsprivatelimited",
+    "source_file": "25batchemailthread-2.pdf",
+    "pages": [
+      3
+    ],
+    "declared_date": "2025-07-07",
+    "date_text": "Date of Result Declared - 7 - July - 2025",
+    "ctc_value_lpa": 18.0,
+    "ctc_text": "CTC - 18.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010421068",
+      "16010421041",
+      "16010421099"
+    ],
+    "role": "Software Development Engineer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 106,
+    "company": "RBL bank",
+    "company_key": "rbl-bank",
+    "source_file": "25batchemailthread-2.pdf",
+    "pages": [
+      3
+    ],
+    "declared_date": "2025-07-09",
+    "date_text": "Date of Result Declared - 9 - July - 2025",
+    "ctc_value_lpa": 9.22,
+    "ctc_text": "CTC - 9.22 LPA",
+    "type": "BFSI",
+    "roll_numbers": [
+      "16010121025"
+    ],
+    "role": "Node JS Developer",
+    "candidate_roles": {}
+  },
+  {
+    "id": 107,
+    "company": "Taabi Mobility",
+    "company_key": "taabi-mobility",
+    "source_file": "25batchemailthread-2.pdf",
+    "pages": [
+      3,
+      4
+    ],
+    "declared_date": "2025-07-10",
+    "date_text": "Date of Result Declared - 10 - July - 2025",
+    "ctc_value_lpa": 12.0,
+    "ctc_text": "CTC - 12.00 LPA",
+    "type": "Logistics",
+    "roll_numbers": [
+      "16010121154",
+      "16010321050"
+    ],
+    "role": "Associate Product Manager",
+    "candidate_roles": {}
+  },
+  {
+    "id": 108,
+    "company": "Nouryon Chemicals",
+    "company_key": "nouryon-chemicals",
+    "source_file": "25batchemailthread-2.pdf",
+    "pages": [
+      4
+    ],
+    "declared_date": "2025-07-15",
+    "date_text": "Date of Result Declared - 15 - July - 2025",
+    "ctc_value_lpa": 15.51,
+    "ctc_text": "CTC - 15.51 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010121011"
+    ],
+    "role": "Management Trainee - IAM",
+    "candidate_roles": {}
+  },
+  {
+    "id": 109,
+    "company": "Reserve Bank Information Technology Pvt. Ltd. (ReBIT)",
+    "company_key": "reserve-bank-information-technology-pvt-ltd-rebit",
+    "source_file": "25batchemailthread-2.pdf",
+    "pages": [
+      4,
+      5
+    ],
+    "declared_date": "2025-07-16",
+    "date_text": "Date of Result Declared - 16 - July - 2025",
+    "ctc_value_lpa": 4.5,
+    "ctc_text": "CTC - 4.50 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010421047"
+    ],
+    "role": "Associate Cyber Security",
+    "candidate_roles": {}
+  },
+  {
+    "id": 110,
+    "company": "Reliance Industries Limited.",
+    "company_key": "reliance-industries-limited",
+    "source_file": "25batchemailthread-2.pdf",
+    "pages": [
+      5
+    ],
+    "declared_date": "2025-07-17",
+    "date_text": "Date of Result Declared - 17 - July - 2025",
+    "ctc_value_lpa": 9.0,
+    "ctc_text": "CTC - 9.00 LPA",
+    "type": "Core",
+    "roll_numbers": [
+      "16010522803"
+    ],
+    "role": "Graduate Engineer Trainee",
+    "candidate_roles": {}
+  },
+  {
+    "id": 111,
+    "company": "Loylty Rewardz Mngt Pvt Ltd",
+    "company_key": "loylty-rewardz-mngt-pvt-ltd",
+    "source_file": "25batchemailthread-2.pdf",
+    "pages": [
+      5
+    ],
+    "declared_date": "2025-07-17",
+    "date_text": "Date of Result Declared - 17 - July - 2025",
+    "ctc_value_lpa": 7.0,
+    "ctc_text": "CTC - 7.00 LPA",
+    "type": "IT",
+    "roll_numbers": [
+      "16010122814"
+    ],
+    "role": "Software Trainee",
+    "candidate_roles": {}
+  }
+]

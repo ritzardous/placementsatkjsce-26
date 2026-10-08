@@ -1,0 +1,50 @@
+name: Firebase cloud data and rules
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: Cloud operation (publish deploys rules and imports the selected batch)
+        required: true
+        default: verify
+        type: choice
+        options: [verify, publish, set-role]
+      year:
+        description: Graduation year (2025 is AY 2024-25)
+        default: '2026'
+        type: choice
+        options: ['2026', '2025']
+      uid:
+        description: Firebase Auth UID (only for set-role)
+        required: false
+        type: string
+      role:
+        description: Account role (only for set-role)
+        default: contributor
+        type: choice
+        options: [contributor, moderator, admin]
+permissions:
+  contents: read
+concurrency:
+  group: firebase-production-maintenance
+  cancel-in-progress: false
+jobs:
+  firebase:
+    runs-on: ubuntu-latest
+    environment: firebase-production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run typecheck
+      - run: npm run cloud:firebase
+        env:
+          FIREBASE_ACTION: ${{ inputs.action }}
+          FIREBASE_BATCH_YEAR: ${{ inputs.year }}
+          FIREBASE_PROJECT_ID: ${{ vars.FIREBASE_PROJECT_ID }}
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+          FIREBASE_AUTH_UID: ${{ inputs.uid }}
+          FIREBASE_AUTH_ROLE: ${{ inputs.role }}

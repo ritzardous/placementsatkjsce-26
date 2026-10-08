@@ -1,0 +1,975 @@
+[
+  {
+    "id": "360-one",
+    "aliases": [
+      "360-one"
+    ],
+    "file": "/company-logos/360-one.png",
+    "website": "https://360.one",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2F360.one&sz=128"
+  },
+  {
+    "id": "accelya",
+    "aliases": [
+      "accelya-group"
+    ],
+    "file": "/company-logos/accelya.png",
+    "website": "https://accelya.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Faccelya.com&sz=128"
+  },
+  {
+    "id": "accenture",
+    "aliases": [
+      "accenture"
+    ],
+    "file": "/company-logos/accenture.png",
+    "website": "https://accenture.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Faccenture.com&sz=128"
+  },
+  {
+    "id": "aci-worldwide",
+    "aliases": [
+      "aci-worldwide"
+    ],
+    "file": "/company-logos/aci-worldwide.png",
+    "website": "https://aciworldwide.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Faciworldwide.com&sz=128"
+  },
+  {
+    "id": "amazon",
+    "aliases": [
+      "amazon-india"
+    ],
+    "file": "/company-logos/amazon.png",
+    "website": "https://amazon.in",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Famazon.in&sz=128"
+  },
+  {
+    "id": "aptia",
+    "aliases": [
+      "aptia",
+      "aptia-india"
+    ],
+    "file": "/company-logos/aptia.png",
+    "website": "https://aptia-group.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Faptia-group.com&sz=128"
+  },
+  {
+    "id": "arcon",
+    "aliases": [
+      "arcon"
+    ],
+    "file": "/company-logos/arcon.png",
+    "website": "https://arconnet.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Farconnet.com&sz=128"
+  },
+  {
+    "id": "aurionpro",
+    "aliases": [
+      "aurion-pro"
+    ],
+    "file": "/company-logos/aurionpro.png",
+    "website": "https://aurionpro.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Faurionpro.com&sz=128"
+  },
+  {
+    "id": "axis-amc",
+    "aliases": [
+      "axis-asset-management-company-ltd"
+    ],
+    "file": "/company-logos/axis-amc.png",
+    "website": "https://axismf.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Faxismf.com&sz=128"
+  },
+  {
+    "id": "bandhan-amc",
+    "aliases": [
+      "bandhan-amc"
+    ],
+    "file": "/company-logos/bandhan-amc.png",
+    "website": "https://bandhanmutual.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fbandhanmutual.com&sz=128"
+  },
+  {
+    "id": "barclays",
+    "aliases": [
+      "barclays"
+    ],
+    "file": "/company-logos/barclays.png",
+    "website": "https://home.barclays",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fhome.barclays&sz=128"
+  },
+  {
+    "id": "bluestar",
+    "aliases": [
+      "bluestar"
+    ],
+    "file": "/company-logos/bluestar.png",
+    "website": "https://bluestarindia.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fbluestarindia.com&sz=128"
+  },
+  {
+    "id": "browserstack",
+    "aliases": [
+      "browserstack",
+      "browserstack-software-pvt-ltd"
+    ],
+    "file": "/company-logos/browserstack.png",
+    "website": "https://browserstack.com",
+    "source": "https://bstackprod.kinsta.cloud/wp-content/themes/browserstack/img/favicons/apple-touch-icon.png"
+  },
+  {
+    "id": "capgemini",
+    "aliases": [
+      "capgemini"
+    ],
+    "file": "/company-logos/capgemini.png",
+    "website": "https://capgemini.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fcapgemini.com&sz=128"
+  },
+  {
+    "id": "caratlane",
+    "aliases": [
+      "caratlane-a-tata-product"
+    ],
+    "file": "/company-logos/caratlane.png",
+    "website": "https://caratlane.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fcaratlane.com&sz=128"
+  },
+  {
+    "id": "cimpress",
+    "aliases": [
+      "cimpress"
+    ],
+    "file": "/company-logos/cimpress.png",
+    "website": "https://cimpress.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fcimpress.com&sz=128"
+  },
+  {
+    "id": "cisco",
+    "aliases": [
+      "cisco-systems-india-private-limited"
+    ],
+    "file": "/company-logos/cisco.png",
+    "website": "https://cisco.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fcisco.com&sz=128"
+  },
+  {
+    "id": "citiustech",
+    "aliases": [
+      "citiustech"
+    ],
+    "file": "/company-logos/citiustech.png",
+    "website": "https://citiustech.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fcitiustech.com&sz=128"
+  },
+  {
+    "id": "cityflo",
+    "aliases": [
+      "cityflo"
+    ],
+    "file": "/company-logos/cityflo.png",
+    "website": "https://cityflo.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fcityflo.com&sz=128"
+  },
+  {
+    "id": "colgate",
+    "aliases": [
+      "colgate",
+      "colgate-palmolive"
+    ],
+    "file": "/company-logos/colgate.png",
+    "website": "https://colgatepalmolive.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fcolgatepalmolive.com&sz=128"
+  },
+  {
+    "id": "connectwise",
+    "aliases": [
+      "connectwise"
+    ],
+    "file": "/company-logos/connectwise.png",
+    "website": "https://connectwise.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fconnectwise.com&sz=128"
+  },
+  {
+    "id": "crackeddevs",
+    "aliases": [
+      "crackeddevs"
+    ],
+    "file": "/company-logos/crackeddevs.png",
+    "website": "https://crackeddevs.beehiiv.com",
+    "source": "https://media.beehiiv.com/uploads/publication/logo/c7cb70a5-017a-48c0-8089-18ba0c1c5204/ccc.png"
+  },
+  {
+    "id": "crisil",
+    "aliases": [
+      "crisil",
+      "crisil-intelligence"
+    ],
+    "file": "/company-logos/crisil.png",
+    "website": "https://crisil.com",
+    "source": "https://www.crisil.com/content/dam/crisil/crisil-homepage-logo/32-x-32.png"
+  },
+  {
+    "id": "deloitte",
+    "aliases": [
+      "deloitte-india"
+    ],
+    "file": "/company-logos/deloitte.png",
+    "website": "https://deloitte.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fdeloitte.com&sz=128"
+  },
+  {
+    "id": "dolat",
+    "aliases": [
+      "dolat-capital"
+    ],
+    "file": "/company-logos/dolat.png",
+    "website": "https://dolatcapital.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fdolatcapital.com&sz=128"
+  },
+  {
+    "id": "dp-world",
+    "aliases": [
+      "dp-world"
+    ],
+    "file": "/company-logos/dp-world.jpg",
+    "website": "https://dpworld.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fdpworld.com&sz=128"
+  },
+  {
+    "id": "edelweiss",
+    "aliases": [
+      "edelweiss-global-markets"
+    ],
+    "file": "/company-logos/edelweiss.png",
+    "website": "https://edelweissfin.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fedelweissfin.com&sz=128"
+  },
+  {
+    "id": "edelweiss-insurance",
+    "aliases": [
+      "edelweiss-insurance"
+    ],
+    "file": "/company-logos/edelweiss-insurance.png",
+    "website": "https://edelweissfin.com",
+    "source": "https://www.edelweissfin.com/wp-content/uploads/2020/02/logo-1.png",
+    "background": "#123357"
+  },
+  {
+    "id": "edra",
+    "aliases": [
+      "edra-labs",
+      "edra-labs-llp"
+    ],
+    "file": "/company-logos/edra.jpg",
+    "website": "https://www.linkedin.com/company/edra-labs",
+    "source": "https://media.licdn.com/dms/image/v2/D4D0BAQFcSgfDbJsMEw/company-logo_400_400/company-logo_400_400/0/1737108000667/edra_labs_logo?e=1793232000&v=beta&t=vRZBAfoQfpKXmBRCwQo2H5sw-l3SUw1vZ3fUZguTQRw"
+  },
+  {
+    "id": "ericsson",
+    "aliases": [
+      "ericsson-india"
+    ],
+    "file": "/company-logos/ericsson.png",
+    "website": "https://ericsson.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fericsson.com&sz=128"
+  },
+  {
+    "id": "ey",
+    "aliases": [
+      "ey"
+    ],
+    "file": "/company-logos/ey.png",
+    "website": "https://ey.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fey.com&sz=128"
+  },
+  {
+    "id": "framatome",
+    "aliases": [
+      "framatome-pvt-ltd"
+    ],
+    "file": "/company-logos/framatome.png",
+    "website": "https://framatome.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fframatome.com&sz=128"
+  },
+  {
+    "id": "godrej",
+    "aliases": [
+      "godrej-and-boyce",
+      "godrej-boyce",
+      "godrej-and-boyce-ppo"
+    ],
+    "file": "/company-logos/godrej.png",
+    "website": "https://godrejenterprises.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fgodrejenterprises.com&sz=128"
+  },
+  {
+    "id": "godrej-capital",
+    "aliases": [
+      "godrej-capital"
+    ],
+    "file": "/company-logos/godrej-capital.png",
+    "website": "https://godrejcapital.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fgodrejcapital.com&sz=128"
+  },
+  {
+    "id": "godrej-consumer",
+    "aliases": [
+      "godrej-consumer-products-limited"
+    ],
+    "file": "/company-logos/godrej-consumer.png",
+    "website": "https://godrejcp.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fgodrejcp.com&sz=128"
+  },
+  {
+    "id": "godrej-industries",
+    "aliases": [
+      "godrej-industries-limited"
+    ],
+    "file": "/company-logos/godrej-industries.png",
+    "website": "https://godrejindustries.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fgodrejindustries.com&sz=128"
+  },
+  {
+    "id": "goldman-sachs",
+    "aliases": [
+      "goldman-sachs"
+    ],
+    "file": "/company-logos/goldman-sachs.png",
+    "website": "https://goldmansachs.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fgoldmansachs.com&sz=128"
+  },
+  {
+    "id": "google",
+    "aliases": [
+      "google"
+    ],
+    "file": "/company-logos/google.png",
+    "website": "https://google.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fgoogle.com&sz=128"
+  },
+  {
+    "id": "greylabs",
+    "aliases": [
+      "greylabs-ai",
+      "greylabs-ai-ahg-technologies-private-limited"
+    ],
+    "file": "/company-logos/greylabs.png",
+    "website": "https://greylabs.ai",
+    "source": "https://greylabs.ai/favicon-96x96.png"
+  },
+  {
+    "id": "grindwell-norton",
+    "aliases": [
+      "grindwell-norton-limited-saint-gobain-group"
+    ],
+    "file": "/company-logos/grindwell-norton.png",
+    "website": "https://grindwellnorton.co.in",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fgrindwellnorton.co.in&sz=128"
+  },
+  {
+    "id": "gupshup",
+    "aliases": [
+      "gupshup-technology"
+    ],
+    "file": "/company-logos/gupshup.png",
+    "website": "https://gupshup.io",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fgupshup.io&sz=128"
+  },
+  {
+    "id": "hdfc-life",
+    "aliases": [
+      "hdfc-life"
+    ],
+    "file": "/company-logos/hdfc-life.png",
+    "website": "https://hdfclife.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fhdfclife.com&sz=128"
+  },
+  {
+    "id": "holcim",
+    "aliases": [
+      "holcim-global-digital-hub"
+    ],
+    "file": "/company-logos/holcim.jpg",
+    "website": "https://holcim.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fholcim.com&sz=128"
+  },
+  {
+    "id": "hsbc",
+    "aliases": [
+      "hsbc"
+    ],
+    "file": "/company-logos/hsbc.png",
+    "website": "https://hsbc.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fhsbc.com&sz=128"
+  },
+  {
+    "id": "hyperverge",
+    "aliases": [
+      "hyperverge"
+    ],
+    "file": "/company-logos/hyperverge.png",
+    "website": "https://hyperverge.co",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fhyperverge.co&sz=128"
+  },
+  {
+    "id": "icici-lombard",
+    "aliases": [
+      "icici-lombard"
+    ],
+    "file": "/company-logos/icici-lombard.png",
+    "website": "https://icicilombard.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Ficicilombard.com&sz=128"
+  },
+  {
+    "id": "icici-prudential",
+    "aliases": [
+      "icici-prudential"
+    ],
+    "file": "/company-logos/icici-prudential.png",
+    "website": "https://iciciprulife.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Ficiciprulife.com&sz=128"
+  },
+  {
+    "id": "icici-prudential-amc",
+    "aliases": [
+      "icici-prudential-amc-ltd"
+    ],
+    "file": "/company-logos/icici-prudential-amc.png",
+    "website": "https://icicipruamc.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Ficicipruamc.com&sz=128"
+  },
+  {
+    "id": "icici-prudential-life",
+    "aliases": [
+      "icici-prudential-life-insurance"
+    ],
+    "file": "/company-logos/icici-prudential-life.png",
+    "website": "https://iciciprulife.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Ficiciprulife.com&sz=128"
+  },
+  {
+    "id": "ideaforge",
+    "aliases": [
+      "ideaforge-technology-ltd"
+    ],
+    "file": "/company-logos/ideaforge.png",
+    "website": "https://ideaforgetech.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fideaforgetech.com&sz=128"
+  },
+  {
+    "id": "idfc-first",
+    "aliases": [
+      "idfc-bank"
+    ],
+    "file": "/company-logos/idfc-first.png",
+    "website": "https://idfcfirstbank.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fidfcfirstbank.com&sz=128"
+  },
+  {
+    "id": "idfy",
+    "aliases": [
+      "idfy"
+    ],
+    "file": "/company-logos/idfy.png",
+    "website": "https://idfy.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fidfy.com&sz=128"
+  },
+  {
+    "id": "iks-health",
+    "aliases": [
+      "iks"
+    ],
+    "file": "/company-logos/iks-health.png",
+    "website": "https://ikshealth.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fikshealth.com&sz=128"
+  },
+  {
+    "id": "impactguru",
+    "aliases": [
+      "impactguru",
+      "impact-guru-technology-venture"
+    ],
+    "file": "/company-logos/impactguru.png",
+    "website": "https://impactguru.com",
+    "source": "https://cdn.impactguru.com/themes/front/page/images/icons/impactguru.png"
+  },
+  {
+    "id": "interactive-brokers",
+    "aliases": [
+      "interactive-broker",
+      "interactive-brokers"
+    ],
+    "file": "/company-logos/interactive-brokers.png",
+    "website": "https://interactivebrokers.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Finteractivebrokers.com&sz=128"
+  },
+  {
+    "id": "intrade",
+    "aliases": [
+      "intrade"
+    ],
+    "file": "/company-logos/intrade.svg",
+    "website": "https://intradets.com",
+    "source": "https://www.intradets.com/Logo.svg"
+  },
+  {
+    "id": "investec",
+    "aliases": [
+      "investec-global-services-india-private-limited"
+    ],
+    "file": "/company-logos/investec.png",
+    "website": "https://investec.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Finvestec.com&sz=128"
+  },
+  {
+    "id": "ion",
+    "aliases": [
+      "ion",
+      "ion-group"
+    ],
+    "file": "/company-logos/ion.png",
+    "website": "https://iongroup.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fiongroup.com&sz=128"
+  },
+  {
+    "id": "jaro",
+    "aliases": [
+      "jaro-education"
+    ],
+    "file": "/company-logos/jaro.png",
+    "website": "https://jaroeducation.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fjaroeducation.com&sz=128"
+  },
+  {
+    "id": "jpmorgan",
+    "aliases": [
+      "jpmc",
+      "jp-morgan-chase-co"
+    ],
+    "file": "/company-logos/jpmorgan.svg",
+    "website": "https://jpmorganchase.com",
+    "source": "https://www.jpmorganchase.com/content/dam/jpmorganchase/images/logos/jpmc-logo.svg"
+  },
+  {
+    "id": "jsw",
+    "aliases": [
+      "jsw"
+    ],
+    "file": "/company-logos/jsw.png",
+    "website": "https://jsw.in",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fjsw.in&sz=128"
+  },
+  {
+    "id": "kpmg",
+    "aliases": [
+      "kpmg"
+    ],
+    "file": "/company-logos/kpmg.svg",
+    "website": "https://kpmg.com",
+    "source": "https://kpmg.com/content/experience-fragments/kpmgpublic/xx/en/site/header/master/_jcr_content/root/header_v2/logo.coreimg.svg/1787056531657/logo.svg"
+  },
+  {
+    "id": "leadsquared",
+    "aliases": [
+      "leadsquared"
+    ],
+    "file": "/company-logos/leadsquared.png",
+    "website": "https://leadsquared.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fleadsquared.com&sz=128"
+  },
+  {
+    "id": "loylty",
+    "aliases": [
+      "loylty-rewardz",
+      "loylty-rewardz-mngt-pvt-ltd"
+    ],
+    "file": "/company-logos/loylty.png",
+    "website": "https://loylty.com",
+    "source": "https://loylty.com/logo.png",
+    "background": "#14375d"
+  },
+  {
+    "id": "ltimindtree",
+    "aliases": [
+      "ltimindtree"
+    ],
+    "file": "/company-logos/ltimindtree.png",
+    "website": "https://ltimindtree.com",
+    "source": "https://www.ltm.com/refresh-images/icons/LTM_favicon.png"
+  },
+  {
+    "id": "ltts",
+    "aliases": [
+      "l-t-technology-services"
+    ],
+    "file": "/company-logos/ltts.svg",
+    "website": "https://ltts.com",
+    "source": "https://www.ltts.com/themes/custom/ltts_revamp/logo.svg"
+  },
+  {
+    "id": "mahindra",
+    "aliases": [
+      "mahindra-mahindra"
+    ],
+    "file": "/company-logos/mahindra.png",
+    "website": "https://mahindra.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fmahindra.com&sz=128"
+  },
+  {
+    "id": "mindgate",
+    "aliases": [
+      "mindgate-solutions-private-limited"
+    ],
+    "file": "/company-logos/mindgate.png",
+    "website": "https://mindgate.solutions",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fmindgate.solutions&sz=128"
+  },
+  {
+    "id": "mondelez",
+    "aliases": [
+      "mondelez-digital-services"
+    ],
+    "file": "/company-logos/mondelez.png",
+    "website": "https://mondelezinternational.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fmondelezinternational.com&sz=128"
+  },
+  {
+    "id": "morningstar",
+    "aliases": [
+      "morning-star"
+    ],
+    "file": "/company-logos/morningstar.png",
+    "website": "https://morningstar.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fmorningstar.com&sz=128"
+  },
+  {
+    "id": "mr-diy",
+    "aliases": [
+      "mr-diy"
+    ],
+    "file": "/company-logos/mr-diy.png",
+    "website": "https://mrdiy.co.in",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fmrdiy.co.in&sz=128"
+  },
+  {
+    "id": "mukand",
+    "aliases": [
+      "mukand-ltd-bajaj-group"
+    ],
+    "file": "/company-logos/mukand.jpg",
+    "website": "https://mukand.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fmukand.com&sz=128"
+  },
+  {
+    "id": "nagarro",
+    "aliases": [
+      "nagarro-software"
+    ],
+    "file": "/company-logos/nagarro.png",
+    "website": "https://nagarro.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fnagarro.com&sz=128"
+  },
+  {
+    "id": "nilkamal",
+    "aliases": [
+      "nilkamal"
+    ],
+    "file": "/company-logos/nilkamal.jpg",
+    "website": "https://nilkamal.com",
+    "source": "https://nilkamal.com/wp-content/themes/binary-theme/images/Nilkamal_logo_new.jpg"
+  },
+  {
+    "id": "nouryon",
+    "aliases": [
+      "nouryon-chemicals",
+      "nouryon-chemicals-india-private-limited"
+    ],
+    "file": "/company-logos/nouryon.png",
+    "website": "https://nouryon.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fnouryon.com&sz=128"
+  },
+  {
+    "id": "nsdl",
+    "aliases": [
+      "national-securities-depository-ltd"
+    ],
+    "file": "/company-logos/nsdl.png",
+    "website": "https://nsdl.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https://nsdl.com&sz=128"
+  },
+  {
+    "id": "nuvoco",
+    "aliases": [
+      "nuvoco-vistas-corp-ltd"
+    ],
+    "file": "/company-logos/nuvoco.png",
+    "website": "https://nuvoco.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fnuvoco.com&sz=128"
+  },
+  {
+    "id": "oberoi",
+    "aliases": [
+      "oberoi-realty"
+    ],
+    "file": "/company-logos/oberoi.png",
+    "website": "https://oberoirealty.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Foberoirealty.com&sz=128"
+  },
+  {
+    "id": "oracle",
+    "aliases": [
+      "oracle",
+      "oracle-financial-software-services-ltd"
+    ],
+    "file": "/company-logos/oracle.png",
+    "website": "https://oracle.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Foracle.com&sz=128"
+  },
+  {
+    "id": "orange-business",
+    "aliases": [
+      "orange-business"
+    ],
+    "file": "/company-logos/orange-business.png",
+    "website": "https://orange-business.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Forange-business.com&sz=128"
+  },
+  {
+    "id": "paynearby",
+    "aliases": [
+      "pay-nearby"
+    ],
+    "file": "/company-logos/paynearby.jpg",
+    "website": "https://paynearby.in",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fpaynearby.in&sz=128"
+  },
+  {
+    "id": "piramal-pharma",
+    "aliases": [
+      "piramal-pharma"
+    ],
+    "file": "/company-logos/piramal-pharma.png",
+    "website": "https://piramalpharma.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fpiramalpharma.com&sz=128"
+  },
+  {
+    "id": "purplle",
+    "aliases": [
+      "purplle"
+    ],
+    "file": "/company-logos/purplle.svg",
+    "website": "https://purplle.com",
+    "source": "https://media6.ppl-media.com/mediafiles/ecomm/promo/1728010487_p-icon-square-appfirst-.svg"
+  },
+  {
+    "id": "rapid7",
+    "aliases": [
+      "rapid7"
+    ],
+    "file": "/company-logos/rapid7.png",
+    "website": "https://rapid7.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Frapid7.com&sz=128"
+  },
+  {
+    "id": "rbl",
+    "aliases": [
+      "rbl-bank"
+    ],
+    "file": "/company-logos/rbl.png",
+    "website": "https://rbl.bank.in",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Frbl.bank.in&sz=128"
+  },
+  {
+    "id": "rebit",
+    "aliases": [
+      "reserve-bank-information-technology-pvt-ltd-rebit"
+    ],
+    "file": "/company-logos/rebit.png",
+    "website": "https://rebit.org.in",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Frebit.org.in&sz=128"
+  },
+  {
+    "id": "reliance",
+    "aliases": [
+      "reliance-industries-limited"
+    ],
+    "file": "/company-logos/reliance.png",
+    "website": "https://ril.com",
+    "source": "https://rilstaticasset.akamaized.net/sites/default/files/2022-11/reliance-industries-ltd.png",
+    "background": "#12243a"
+  },
+  {
+    "id": "rsm",
+    "aliases": [
+      "rsm-astute-consulting"
+    ],
+    "file": "/company-logos/rsm.png",
+    "website": "https://rsm.global",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Frsm.global&sz=128"
+  },
+  {
+    "id": "sbi-general",
+    "aliases": [
+      "sbi-general-insurance"
+    ],
+    "file": "/company-logos/sbi-general.webp",
+    "website": "https://sbigeneral.in",
+    "source": "https://www.sbigeneral.in/assets/images/sbig-logo.webp"
+  },
+  {
+    "id": "seclore",
+    "aliases": [
+      "seclore"
+    ],
+    "file": "/company-logos/seclore.png",
+    "website": "https://seclore.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fseclore.com&sz=128"
+  },
+  {
+    "id": "sharekhan",
+    "aliases": [
+      "sharekhan-limited"
+    ],
+    "file": "/company-logos/sharekhan.png",
+    "website": "https://sharekhan.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fsharekhan.com&sz=128"
+  },
+  {
+    "id": "smfg",
+    "aliases": [
+      "smfg-india-credit"
+    ],
+    "file": "/company-logos/smfg.svg",
+    "website": "https://smfgindiacredit.com",
+    "source": "https://assets.smfgindiacredit.com/static/images/SMFG-Logo.svg"
+  },
+  {
+    "id": "smowcode",
+    "aliases": [
+      "smowcode-private-limited"
+    ],
+    "file": "/company-logos/smowcode.png",
+    "website": "https://smowcode.com",
+    "source": "https://smowcode.com/images/logo/smowcode-text-logo-low-res-reg.png"
+  },
+  {
+    "id": "sp-global",
+    "aliases": [
+      "s-p-global"
+    ],
+    "file": "/company-logos/sp-global.png",
+    "website": "https://spglobal.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fspglobal.com&sz=128"
+  },
+  {
+    "id": "stonex",
+    "aliases": [
+      "stonex"
+    ],
+    "file": "/company-logos/stonex.png",
+    "website": "https://stonex.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fstonex.com&sz=128"
+  },
+  {
+    "id": "sutherland",
+    "aliases": [
+      "sutherland"
+    ],
+    "file": "/company-logos/sutherland.png",
+    "website": "https://sutherlandglobal.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fsutherlandglobal.com&sz=128"
+  },
+  {
+    "id": "tata-power",
+    "aliases": [
+      "tata-power"
+    ],
+    "file": "/company-logos/tata-power.png",
+    "website": "https://tatapower.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Ftatapower.com&sz=128"
+  },
+  {
+    "id": "tcs",
+    "aliases": [
+      "tcs-ninja"
+    ],
+    "file": "/company-logos/tcs.png",
+    "website": "https://tcs.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Ftcs.com&sz=128"
+  },
+  {
+    "id": "think360",
+    "aliases": [
+      "think-360"
+    ],
+    "file": "/company-logos/think360.png",
+    "website": "https://think360.ai",
+    "source": "https://think360.ai/wp-content/uploads/2023/06/Think-new-logo1.png"
+  },
+  {
+    "id": "toyo",
+    "aliases": [
+      "toyo-engineering"
+    ],
+    "file": "/company-logos/toyo.ico",
+    "website": "https://toyo-eng.com",
+    "source": "https://www.toyo-eng.com/common/img/favicon.ico"
+  },
+  {
+    "id": "transbnk",
+    "aliases": [
+      "transbnk-solutions"
+    ],
+    "file": "/company-logos/transbnk.webp",
+    "website": "https://tbx.co.in",
+    "source": "https://www.tbx.co.in/logo-new.webp"
+  },
+  {
+    "id": "trent",
+    "aliases": [
+      "tata-trent"
+    ],
+    "file": "/company-logos/trent.png",
+    "website": "https://trentlimited.com",
+    "source": "https://trentlimited.com/cdn/shop/files/TRENT_LOGO_1_180x.png?v=1723527862"
+  },
+  {
+    "id": "tresvista",
+    "aliases": [
+      "tresvista"
+    ],
+    "file": "/company-logos/tresvista.png",
+    "website": "https://tresvista.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Ftresvista.com&sz=128"
+  },
+  {
+    "id": "worley",
+    "aliases": [
+      "worley"
+    ],
+    "file": "/company-logos/worley.png",
+    "website": "https://worley.com",
+    "source": "https://www.worley.com/-/media/images/worley/logos/global/header-logo-updated.png",
+    "background": "#153c42"
+  },
+  {
+    "id": "yotta",
+    "aliases": [
+      "yotta-data-services"
+    ],
+    "file": "/company-logos/yotta.png",
+    "website": "https://yotta.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fyotta.com&sz=128"
+  },
+  {
+    "id": "zs",
+    "aliases": [
+      "zs-associates"
+    ],
+    "file": "/company-logos/zs.png",
+    "website": "https://zs.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fzs.com&sz=128"
+  }
+]

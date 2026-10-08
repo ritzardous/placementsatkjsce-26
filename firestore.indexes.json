@@ -1,0 +1,8 @@
+{
+  "indexes": [],
+  "fieldOverrides": [
+    { "collectionGroup": "views", "fieldPath": "payload", "indexes": [] },
+    { "collectionGroup": "announcements", "fieldPath": "record", "indexes": [] },
+    { "collectionGroup": "imports", "fieldPath": "metadata", "indexes": [] }
+  ]
+}

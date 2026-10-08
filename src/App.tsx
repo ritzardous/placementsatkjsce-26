@@ -1,0 +1,89 @@
+import { useEffect, useState } from 'react';
+import type { DashboardResponse } from '../shared/statistics';
+import { loadDashboard } from './repository';
+import { firebaseMessage } from './firebase';
+import AuthControls from './AuthControls';
+import { academicYear, date, money, routeHref } from './components';
+import { Branches, Candidates, Companies, CompanyDetail, Insights, Overview, Timeline, initialCompanyFilters, type CandidateFilters } from './pages';
+
+const nav = [['overview', 'Overview'], ['companies', 'Companies'], ['branches', 'Branches'], ['candidates', 'Candidates & Roles'], ['timeline', 'Timeline'], ['insights', 'Insights']];
+function parseRoute() {
+  const segments = (location.hash || '#overview').slice(1).split('/');
+  const year = segments[0] === '2025' ? 2025 : 2026;
+  if (segments[0] === '2025' || segments[0] === '2026') segments.shift();
+  const [page = 'overview', encoded] = segments;
+  let parameter: string | undefined;
+  try { parameter = encoded ? decodeURIComponent(encoded) : undefined; } catch { parameter = undefined; }
+  return { page, parameter, year };
+}
+function useRoute() {
+  const [route, setRoute] = useState(parseRoute);
+  useEffect(() => {
+    const handle = () => { setRoute(parseRoute()); window.scrollTo(0, 0); };
+    window.addEventListener('hashchange', handle);
+    return () => window.removeEventListener('hashchange', handle);
+  }, []);
+  return route;
+}
+function initAnalytics() {
+  const id = import.meta.env.VITE_GA_ID;
+  if (!import.meta.env.PROD || !id || document.getElementById('google-analytics')) return;
+  const dataLayer: unknown[][] = [];
+  Object.assign(window, { dataLayer });
+  const gtag = (...args: unknown[]) => dataLayer.push(args);
+  Object.assign(window, { gtag });
+  const script = document.createElement('script');
+  script.id = 'google-analytics'; script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(id);
+  document.head.appendChild(script);
+  gtag('js', new Date()); gtag('config', id);
+}
+export default function App() {
+  const route = useRoute();
+  const [data, setData] = useState<DashboardResponse | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [attempt, setAttempt] = useState(0);
+  const [companyFilters, setCompanyFilters] = useState(initialCompanyFilters);
+  const [candidateFilters, setCandidateFilters] = useState<CandidateFilters>({ search: '', role: null });
+  useEffect(() => { initAnalytics(); }, []);
+  useEffect(() => {
+    setCompanyFilters(initialCompanyFilters); setCandidateFilters({ search: '', role: null });
+    document.title = `Placement Stats @ KJSCE '${String(route.year).slice(-2)}`;
+  }, [route.year]);
+  useEffect(() => {
+    let active = true;
+    let timeout: number | undefined;
+    setError(null); setData(null);
+    async function load() {
+      try {
+        const result = await Promise.race([
+          loadDashboard(route.year),
+          new Promise<never>((_, reject) => { timeout = window.setTimeout(() => reject(new Error('Loading timed out. Check your connection and Firebase connectivity, then try again.')), 20000); }),
+        ]);
+        if (active) setData(result);
+      } catch (cause) {
+        if (active) setError(firebaseMessage(cause));
+      } finally { window.clearTimeout(timeout); }
+    }
+    void load();
+    return () => { active = false; window.clearTimeout(timeout); };
+  }, [attempt, route.year]);
+  const s = data?.statistics.batch.year === route.year ? data.statistics : undefined;
+  const active = route.page === 'company' ? 'companies' : nav.some(([key]) => key === route.page) ? route.page : 'overview';
+  let page;
+  if (!s) page = <div className="page-message" role={error ? 'alert' : 'status'}><h1>{error ? 'Placement data unavailable' : 'Loading placement statistics…'}</h1><p>{error ?? `Fetching the ${route.year} dataset.`}</p>{error && <button className="action-button" onClick={() => setAttempt(a => a + 1)}>Try again</button>}</div>;
+  else if (route.page === 'company') page = <CompanyDetail company={s.companies.find(c => c.key === route.parameter)} />;
+  else if (active === 'companies') page = <Companies statistics={s} filters={companyFilters} setFilters={setCompanyFilters} />;
+  else if (active === 'branches') page = <Branches statistics={s} selected={route.parameter} onCandidates={branch => setCandidateFilters({ search: branch, role: null })} />;
+  else if (active === 'candidates') page = <Candidates statistics={s} filters={candidateFilters} setFilters={setCandidateFilters} />;
+  else if (active === 'timeline') page = <Timeline statistics={s} />;
+  else if (active === 'insights') page = <Insights statistics={s} />;
+  else page = <Overview statistics={s} />;
+  const notes = data?.metadata.extraction_notes;
+  return <div id="app"><header className="topbar"><div className="topbar-inner"><a href={routeHref("overview", route.year)} className="brand"><span className="brand-mark">KJSCE</span><div><div className="brand-name">Placement Stats @ KJSCE '{String(route.year).slice(-2)}</div><div className="brand-sub">AY {academicYear(route.year)} · {route.year === 2025 ? "UG report & placement emails" : "Training & Placement Office announcements"}</div></div></a><div className="topbar-meta">{[
+    [route.year === 2025 ? s?.summary.uniqueStudents ?? '—' : s?.summary.reportedCounter ?? '—', route.year === 2025 ? 'Students' : 'Confirmed'], [s?.summary.placementRate == null ? '—' : s.summary.placementRate.toFixed(1) + '%', 'Of B.Tech Placed'], [s?.summary.companies ?? '—', 'Companies'], [s ? money(s.summary.highestCtc) : '—', 'Top CTC'],
+  ].map(([value, label]) => <div className="topbar-stat" key={label}><div className="v">{value}</div><div className="l">{label}</div></div>)}</div><label className="batch-picker">Placement year<select aria-label="Placement year" value={route.year} onChange={e => { location.hash = routeHref("overview", Number(e.target.value)); }}><option value="2026">2025–26 · Class of 2026</option><option value="2025">2024–25 · Class of 2025</option></select></label><AuthControls /></div><nav className="nav" aria-label="Dashboard">{nav.map(([key, label]) => <a className={'nav-item ' + (active === key ? 'active' : '')} aria-current={active === key ? 'page' : undefined} key={key} href={routeHref(key, route.year)}>{label}</a>)}</nav></header>
+    <main id="main" key={route.year}>{s && route.year === 2025 && <aside className="coverage-notice"><strong>2024–25 · Final UG report + email results</strong>{s.candidates.filter(c => c.campus === 'On campus').length} on-campus and {s.candidates.filter(c => c.campus === 'Off campus').length} off-campus selections. {s.candidates.filter(c => c.date === null).length} selections have no confirmed date; undated entries remain in totals but are excluded from timeline charts. Registration total is unavailable, so no placement rate is calculated.</aside>}{page}{s && Array.isArray(notes) && <details className="source-notes"><summary>Data sources, extraction notes & limitations</summary><ul>{notes.map((note, i) => <li key={i}>{String(note)}</li>)}</ul></details>}</main>
+    <footer><div className="footer-inner"><div className="footer-left"><span>KJSCE T&amp;PO PLACEMENT DATA{s ? ` · ${date(s.summary.firstDate, true)} → ${date(s.summary.latestDate, true)} · ${s.summary.announcements} ${route.year === 2025 ? "RECORD GROUPS" : "ANNOUNCEMENTS"} · ${s.summary.selections} CANDIDATE SELECTIONS RECORDED` : ''}</span><span className="footer-credit">Made with <span className="footer-heart">♥</span> by Ritzardous</span></div><a href="https://github.com/RiteshJha912/placementsatkjsce-26" target="_blank" rel="noopener noreferrer" className="footer-source-btn">Source code ↗</a></div></footer>
+  </div>;
+}

@@ -1,0 +1,35 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function active(year, version) {
+      return get(/databases/$(database)/documents/batches/$(year)).data.activeVersion == version;
+    }
+    match /batches/{year} {
+      allow get: if true;
+      allow list, write: if false;
+      match /versions/{version} {
+        allow get: if active(year, version);
+        allow list, write: if false;
+        match /views/{view} {
+          allow get: if active(year, version) && view.matches('chunk-[0-9]{4}');
+          allow list, write: if false;
+        }
+      }
+    }
+    match /users/{uid} {
+      allow get: if request.auth != null && request.auth.uid == uid;
+      allow create: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['displayName'])
+        && request.resource.data.displayName is string
+        && request.resource.data.displayName.size() <= 100;
+      allow update: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['displayName'])
+        && request.resource.data.displayName is string
+        && request.resource.data.displayName.size() <= 100;
+      allow list, delete: if false;
+    }
+    // Private source/import documents and all future community collections remain closed.
+    // Browser users (including admins) cannot publish or grant roles in this release.
+    match /{document=**} { allow read, write: if false; }
+  }
+}

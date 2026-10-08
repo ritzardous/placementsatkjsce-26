@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "file": "24-25+Students+List.pdf",
+      "pages": 8,
+      "sha256": "c72aefe0b6c1f22caf7ef5457500f23a90018dc36f9274090b9487b33889cea3"
+    },
+    {
+      "file": "25batchemailthread.pdf",
+      "pages": 49,
+      "sha256": "13c022d46851894bb871820ac13d34b9da11e2c5889c6ae33db5ec7243123b3d"
+    },
+    {
+      "file": "25batchemailthread-2.pdf",
+      "pages": 5,
+      "sha256": "b6a21be8cd1985786033eebc4884c6752ca7048e4ea7cda159a2b6ecece10f98"
+    }
+  ],
+  "report_rows": 360,
+  "report_unique_students": 323,
+  "report_on_campus_rows": 331,
+  "report_off_campus_rows": 29,
+  "report_missing_ctc_rows": 7,
+  "email_messages": 111
+}
