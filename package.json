@@ -21,7 +21,8 @@
     "test:e2e": "playwright test",
     "db:rules": "tsx scripts/deploy-rules.ts",
     "auth:verify": "tsx scripts/verify-auth.ts",
-    "data:build-2025": "tsx scripts/build-2025-dataset.ts"
+    "data:build-2025": "tsx scripts/build-2025-dataset.ts",
+    "data:build-2027": "tsx scripts/build-2027-dataset.ts"
   },
   "dependencies": {
     "dotenv": "^18.0.6",

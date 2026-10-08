@@ -108,10 +108,94 @@ const brands = [
   ['think360', 'think360.ai', ['think-360']],
   ['smowcode', 'smowcode.com', ['smowcode-private-limited']],
   ['edra', 'www.linkedin.com/company/edra-labs', ['edra-labs', 'edra-labs-llp']],
+  ["eventstrat","eventstrat.ai",["eventstrat-labsprivatelimited"]],
+  ["tekgeminus","tekgeminus.com",["tekgeminus-solutions-ltd"]],
+  ["taabi","taabi.ai",["taabi-mobility"]],
+  ["mehery","mehery.com",["mehery-soccom-pvt-ltd"]],
+  ["jeavio","jeavio.com",["jeavio-india-pvt-ltd"]],
+  ["fileago","fileago.com",["fileago"]],
+  ["cogitate","cogitate.com",["cogitate-technology"]],
+  ["logisticsnow","logisticsnow.in",["logisticsnow"]],
+  ["nstore","nstore.in",["nstore-retech-pvt-ltd"]],
+  ["neebal","neebal.com",["neebal-technology"]],
+  ["ncsi","ncs.co",["ncsi-technologies-india-private-limited","ncsi-technologies-india"]],
+  ["hike-education","hikeeducation.com",["hike-education"]],
+  ["astrico","astrico.ai",["astrico-ai"]],
+  ["pravaayu","pravaayu.com",["pravaayu","pravaayu-healthcare"]],
+  ["signpost","signpostindia.com",["signpost-india-pvt-ltd"]],
+  ["segumento","segumento.com",["segumento"]],
+  ["quantanite","quantanite.com",["quantanite"]],
+  ["c-prav","c-prav.com",["c-prav-labs-pvt-ltd"]],
+  ["tata-motors-insurance","tatamotorsinsurancebrokers.com",["tata-motors-insurance-broking-and-advisory-services-limited"]],
+  ["atrina","atriina.com",["atrina-tech"]],
+  ["sunjewels","sunjewels.com",["sunjewels-private-limited"]],
+  ["commtel","commtelnetworks.com",["commtel"]],
+  ["matrix-medicals","matrixmedicals.in",["matrix-medicals"]],
+  ["aegis-awards","bellaward.com",["aegis-graham-bell-awards"]],
+  ["synergetics","synergetics-india.com",["synergetics-information-technology-services-india-pvt-ltd","synergetics-it-services-india"]],
+  ["bfw","bfwindia.com",["bharat-fritz-werner-limited"]],
+  ["global-payex","globalpayex.com",["global-payex-technologies-pvt-ltd"]],
+  ["quantum-data-engines","quantumdataengines.com",["quantum-data-engines"]],
+  ["infytrix","infytrix.com",["infytrix-ecom-pvt-ltd"]],
+  ["ripplehire","ripplehire.com",["ripplehire"]],
+  ["arora-ndt","arorandt.com",["arora-technologies-p-limited"]],
+  ["senergy","keymanagementsystems.in",["senergy-intellution-pvt-ltd"]],
+  ["affix","affixcenter.com",["affix-centre"]],
+  ["hansa-cequity","hansacequity.com",["hansa-customer-equity-pvt-ltd"]],
+  ["toshniwal","tipl.com",["toshniwal-industries-pvt-ltd"]],
+  ["spay","spay.live",["spay-fintech-pvt-ltd"]],
+  ["beyond-automation","beyond-alliance.com",["beyond-automation-pvt-ltd"]],
+  ["kalki","kalkifashion.com",["kalki-fashion"]],
+  ["doubletick","doubletick.io",["double-tick"]],
+  ["opus","opustechglobal.com",["opus-technology"]],
+  ["affinity","affinity.com",["affinity-global-advertising-pvt-ltd"]],
+  ["omnenest","omnenest.com",["omnenest-technologies"]],
+  ["dhurin","dhurin.in",["dhurin"]],
+  ["logixal","logixal.com",["logixal"]],
+  ["eighty-days","eightydays.ai",["colourblind-ventures-private-limited-eighty-days"]],
+  ["akademika","akademika.in",["akademika-lab-solutions"]],
+  ["acg","acg-world.com",["acg-inspection"]],
+  ["iqlytics","iqlytics.in",["iqlytics-solutions-pvt-ltd"]],
+  ["odex","odexglobal.com",["odex-india-solutions-pvt-ltd"]],
+  ["inbetween","inbetween.com",["inbetween-innovation-ltd"]],
+  ["centiro","centiro.com",["centiro-solutions-private-limited"]],
+  ["digital-fifth","thedigitalfifth.com",["the-digital-fifth"]],
+  ["loginext","loginextsolutions.com",["loginext"]],
+  ["ibm","ibm.com",["ibm-india"]],
+  ["bizom","bizom.com",["bizom"]],
+  ['setu', 'setu.co', ['brokentusk-technologies-pvt-ltd']],
+  ['transpure', 'tranzily.com', ['transpure-solutions-pvt-ltd']],
+  ['sure-financial', 'sure.financial', ['sure-financial']],
+  ['fiamarc', 'fiamarc.zohoecommerce.in', ['all-home-bharat-platform-pvt-ltd']],
+  ['lloyds-defence', 'lloydsdefence.in', ['lloyds-advance-defence-systems']],
+  ['novel-jewels', 'indriya.com', ['novel-jewels-aditya-birla-jewellery']],
+  ['rk-control', 'rkcipl.co.in', ['r-k-control-instruments-pvt-ltd']],
+  ['continuum', 'continuumenergy.in', ['watsun-infrabuild-pvt-ltd']],
+  ['sumitomo', 'sumitomo.gr.jp', ['sumitomo']],
 ];
 
 // Prefer sharper official assets where the cached website icon is too small.
 const directAssets = {
+  'rk-control': ['https://rkcipl.co.in/wp-content/uploads/2021/11/cropped-Asset-5ldpi-192x192.png', 'png'],
+  continuum: ['https://www.continuumenergy.in/img/logo-fav.png', 'png'],
+  kalki: ['https://www.kalkifashion.com/cdn/shop/files/Fav_512.jpg?v=1753505124', 'jpg'],
+  'digital-fifth': ['https://i0.wp.com/thedigitalfifth.com/wp-content/uploads/tdf-png-logo.webp', 'png'],
+  logisticsnow: ['https://logisticsnow.in/images/logo.png', 'png'],
+  fileago: ['https://fileago.com', 'svg'],
+  setu: ['https://framerusercontent.com/images/mbFRne9qNTrOhiqc0h2DJuE0FDw.png', 'png'],
+  transpure: ['https://tranzily.com/assets/img/logo.png', 'png'],
+  fiamarc: ['https://fiamarc.zohoecommerce.in/fiamarc_logo.png', 'png'],
+  'lloyds-defence': ['https://lloydsdefence.si/wp-content/uploads/2026/09/LADS-logo.png', 'png'],
+  'novel-jewels': ['https://www.indriya.com/etc.clientlibs/noveljewels/clientlibs/clientlib-site/resources/images/196.png', 'png'],
+  taabi: ['https://www.taabi.ai/assets/taabi-logo.png', 'png'],
+  nstore: ['https://www.nstore.in/nStorev1/nslogo.png', 'png'],
+  'tata-motors-insurance': ['https://www.tatamotorsinsurancebrokers.com/assets/images/tata-logo-mobile.png', 'png'],
+  'quantum-data-engines': ['https://qde.ai/assets/img/brand/QDE_Logo.png', 'png'],
+  'arora-ndt': ['https://arorandt.com/wp-content/uploads/2022/09/ATPL-Logo-PNG-1024x296.png', 'png'],
+  infytrix: ['https://infytrix.com/wp-content/uploads/2024/08/cropped-cropped-Untitled-1-192x192.png', 'png'],
+  ncsi: ['https://www.ncs.co/dam/jcr:68e48c73-c3bf-443b-bf66-cb5f4e8bc7fe/ncs_logo.2024-09-16-16-43-35.png', 'png'],
+  'hansa-cequity': ['https://hansacequity.com/wp-content/uploads/2024/08/Layer_18.png', 'png'],
+  ibm: ['https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg', 'svg'],
   edra: ['https://media.licdn.com/dms/image/v2/D4D0BAQFcSgfDbJsMEw/company-logo_400_400/company-logo_400_400/0/1737108000667/edra_labs_logo?e=1793232000&v=beta&t=vRZBAfoQfpKXmBRCwQo2H5sw-l3SUw1vZ3fUZguTQRw', 'jpg'],
   jpmorgan: ['https://www.jpmorganchase.com/content/dam/jpmorganchase/images/logos/jpmc-logo.svg', 'svg'],
   intrade: ['https://www.intradets.com/Logo.svg', 'svg'],
@@ -141,6 +225,7 @@ const directAssets = {
 
 // Give white wordmarks contrast; tile dimensions are uniform for every company.
 const presentation = {
+  fileago: { background: '#17243d' },
   reliance: { background: '#12243a' },
   loylty: { background: '#14375d' },
   worley: { background: '#153c42' },
@@ -159,7 +244,10 @@ for (let start = 0; start < selected.length; start += 6) {
     try {
       const response = await fetch(source, { signal: AbortSignal.timeout(20000) });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const bytes = Buffer.from(await response.arrayBuffer());
+      // FileAgo publishes its official wordmark inline rather than as an image URL.
+      const bytes = id === 'fileago'
+        ? Buffer.from((await response.text()).match(/<a href="\/">(<svg\b[\s\S]*?<\/svg>)/)?.[1] ?? '')
+        : Buffer.from(await response.arrayBuffer());
       const extension = !directAssets[id] && bytes.subarray(0, 3).toString('hex') === 'ffd8ff' ? 'jpg' : expectedExtension;
       if (extension === 'png' && bytes.subarray(0, 8).toString('hex') !== '89504e470d0a1a0a') throw new Error('Not PNG');
       if (extension === 'jpg' && bytes.subarray(0, 3).toString('hex') !== 'ffd8ff') throw new Error('Not JPEG');
@@ -170,7 +258,7 @@ for (let start = 0; start < selected.length; start += 6) {
       await writeFile(`public${file}`, bytes);
       const oldIndex = entries.findIndex(entry => entry.id === id);
       if (oldIndex !== -1) entries.splice(oldIndex, 1);
-      entries.push({ id, aliases, file, website: `https://${domain}`, source, ...presentation[id] });
+      entries.push({ id, aliases: [...new Set([...aliases, ...(previous.find(entry => entry.id === id)?.aliases ?? [])])], file, website: `https://${domain}`, source, ...presentation[id] });
       console.log(`${id}: ${extension}`);
     } catch (error) { console.log(`${id}: skipped (${error.message})`); }
   }));

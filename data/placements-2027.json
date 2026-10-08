@@ -1,0 +1,1569 @@
+{
+  "metadata": {
+    "academic_year": "2026–27",
+    "graduation_year": 2027,
+    "degree_scope": "UG",
+    "season_status": "ongoing",
+    "source_manifest": {
+      "source_file": "27batchemailthread.pdf",
+      "pages": 16,
+      "sha256": "ba053226777b4080ca7ed0a13a75bd1b0b7ca2dd5e14b82c7fe74081bac2685a",
+      "exported_at": "2026-10-08T17:03:00+05:30",
+      "latest_email_at": "2026-10-08T14:42:00+05:30",
+      "messages": 22
+    },
+    "source_updated_at": "2026-10-08T14:42:00+05:30",
+    "extraction_notes": [
+      "Ongoing placement season: this is the supplied email snapshot, not an automatic real-time email feed. Latest included email: 8 October 2026; latest declared result: 6 October 2026.",
+      "All 22 announcements and 121 candidate rows were transcribed from the 16-page image-based PDF and checked visually. Source file and page references are retained for each announcement.",
+      "The final sourced TPO counter is 121. Candidate selections and distinct roll numbers independently reconcile to 121; no milestone poster is counted as a separate result.",
+      "Registration total is absent, so placement rate and unplaced count remain unavailable. Branch labels, including AI & DS, CCE, EXCP and RAI, follow the printed tables rather than older-batch branch assumptions.",
+      "TCS Prime/Digital, KPMG, and Deloitte announcements contain mixed CTC bands and have no single numerical announcement CTC. Their source package text and role groups are preserved; these 52 selections are excluded from numerical compensation statistics.",
+      "Average and median overview CTC remain announcement-weighted, consistent with the 2026 email dashboard. Branch CTC is selection-weighted; both exclude mixed/unknown numerical CTC. These are not official college averages.",
+      "StoneX/Stonex and Tata Consultancy Services/TCS are reviewed aliases within this batch. Other source company labels are preserved. No company type, role, registration denominator, or individual package is inferred externally.",
+      "Think 360 prints 09:50 LPA, Transbnk 10:00 LPA, and LogiNext 11:00 LPA. They are transcribed numerically as 9.50, 10.00, and 11.00 LPA, with the original strings and notes retained.",
+      "Dates use the declared result date, not the later email send date or PDF export date. Future email updates must be reviewed, deduplicated, rebuilt, and published as a new immutable Firestore version."
+    ]
+  },
+  "placements": [
+    {
+      "placement_id": "Y27-0001",
+      "company": {
+        "name": "ZS Associates",
+        "normalized_name": "zs-associates",
+        "type": "Consultancy"
+      },
+      "result": {
+        "declared_date": "2026-07-22",
+        "original_date_text": "22 - July - 2026"
+      },
+      "compensation": {
+        "ctc_text": "14.20 LPA",
+        "ctc_value_lpa": 14.2,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Decision Analytics Associate",
+        "Business Technology Solutions Associate"
+      ],
+      "hiring": {
+        "students_hired": 6,
+        "placement_count": 6
+      },
+      "candidates": [
+        {
+          "name": "Manasvi Mahesh Naik",
+          "roll_number": "16014223022",
+          "branch": "COMP",
+          "role": "Decision Analytics Associate"
+        },
+        {
+          "name": "Soham Shashibhushan Mishra",
+          "roll_number": "16014223082",
+          "branch": "AI & DS",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Atharva Amit Indulkar",
+          "roll_number": "16010123189",
+          "branch": "AI & DS",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Arnab Debasish Bhowmik",
+          "roll_number": "16010123072",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Sambhav Mani Tripathi",
+          "roll_number": "16010123297",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Samiksha Sharma",
+          "roll_number": "16010123298",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 1,
+        "pages": [
+          1
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": null
+    },
+    {
+      "placement_id": "Y27-0002",
+      "company": {
+        "name": "Edelweiss Global Markets",
+        "normalized_name": "edelweiss-global-markets",
+        "type": "BFSI"
+      },
+      "result": {
+        "declared_date": "2026-07-28",
+        "original_date_text": "28 - July - 2026"
+      },
+      "compensation": {
+        "ctc_text": "16.00 LPA",
+        "ctc_value_lpa": 16,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Data Engineer",
+        "AI Engineer"
+      ],
+      "hiring": {
+        "students_hired": 2,
+        "placement_count": 8
+      },
+      "candidates": [
+        {
+          "name": "Aditi Singh",
+          "roll_number": "16010123020",
+          "branch": "COMP",
+          "role": "Data Engineer"
+        },
+        {
+          "name": "Ayush Sachin Goyal",
+          "roll_number": "16010423025",
+          "branch": "IT",
+          "role": "AI Engineer"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 1,
+        "pages": [
+          1,
+          2
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": null
+    },
+    {
+      "placement_id": "Y27-0003",
+      "company": {
+        "name": "StoneX",
+        "normalized_name": "stonex",
+        "type": "IT"
+      },
+      "result": {
+        "declared_date": "2026-08-03",
+        "original_date_text": "03 - Aug - 2026"
+      },
+      "compensation": {
+        "ctc_text": "10.00 LPA",
+        "ctc_value_lpa": 10,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Business Analyst",
+        "QA Automation"
+      ],
+      "hiring": {
+        "students_hired": 2,
+        "placement_count": 10
+      },
+      "candidates": [
+        {
+          "name": "Saachi Alok Mishra",
+          "roll_number": "16010123282",
+          "branch": "COMP",
+          "role": "Business Analyst"
+        },
+        {
+          "name": "Devanshi Sarbesh Pandey",
+          "roll_number": "16014023016",
+          "branch": "EXCP",
+          "role": "QA Automation"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 2,
+        "pages": [
+          2
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": null
+    },
+    {
+      "placement_id": "Y27-0004",
+      "company": {
+        "name": "IDFY",
+        "normalized_name": "idfy",
+        "type": "IT"
+      },
+      "result": {
+        "declared_date": "2026-08-05",
+        "original_date_text": "05 - Aug - 2026"
+      },
+      "compensation": {
+        "ctc_text": "10.00 LPA",
+        "ctc_value_lpa": 10,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Software Engineer"
+      ],
+      "hiring": {
+        "students_hired": 1,
+        "placement_count": 11
+      },
+      "candidates": [
+        {
+          "name": "Saad Shaikh",
+          "roll_number": "16010123284",
+          "branch": "COMP",
+          "role": "Software Engineer"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 3,
+        "pages": [
+          3
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": null
+    },
+    {
+      "placement_id": "Y27-0005",
+      "company": {
+        "name": "Godrej Capital",
+        "normalized_name": "godrej-capital",
+        "type": "BFSI"
+      },
+      "result": {
+        "declared_date": "2026-08-06",
+        "original_date_text": "06 - Aug - 2026"
+      },
+      "compensation": {
+        "ctc_text": "12.00 LPA",
+        "ctc_value_lpa": 12,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "SDE Trainee"
+      ],
+      "hiring": {
+        "students_hired": 3,
+        "placement_count": 14
+      },
+      "candidates": [
+        {
+          "name": "Astha Dubey",
+          "roll_number": "16010323020",
+          "branch": "EXTC",
+          "role": "SDE Trainee"
+        },
+        {
+          "name": "Bhoumish Udayan Grover",
+          "roll_number": "16010123100",
+          "branch": "COMP",
+          "role": "SDE Trainee"
+        },
+        {
+          "name": "Cheryl Blanny Pinto",
+          "roll_number": "16010123103",
+          "branch": "COMP",
+          "role": "SDE Trainee"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": null
+    },
+    {
+      "placement_id": "Y27-0006",
+      "company": {
+        "name": "Dolat Capital",
+        "normalized_name": "dolat-capital",
+        "type": "BFSI"
+      },
+      "result": {
+        "declared_date": "2026-08-10",
+        "original_date_text": "10 - Aug - 2026"
+      },
+      "compensation": {
+        "ctc_text": "16.00 LPA",
+        "ctc_value_lpa": 16,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Software Developer ( C++)"
+      ],
+      "hiring": {
+        "students_hired": 1,
+        "placement_count": 15
+      },
+      "candidates": [
+        {
+          "name": "Yash Shrinivas Joshi",
+          "roll_number": "16010423116",
+          "branch": "IT",
+          "role": "Software Developer ( C++)"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 4,
+        "pages": [
+          4
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": null
+    },
+    {
+      "placement_id": "Y27-0007",
+      "company": {
+        "name": "Stonex",
+        "normalized_name": "stonex",
+        "type": "IT"
+      },
+      "result": {
+        "declared_date": "2026-08-12",
+        "original_date_text": "12 - Aug - 2026"
+      },
+      "compensation": {
+        "ctc_text": "10.00 LPA",
+        "ctc_value_lpa": 10,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Software Developer"
+      ],
+      "hiring": {
+        "students_hired": 1,
+        "placement_count": 16
+      },
+      "candidates": [
+        {
+          "name": "Saish Pramod Korgaonkar",
+          "roll_number": "16010123294",
+          "branch": "COMP",
+          "role": "Software Developer"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": null
+    },
+    {
+      "placement_id": "Y27-0008",
+      "company": {
+        "name": "ZS Associates",
+        "normalized_name": "zs-associates",
+        "type": "Consultancy"
+      },
+      "result": {
+        "declared_date": "2026-08-14",
+        "original_date_text": "14 - Aug - 2026"
+      },
+      "compensation": {
+        "ctc_text": "14.20 LPA",
+        "ctc_value_lpa": 14.2,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Business Technology Solutions Associate"
+      ],
+      "hiring": {
+        "students_hired": 18,
+        "placement_count": 34
+      },
+      "candidates": [
+        {
+          "name": "Anushri Anand Bhaskarwar",
+          "roll_number": "16010123055",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Swayam Sanjay Vernekar",
+          "roll_number": "16010123131",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Aditey Ranjit Kshirsagar",
+          "roll_number": "16010123017",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Aviral Sharma",
+          "roll_number": "16014223024",
+          "branch": "AI & DS",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Ishika Atul Bhoyar",
+          "roll_number": "16010123151",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Vivin Mayank Dube",
+          "roll_number": "16010123273",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Sreyasi Mallick",
+          "roll_number": "16010123067",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Manay Pritesh Mehta",
+          "roll_number": "16010123190",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Shloka Jaywant Pol",
+          "roll_number": "16010123316",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Tanisha Mukherjee",
+          "roll_number": "16010123134",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Saad Nawaz",
+          "roll_number": "16010123283",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Vibhu Gupta",
+          "roll_number": "16010123262",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Aarya Shailesh Kulkarni",
+          "roll_number": "16010123007",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Abhiroop Dattaram Padate",
+          "roll_number": "16014123007",
+          "branch": "CCE",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Ritesh Sudhir Jha",
+          "roll_number": "16010423076",
+          "branch": "IT",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Pushkar Rai",
+          "roll_number": "16010123243",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Rudra Rajesh Laheri",
+          "roll_number": "16010123277",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        },
+        {
+          "name": "Ankita Dattatray Survase",
+          "roll_number": "16010123047",
+          "branch": "COMP",
+          "role": "Business Technology Solutions Associate"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 5,
+        "pages": [
+          5,
+          6
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": null
+    },
+    {
+      "placement_id": "Y27-0009",
+      "company": {
+        "name": "Barclays",
+        "normalized_name": "barclays",
+        "type": "BFSI"
+      },
+      "result": {
+        "declared_date": "2026-08-18",
+        "original_date_text": "18 - Aug - 2026"
+      },
+      "compensation": {
+        "ctc_text": "15.04 LPA",
+        "ctc_value_lpa": 15.04,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Technology Trainee"
+      ],
+      "hiring": {
+        "students_hired": 14,
+        "placement_count": 48
+      },
+      "candidates": [
+        {
+          "name": "Shashank Sathish",
+          "roll_number": "16010423085",
+          "branch": "IT",
+          "role": "Technology Trainee"
+        },
+        {
+          "name": "Shreyans Sandeep Tatiya",
+          "roll_number": "16010123325",
+          "branch": "COMP",
+          "role": "Technology Trainee"
+        },
+        {
+          "name": "Anish Tushar Wagle",
+          "roll_number": "16014223011",
+          "branch": "AI & DS",
+          "role": "Technology Trainee"
+        },
+        {
+          "name": "Parth Yogesh Dhande",
+          "roll_number": "16010123232",
+          "branch": "COMP",
+          "role": "Technology Trainee"
+        },
+        {
+          "name": "Omik Manisha Acharya",
+          "roll_number": "16010123218",
+          "branch": "COMP",
+          "role": "Technology Trainee"
+        },
+        {
+          "name": "MANN SANJAY SHAH",
+          "roll_number": "16010123193",
+          "branch": "COMP",
+          "role": "Technology Trainee"
+        },
+        {
+          "name": "Rhea Suresh",
+          "roll_number": "16010123252",
+          "branch": "COMP",
+          "role": "Technology Trainee"
+        },
+        {
+          "name": "Vipul Mamta Garg",
+          "roll_number": "16010123266",
+          "branch": "COMP",
+          "role": "Technology Trainee"
+        },
+        {
+          "name": "Shantanu Nadar",
+          "roll_number": "16010123308",
+          "branch": "COMP",
+          "role": "Technology Trainee"
+        },
+        {
+          "name": "Heer Tushar Makwana",
+          "roll_number": "16010123145",
+          "branch": "COMP",
+          "role": "Technology Trainee"
+        },
+        {
+          "name": "ARYAN GOKUL RAUT",
+          "roll_number": "16010123080",
+          "branch": "COMP",
+          "role": "Technology Trainee"
+        },
+        {
+          "name": "Aayush Kumar Tiwari",
+          "roll_number": "16014223003",
+          "branch": "AI & DS",
+          "role": "Technology Trainee"
+        },
+        {
+          "name": "Shalini Majumdar",
+          "roll_number": "16010123307",
+          "branch": "COMP",
+          "role": "Technology Trainee"
+        },
+        {
+          "name": "Rajdeep Vishalanand Pandey",
+          "roll_number": "16014223064",
+          "branch": "AI & DS",
+          "role": "Technology Trainee"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": null
+    },
+    {
+      "placement_id": "Y27-0010",
+      "company": {
+        "name": "The Digital Fifth",
+        "normalized_name": "the-digital-fifth",
+        "type": "Fintech Consulting"
+      },
+      "result": {
+        "declared_date": "2026-08-25",
+        "original_date_text": "25 - Aug - 2026"
+      },
+      "compensation": {
+        "ctc_text": "8.00 LPA",
+        "ctc_value_lpa": 8,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Sr. Analyst"
+      ],
+      "hiring": {
+        "students_hired": 3,
+        "placement_count": 51
+      },
+      "candidates": [
+        {
+          "name": "Palak Hitesh Shah",
+          "roll_number": "16010123225",
+          "branch": "COMP",
+          "role": "Sr. Analyst"
+        },
+        {
+          "name": "Sahil Chirag Shah",
+          "roll_number": "16010123288",
+          "branch": "COMP",
+          "role": "Sr. Analyst"
+        },
+        {
+          "name": "K Likhita Reddy",
+          "roll_number": "16010423042",
+          "branch": "IT",
+          "role": "Sr. Analyst"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": null
+    },
+    {
+      "placement_id": "Y27-0011",
+      "company": {
+        "name": "Arcon",
+        "normalized_name": "arcon",
+        "type": "IT"
+      },
+      "result": {
+        "declared_date": "2026-08-31",
+        "original_date_text": "31- Aug - 2026"
+      },
+      "compensation": {
+        "ctc_text": "8.00 LPA",
+        "ctc_value_lpa": 8,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Software Developer"
+      ],
+      "hiring": {
+        "students_hired": 1,
+        "placement_count": 52
+      },
+      "candidates": [
+        {
+          "name": "Aditya Rajesh Belgaonkar",
+          "roll_number": "16010123026",
+          "branch": "COMP",
+          "role": "Software Developer"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 7,
+        "pages": [
+          7,
+          8
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": null
+    },
+    {
+      "placement_id": "Y27-0012",
+      "company": {
+        "name": "JPMC",
+        "normalized_name": "jpmc",
+        "type": "BFSI"
+      },
+      "result": {
+        "declared_date": "2026-08-31",
+        "original_date_text": "31 - Aug - 2026"
+      },
+      "compensation": {
+        "ctc_text": "19.75 LPA",
+        "ctc_value_lpa": 19.75,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "SEP - Full Time Analyst"
+      ],
+      "hiring": {
+        "students_hired": 2,
+        "placement_count": 54
+      },
+      "candidates": [
+        {
+          "name": "Shreeya Hemant Panchal",
+          "roll_number": "16010124813",
+          "branch": "COMP",
+          "role": "SEP - Full Time Analyst"
+        },
+        {
+          "name": "Kavish Arora",
+          "roll_number": "16014223045",
+          "branch": "AI & DS",
+          "role": "SEP - Full Time Analyst"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 8,
+        "pages": [
+          8
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": null
+    },
+    {
+      "placement_id": "Y27-0013",
+      "company": {
+        "name": "Tata Consultancy Services",
+        "normalized_name": "tata-consultancy-services",
+        "type": "IT"
+      },
+      "result": {
+        "declared_date": "2026-09-01",
+        "original_date_text": "1- Sep - 2026"
+      },
+      "compensation": {
+        "ctc_text": "Pime - 9.00 LPA Digital 7.09 LPA",
+        "ctc_value_lpa": null,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Prime",
+        "Digital"
+      ],
+      "hiring": {
+        "students_hired": 7,
+        "placement_count": 61
+      },
+      "candidates": [
+        {
+          "name": "Aarit Kalpesh Mehta",
+          "roll_number": "16014223002",
+          "branch": "AI & DS",
+          "role": "Prime"
+        },
+        {
+          "name": "Vaibhav Vibhor Bhatt",
+          "roll_number": "16014223089",
+          "branch": "AI & DS",
+          "role": "Digital"
+        },
+        {
+          "name": "Shreya Tiwari",
+          "roll_number": "16010123322",
+          "branch": "COMP",
+          "role": "Digital"
+        },
+        {
+          "name": "Vikrant Ganesh Vaidya",
+          "roll_number": "16010423115",
+          "branch": "IT",
+          "role": "Digital"
+        },
+        {
+          "name": "Rishi Sandeep Mane",
+          "roll_number": "16014224811",
+          "branch": "AI & DS",
+          "role": "Digital"
+        },
+        {
+          "name": "Shravani Sanjay Parte",
+          "roll_number": "16010123319",
+          "branch": "COMP",
+          "role": "Digital"
+        },
+        {
+          "name": "Tanisha Jayanta Saha",
+          "roll_number": "16014323043",
+          "branch": "RAI",
+          "role": "Digital"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": "Mixed compensation bands: Prime 9.00 LPA and Digital 7.09 LPA. Original header spells Prime as Pime. No single announcement CTC is substituted."
+    },
+    {
+      "placement_id": "Y27-0014",
+      "company": {
+        "name": "LogiNext",
+        "normalized_name": "loginext",
+        "type": "IT"
+      },
+      "result": {
+        "declared_date": "2026-09-03",
+        "original_date_text": "3- Sep - 2026"
+      },
+      "compensation": {
+        "ctc_text": "11:00 LPA",
+        "ctc_value_lpa": 11,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Full Stack Web & Mobile Engineer",
+        "Business Development Manager"
+      ],
+      "hiring": {
+        "students_hired": 2,
+        "placement_count": 63
+      },
+      "candidates": [
+        {
+          "name": "Gurkaran Singh Ahuja",
+          "roll_number": "16010123129",
+          "branch": "COMP",
+          "role": "Full Stack Web & Mobile Engineer"
+        },
+        {
+          "name": "Rohan Sunil Kumar Suri",
+          "roll_number": "16010123276",
+          "branch": "COMP",
+          "role": "Business Development Manager"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 9,
+        "pages": [
+          9,
+          10
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": "Source prints 11:00 LPA; numeric value transcribed as 11.00 LPA."
+    },
+    {
+      "placement_id": "Y27-0015",
+      "company": {
+        "name": "Transbnk Solutions Pvt. Ltd. (TBX)",
+        "normalized_name": "transbnk-solutions-pvt-ltd-tbx",
+        "type": "BFSI"
+      },
+      "result": {
+        "declared_date": "2026-09-08",
+        "original_date_text": "8 - Sep - 2026"
+      },
+      "compensation": {
+        "ctc_text": "10:00 LPA",
+        "ctc_value_lpa": 10,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Trainee - Banking System",
+        "Trainee - AI-First Products"
+      ],
+      "hiring": {
+        "students_hired": 2,
+        "placement_count": 65
+      },
+      "candidates": [
+        {
+          "name": "Amandeep Singh Gurdeep Singh Rathod",
+          "roll_number": "16010123036",
+          "branch": "COMP",
+          "role": "Trainee - Banking System"
+        },
+        {
+          "name": "Shreejay Ravikumar Kurhade",
+          "roll_number": "16010123320",
+          "branch": "COMP",
+          "role": "Trainee - AI-First Products"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 10,
+        "pages": [
+          10
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": "Source prints 10:00 LPA; numeric value transcribed as 10.00 LPA."
+    },
+    {
+      "placement_id": "Y27-0016",
+      "company": {
+        "name": "Think 360",
+        "normalized_name": "think-360",
+        "type": "IT"
+      },
+      "result": {
+        "declared_date": "2026-09-15",
+        "original_date_text": "15- Sep - 2026"
+      },
+      "compensation": {
+        "ctc_text": "09:50 LPA",
+        "ctc_value_lpa": 9.5,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Full Stack Developer"
+      ],
+      "hiring": {
+        "students_hired": 4,
+        "placement_count": 69
+      },
+      "candidates": [
+        {
+          "name": "Ayush Kailas Patil",
+          "roll_number": "16010423023",
+          "branch": "IT",
+          "role": "Full Stack Developer"
+        },
+        {
+          "name": "Aayush Ranjit Solanke",
+          "roll_number": "16010423004",
+          "branch": "IT",
+          "role": "Full Stack Developer"
+        },
+        {
+          "name": "Tanmay Viresh Goraksha",
+          "roll_number": "16010123136",
+          "branch": "COMP",
+          "role": "Full Stack Developer"
+        },
+        {
+          "name": "Siddhant Janardan Shukla",
+          "roll_number": "16010123330",
+          "branch": "COMP",
+          "role": "Full Stack Developer"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 10,
+        "pages": [
+          10,
+          11
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": "Source prints 09:50 LPA; numeric value transcribed as 9.50 LPA."
+    },
+    {
+      "placement_id": "Y27-0017",
+      "company": {
+        "name": "IBM India",
+        "normalized_name": "ibm-india",
+        "type": "IT"
+      },
+      "result": {
+        "declared_date": "2026-09-17",
+        "original_date_text": "17- Sep - 2026"
+      },
+      "compensation": {
+        "ctc_text": "31.79 LPA",
+        "ctc_value_lpa": 31.79,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Research Engineer"
+      ],
+      "hiring": {
+        "students_hired": 1,
+        "placement_count": 70
+      },
+      "candidates": [
+        {
+          "name": "Aakanksha Singh",
+          "roll_number": "16010123004",
+          "branch": "COMP",
+          "role": "Research Engineer"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 11,
+        "pages": [
+          11
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": null
+    },
+    {
+      "placement_id": "Y27-0018",
+      "company": {
+        "name": "KPMG",
+        "normalized_name": "kpmg",
+        "type": "Consultancy"
+      },
+      "result": {
+        "declared_date": "2026-09-22",
+        "original_date_text": "22- Sep - 2026"
+      },
+      "compensation": {
+        "ctc_text": "DSSI - 6 LPA / CRC-CST - 5 LPA",
+        "ctc_value_lpa": null,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Cyber Risk & Compliance / Cyber Security & Technology",
+        "Tech Transformation - DSSI"
+      ],
+      "hiring": {
+        "students_hired": 13,
+        "placement_count": 83
+      },
+      "candidates": [
+        {
+          "name": "Rudra Umesh Shetye",
+          "roll_number": "16010123278",
+          "branch": "COMP",
+          "role": "Cyber Risk & Compliance / Cyber Security & Technology"
+        },
+        {
+          "name": "Chinmay Subhash Parate",
+          "roll_number": "16014123018",
+          "branch": "CCE",
+          "role": "Cyber Risk & Compliance / Cyber Security & Technology"
+        },
+        {
+          "name": "Shreya Singh",
+          "roll_number": "16010323029",
+          "branch": "EXTC",
+          "role": "Cyber Risk & Compliance / Cyber Security & Technology"
+        },
+        {
+          "name": "Nysa Sudhir Kiran",
+          "roll_number": "16014123032",
+          "branch": "CCE",
+          "role": "Cyber Risk & Compliance / Cyber Security & Technology"
+        },
+        {
+          "name": "Saniya Sanjay Brahme",
+          "roll_number": "16010123301",
+          "branch": "COMP",
+          "role": "Cyber Risk & Compliance / Cyber Security & Technology"
+        },
+        {
+          "name": "Srushti Shailendra Patil",
+          "roll_number": "16014022157",
+          "branch": "EXCP",
+          "role": "Cyber Risk & Compliance / Cyber Security & Technology"
+        },
+        {
+          "name": "Janice - Barnes",
+          "roll_number": "16014123024",
+          "branch": "CCE",
+          "role": "Cyber Risk & Compliance / Cyber Security & Technology"
+        },
+        {
+          "name": "Sahana G Iyer",
+          "roll_number": "16014023046",
+          "branch": "EXCP",
+          "role": "Cyber Risk & Compliance / Cyber Security & Technology"
+        },
+        {
+          "name": "Indu Ratankumar Indure",
+          "roll_number": "16010123148",
+          "branch": "COMP",
+          "role": "Cyber Risk & Compliance / Cyber Security & Technology"
+        },
+        {
+          "name": "Vedant Umang Desai",
+          "roll_number": "16010123205",
+          "branch": "COMP",
+          "role": "Tech Transformation - DSSI"
+        },
+        {
+          "name": "Sayan Parida",
+          "roll_number": "16014123043",
+          "branch": "CCE",
+          "role": "Tech Transformation - DSSI"
+        },
+        {
+          "name": "Surabhi Manohar Khutal",
+          "roll_number": "16010123068",
+          "branch": "COMP",
+          "role": "Tech Transformation - DSSI"
+        },
+        {
+          "name": "Tanisha Rajesh Lohiya",
+          "roll_number": "16010423105",
+          "branch": "IT",
+          "role": "Tech Transformation - DSSI"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 11,
+        "pages": [
+          11,
+          12
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": "Mixed compensation bands retained. The merged CRC/CST role cell does not distinguish individual assignments; both labels are preserved together, without choosing one."
+    },
+    {
+      "placement_id": "Y27-0019",
+      "company": {
+        "name": "Deloitte India",
+        "normalized_name": "deloitte-india",
+        "type": "Consultancy"
+      },
+      "result": {
+        "declared_date": "2026-10-01",
+        "original_date_text": "1- Oct - 2026"
+      },
+      "compensation": {
+        "ctc_text": "A&A - 6.71 LPA / Other - 7.6 LPA",
+        "ctc_value_lpa": null,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Analyst"
+      ],
+      "hiring": {
+        "students_hired": 32,
+        "placement_count": 115
+      },
+      "candidates": [
+        {
+          "name": "Anushka Sundar",
+          "roll_number": "16010323005",
+          "branch": "EXTC",
+          "role": "Analyst"
+        },
+        {
+          "name": "Bhav Bhushan Shah",
+          "roll_number": "16010123099",
+          "branch": "COMP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Laksh Jatin Rathi",
+          "roll_number": "16010123182",
+          "branch": "COMP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Kaavya Joseph",
+          "roll_number": "16010420344",
+          "branch": "IT",
+          "role": "Analyst"
+        },
+        {
+          "name": "Harshit Keyur Modi",
+          "roll_number": "16014223039",
+          "branch": "AI & DS",
+          "role": "Analyst"
+        },
+        {
+          "name": "Mohammed Zamee Shaikh",
+          "roll_number": "16014223054",
+          "branch": "AI & DS",
+          "role": "Analyst"
+        },
+        {
+          "name": "Atharva Hemant Joshi",
+          "roll_number": "16010423021",
+          "branch": "IT",
+          "role": "Analyst"
+        },
+        {
+          "name": "Saahil Babbar",
+          "roll_number": "16014023064",
+          "branch": "EXCP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Nathan Varghese",
+          "roll_number": "16014023032",
+          "branch": "EXCP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Khussh Mandar Desai",
+          "roll_number": "16014323027",
+          "branch": "RAI",
+          "role": "Analyst"
+        },
+        {
+          "name": "AARON NINAN",
+          "roll_number": "16010123005",
+          "branch": "COMP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Krisha Devendraprasad Pisat",
+          "roll_number": "16010123174",
+          "branch": "COMP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Ayush Parag Kolekar",
+          "roll_number": "16010423024",
+          "branch": "IT",
+          "role": "Analyst"
+        },
+        {
+          "name": "Ananya Santosh Dubey",
+          "roll_number": "16010423011",
+          "branch": "IT",
+          "role": "Analyst"
+        },
+        {
+          "name": "Soham Kamlesh Shukla",
+          "roll_number": "16010123334",
+          "branch": "COMP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Dhairya Ashwin Bhanushali",
+          "roll_number": "16014023018",
+          "branch": "EXCP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Vaishnavi Sunil Paliwal",
+          "roll_number": "16010123200",
+          "branch": "COMP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Tanish Sadananda Shetty",
+          "roll_number": "16014223088",
+          "branch": "AI & DS",
+          "role": "Analyst"
+        },
+        {
+          "name": "Ruhan Naik",
+          "roll_number": "16010123279",
+          "branch": "COMP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Devansh Rajesh Pant",
+          "roll_number": "16010423028",
+          "branch": "IT",
+          "role": "Analyst"
+        },
+        {
+          "name": "Om Amol Raul",
+          "roll_number": "16010423062",
+          "branch": "IT",
+          "role": "Analyst"
+        },
+        {
+          "name": "Muskan Mehaboob Khan Shaikh",
+          "roll_number": "16010123208",
+          "branch": "COMP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Vibhor Bagga",
+          "roll_number": "16010123261",
+          "branch": "COMP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Anoosha Prashant Lad",
+          "roll_number": "16010123048",
+          "branch": "COMP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Laksh Sameer Rajput",
+          "roll_number": "16010123181",
+          "branch": "COMP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Aayush Sudarshan Hardas",
+          "roll_number": "16010123013",
+          "branch": "COMP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Saloni Vishal Pawar",
+          "roll_number": "16010423082",
+          "branch": "IT",
+          "role": "Analyst"
+        },
+        {
+          "name": "Aamir Moiz Arsiwala",
+          "roll_number": "16014023002",
+          "branch": "EXCP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Bhoomi Jogendra Pradhan",
+          "roll_number": "16014323015",
+          "branch": "RAI",
+          "role": "Analyst"
+        },
+        {
+          "name": "Kabir Budhdev",
+          "roll_number": "16010123162",
+          "branch": "COMP",
+          "role": "Analyst"
+        },
+        {
+          "name": "Vedant Pradeep Tendulkar",
+          "roll_number": "16014223093",
+          "branch": "AI & DS",
+          "role": "Analyst"
+        },
+        {
+          "name": "Navya Rajesh Bhootra",
+          "roll_number": "16014223057",
+          "branch": "AI & DS",
+          "role": "Analyst"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 12,
+        "pages": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": "Compensation groups are not mapped to individual candidates. Numerical CTC remains unavailable; both source bands are retained."
+    },
+    {
+      "placement_id": "Y27-0020",
+      "company": {
+        "name": "TCS",
+        "normalized_name": "tata-consultancy-services",
+        "type": "IT"
+      },
+      "result": {
+        "declared_date": "2026-10-01",
+        "original_date_text": "1 - Oct - 2026"
+      },
+      "compensation": {
+        "ctc_text": "3.46 LPA",
+        "ctc_value_lpa": 3.46,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "TCS - Ninja"
+      ],
+      "hiring": {
+        "students_hired": 1,
+        "placement_count": 116
+      },
+      "candidates": [
+        {
+          "name": "Anish Animesh Sahu",
+          "roll_number": "16014123011",
+          "branch": "CCE",
+          "role": "TCS - Ninja"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 15,
+        "pages": [
+          15
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": null
+    },
+    {
+      "placement_id": "Y27-0021",
+      "company": {
+        "name": "ICICI Prudential AMC",
+        "normalized_name": "icici-prudential-amc",
+        "type": "BFSI"
+      },
+      "result": {
+        "declared_date": "2026-10-06",
+        "original_date_text": "6 - Oct - 2026"
+      },
+      "compensation": {
+        "ctc_text": "8.50 LPA",
+        "ctc_value_lpa": 8.5,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Graduate Engineer Trainee"
+      ],
+      "hiring": {
+        "students_hired": 3,
+        "placement_count": 119
+      },
+      "candidates": [
+        {
+          "name": "Viraj Anand Pawar",
+          "roll_number": "16010123267",
+          "branch": "COMP",
+          "role": "Graduate Engineer Trainee"
+        },
+        {
+          "name": "Pratik Patil",
+          "roll_number": "16010123238",
+          "branch": "COMP",
+          "role": "Graduate Engineer Trainee"
+        },
+        {
+          "name": "Aaryan Sunil Sharma",
+          "roll_number": "16010123012",
+          "branch": "COMP",
+          "role": "Graduate Engineer Trainee"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 15,
+        "pages": [
+          15,
+          16
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": null
+    },
+    {
+      "placement_id": "Y27-0022",
+      "company": {
+        "name": "Bizom",
+        "normalized_name": "bizom",
+        "type": "IT"
+      },
+      "result": {
+        "declared_date": "2026-10-06",
+        "original_date_text": "6 - Oct - 2026"
+      },
+      "compensation": {
+        "ctc_text": "12.00 LPA",
+        "ctc_value_lpa": 12,
+        "currency": "INR",
+        "period": "year"
+      },
+      "roles": [
+        "Growth Consultant Trainee"
+      ],
+      "hiring": {
+        "students_hired": 2,
+        "placement_count": 121
+      },
+      "candidates": [
+        {
+          "name": "Anushka Thakur",
+          "roll_number": "16014123013",
+          "branch": "CCE",
+          "role": "Growth Consultant Trainee"
+        },
+        {
+          "name": "Somin Shah",
+          "roll_number": "16014023056",
+          "branch": "EXCP",
+          "role": "Growth Consultant Trainee"
+        }
+      ],
+      "source": {
+        "source_file": "27batchemailthread.pdf",
+        "page": 16,
+        "pages": [
+          16
+        ],
+        "raw_announcement_text": null
+      },
+      "notes": null
+    }
+  ]
+}

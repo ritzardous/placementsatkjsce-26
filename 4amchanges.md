@@ -98,3 +98,11 @@ npm audit
 - Check Barclays for conflicting report/email CTC, Google for the report's off-campus classification/PPO discrepancy, and Goldman Sachs for missing role/date. These disagreements/missing fields must remain visible.
 - Timeline and monthly charts include only confirmed dates; the cumulative dated series reaches 283 selections rather than inventing dates for all 360. Overall report CTC metrics use selection weighting; legacy 2026 remains announcement-weighted, so year comparisons need that context.
 - `npm run data:build-2025` regenerates the dataset from committed transcriptions. `db:seed` and `db:verify` accept `--year 2025`; omit the flag for 2026. Each year has its own immutable publication and activation manifest. Both are imported and verified in the cloud project.
+
+## Class of 2027 / AY 2026–27 — ongoing season
+
+- Select **2026–27 · Class of 2027 · LIVE** or open `/#2027/overview`. The banner must show **Placements ongoing**, latest included email **8 October 2026**, and explain that updates are reviewed imports.
+- Baseline: **22 announcements, 121 selections, 121 distinct roll numbers, 19 companies, final TPO counter 121**. Latest declared result: **6 October 2026**. Missing registration total means no placement rate; three mixed-package announcements retain text rather than a guessed numerical CTC.
+- Data is published and reconciled in cloud Firestore. Redeploy the changed React frontend to make the year selector available on the deployed site.
+- Check Companies, company details, branches (including AI & DS/CCE/EXCP/RAI), candidates, timeline, insights, reload, and the refresh button. Switch back to 2025/2026 and confirm the live label disappears. Repeat on mobile.
+- Run `npm run data:build-2027`, `npm test`, and `npm run build`. For reviewed future updates, see [the source audit and publication steps](docs/2027-data-audit.md); Firebase seed/verify and cloud workflow now accept year 2027.

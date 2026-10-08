@@ -16,4 +16,6 @@ npm audit
 
 AY 2024–25 (class of 2025) is also available through the year selector: 360 report selections, 323 students, with on/off-campus status and matched email dates/roles. Read [the source audit and missing-data checklist](docs/2025-data-audit.md). `npm run data:build-2025` reproduces the dataset from committed source transcriptions; import/verify commands accept `--year 2025` (default remains 2026).
 
+AY 2026–27 (class of 2027) is available at `/#2027/overview`, explicitly marked **LIVE · Placements ongoing**: 22 announcements, 121 selections/distinct roll numbers, 19 companies. Latest supplied email: 8 October 2026. This is a reviewed cloud snapshot, not automatic email ingestion; registration total and mixed numerical CTC remain unavailable. See [the 2027 source audit and update steps](docs/2027-data-audit.md). Rebuild with `npm run data:build-2027`; seed/verify commands accept `--year 2027`.
+
 Follow [the deployment guide](<deployment guide.md>) to publish this React + Firebase app through GitHub and a new Vercel project. Deployment has not been performed yet. 2027 data and community features are deferred. See [architecture](docs/architecture.md), [operations](docs/operations.md), [migration report](docs/migration-report.md), and [future plan](plan.md).

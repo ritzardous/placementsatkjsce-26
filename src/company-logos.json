@@ -27,6 +27,15 @@
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Faccenture.com&sz=128"
   },
   {
+    "id": "acg",
+    "aliases": [
+      "acg-inspection"
+    ],
+    "file": "/company-logos/acg.png",
+    "website": "https://acg-world.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Facg-world.com&sz=128"
+  },
+  {
     "id": "aci-worldwide",
     "aliases": [
       "aci-worldwide"
@@ -34,6 +43,42 @@
     "file": "/company-logos/aci-worldwide.png",
     "website": "https://aciworldwide.com",
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Faciworldwide.com&sz=128"
+  },
+  {
+    "id": "aegis-awards",
+    "aliases": [
+      "aegis-graham-bell-awards"
+    ],
+    "file": "/company-logos/aegis-awards.jpg",
+    "website": "https://bellaward.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fbellaward.com&sz=128"
+  },
+  {
+    "id": "affinity",
+    "aliases": [
+      "affinity-global-advertising-pvt-ltd"
+    ],
+    "file": "/company-logos/affinity.png",
+    "website": "https://affinity.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Faffinity.com&sz=128"
+  },
+  {
+    "id": "affix",
+    "aliases": [
+      "affix-centre"
+    ],
+    "file": "/company-logos/affix.png",
+    "website": "https://affixcenter.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Faffixcenter.com&sz=128"
+  },
+  {
+    "id": "akademika",
+    "aliases": [
+      "akademika-lab-solutions"
+    ],
+    "file": "/company-logos/akademika.jpg",
+    "website": "https://akademika.in",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fakademika.in&sz=128"
   },
   {
     "id": "amazon",
@@ -62,6 +107,33 @@
     "file": "/company-logos/arcon.png",
     "website": "https://arconnet.com",
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Farconnet.com&sz=128"
+  },
+  {
+    "id": "arora-ndt",
+    "aliases": [
+      "arora-technologies-p-limited"
+    ],
+    "file": "/company-logos/arora-ndt.png",
+    "website": "https://arorandt.com",
+    "source": "https://arorandt.com/wp-content/uploads/2022/09/ATPL-Logo-PNG-1024x296.png"
+  },
+  {
+    "id": "astrico",
+    "aliases": [
+      "astrico-ai"
+    ],
+    "file": "/company-logos/astrico.jpg",
+    "website": "https://astrico.ai",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fastrico.ai&sz=128"
+  },
+  {
+    "id": "atrina",
+    "aliases": [
+      "atrina-tech"
+    ],
+    "file": "/company-logos/atrina.jpg",
+    "website": "https://atriina.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fatriina.com&sz=128"
   },
   {
     "id": "aurionpro",
@@ -100,6 +172,33 @@
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fhome.barclays&sz=128"
   },
   {
+    "id": "beyond-automation",
+    "aliases": [
+      "beyond-automation-pvt-ltd"
+    ],
+    "file": "/company-logos/beyond-automation.png",
+    "website": "https://beyond-alliance.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fbeyond-alliance.com&sz=128"
+  },
+  {
+    "id": "bfw",
+    "aliases": [
+      "bharat-fritz-werner-limited"
+    ],
+    "file": "/company-logos/bfw.png",
+    "website": "https://bfwindia.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fbfwindia.com&sz=128"
+  },
+  {
+    "id": "bizom",
+    "aliases": [
+      "bizom"
+    ],
+    "file": "/company-logos/bizom.png",
+    "website": "https://bizom.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fbizom.com&sz=128"
+  },
+  {
     "id": "bluestar",
     "aliases": [
       "bluestar"
@@ -119,6 +218,15 @@
     "source": "https://bstackprod.kinsta.cloud/wp-content/themes/browserstack/img/favicons/apple-touch-icon.png"
   },
   {
+    "id": "c-prav",
+    "aliases": [
+      "c-prav-labs-pvt-ltd"
+    ],
+    "file": "/company-logos/c-prav.png",
+    "website": "https://c-prav.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fc-prav.com&sz=128"
+  },
+  {
     "id": "capgemini",
     "aliases": [
       "capgemini"
@@ -135,6 +243,15 @@
     "file": "/company-logos/caratlane.png",
     "website": "https://caratlane.com",
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fcaratlane.com&sz=128"
+  },
+  {
+    "id": "centiro",
+    "aliases": [
+      "centiro-solutions-private-limited"
+    ],
+    "file": "/company-logos/centiro.png",
+    "website": "https://centiro.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fcentiro.com&sz=128"
   },
   {
     "id": "cimpress",
@@ -173,6 +290,15 @@
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fcityflo.com&sz=128"
   },
   {
+    "id": "cogitate",
+    "aliases": [
+      "cogitate-technology"
+    ],
+    "file": "/company-logos/cogitate.png",
+    "website": "https://cogitate.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fcogitate.com&sz=128"
+  },
+  {
     "id": "colgate",
     "aliases": [
       "colgate",
@@ -183,6 +309,15 @@
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fcolgatepalmolive.com&sz=128"
   },
   {
+    "id": "commtel",
+    "aliases": [
+      "commtel"
+    ],
+    "file": "/company-logos/commtel.png",
+    "website": "https://commtelnetworks.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fcommtelnetworks.com&sz=128"
+  },
+  {
     "id": "connectwise",
     "aliases": [
       "connectwise"
@@ -190,6 +325,15 @@
     "file": "/company-logos/connectwise.png",
     "website": "https://connectwise.com",
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fconnectwise.com&sz=128"
+  },
+  {
+    "id": "continuum",
+    "aliases": [
+      "watsun-infrabuild-pvt-ltd"
+    ],
+    "file": "/company-logos/continuum.png",
+    "website": "https://continuumenergy.in",
+    "source": "https://www.continuumenergy.in/img/logo-fav.png"
   },
   {
     "id": "crackeddevs",
@@ -220,6 +364,24 @@
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fdeloitte.com&sz=128"
   },
   {
+    "id": "dhurin",
+    "aliases": [
+      "dhurin"
+    ],
+    "file": "/company-logos/dhurin.png",
+    "website": "https://dhurin.in",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fdhurin.in&sz=128"
+  },
+  {
+    "id": "digital-fifth",
+    "aliases": [
+      "the-digital-fifth"
+    ],
+    "file": "/company-logos/digital-fifth.png",
+    "website": "https://thedigitalfifth.com",
+    "source": "https://i0.wp.com/thedigitalfifth.com/wp-content/uploads/tdf-png-logo.webp"
+  },
+  {
     "id": "dolat",
     "aliases": [
       "dolat-capital"
@@ -227,6 +389,15 @@
     "file": "/company-logos/dolat.png",
     "website": "https://dolatcapital.com",
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fdolatcapital.com&sz=128"
+  },
+  {
+    "id": "doubletick",
+    "aliases": [
+      "double-tick"
+    ],
+    "file": "/company-logos/doubletick.png",
+    "website": "https://doubletick.io",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fdoubletick.io&sz=128"
   },
   {
     "id": "dp-world",
@@ -267,6 +438,15 @@
     "source": "https://media.licdn.com/dms/image/v2/D4D0BAQFcSgfDbJsMEw/company-logo_400_400/company-logo_400_400/0/1737108000667/edra_labs_logo?e=1793232000&v=beta&t=vRZBAfoQfpKXmBRCwQo2H5sw-l3SUw1vZ3fUZguTQRw"
   },
   {
+    "id": "eighty-days",
+    "aliases": [
+      "colourblind-ventures-private-limited-eighty-days"
+    ],
+    "file": "/company-logos/eighty-days.png",
+    "website": "https://eightydays.ai",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Feightydays.ai&sz=128"
+  },
+  {
     "id": "ericsson",
     "aliases": [
       "ericsson-india"
@@ -274,6 +454,15 @@
     "file": "/company-logos/ericsson.png",
     "website": "https://ericsson.com",
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fericsson.com&sz=128"
+  },
+  {
+    "id": "eventstrat",
+    "aliases": [
+      "eventstrat-labsprivatelimited"
+    ],
+    "file": "/company-logos/eventstrat.png",
+    "website": "https://eventstrat.ai",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Feventstrat.ai&sz=128"
   },
   {
     "id": "ey",
@@ -285,6 +474,25 @@
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fey.com&sz=128"
   },
   {
+    "id": "fiamarc",
+    "aliases": [
+      "all-home-bharat-platform-pvt-ltd"
+    ],
+    "file": "/company-logos/fiamarc.png",
+    "website": "https://fiamarc.zohoecommerce.in",
+    "source": "https://fiamarc.zohoecommerce.in/fiamarc_logo.png"
+  },
+  {
+    "id": "fileago",
+    "aliases": [
+      "fileago"
+    ],
+    "file": "/company-logos/fileago.svg",
+    "website": "https://fileago.com",
+    "source": "https://fileago.com",
+    "background": "#17243d"
+  },
+  {
     "id": "framatome",
     "aliases": [
       "framatome-pvt-ltd"
@@ -292,6 +500,15 @@
     "file": "/company-logos/framatome.png",
     "website": "https://framatome.com",
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fframatome.com&sz=128"
+  },
+  {
+    "id": "global-payex",
+    "aliases": [
+      "global-payex-technologies-pvt-ltd"
+    ],
+    "file": "/company-logos/global-payex.png",
+    "website": "https://globalpayex.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fglobalpayex.com&sz=128"
   },
   {
     "id": "godrej",
@@ -378,6 +595,15 @@
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fgupshup.io&sz=128"
   },
   {
+    "id": "hansa-cequity",
+    "aliases": [
+      "hansa-customer-equity-pvt-ltd"
+    ],
+    "file": "/company-logos/hansa-cequity.png",
+    "website": "https://hansacequity.com",
+    "source": "https://hansacequity.com/wp-content/uploads/2024/08/Layer_18.png"
+  },
+  {
     "id": "hdfc-life",
     "aliases": [
       "hdfc-life"
@@ -385,6 +611,15 @@
     "file": "/company-logos/hdfc-life.png",
     "website": "https://hdfclife.com",
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fhdfclife.com&sz=128"
+  },
+  {
+    "id": "hike-education",
+    "aliases": [
+      "hike-education"
+    ],
+    "file": "/company-logos/hike-education.png",
+    "website": "https://hikeeducation.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fhikeeducation.com&sz=128"
   },
   {
     "id": "holcim",
@@ -414,6 +649,15 @@
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fhyperverge.co&sz=128"
   },
   {
+    "id": "ibm",
+    "aliases": [
+      "ibm-india"
+    ],
+    "file": "/company-logos/ibm.svg",
+    "website": "https://ibm.com",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"
+  },
+  {
     "id": "icici-lombard",
     "aliases": [
       "icici-lombard"
@@ -434,7 +678,8 @@
   {
     "id": "icici-prudential-amc",
     "aliases": [
-      "icici-prudential-amc-ltd"
+      "icici-prudential-amc-ltd",
+      "icici-prudential-amc"
     ],
     "file": "/company-logos/icici-prudential-amc.png",
     "website": "https://icicipruamc.com",
@@ -496,6 +741,24 @@
     "source": "https://cdn.impactguru.com/themes/front/page/images/icons/impactguru.png"
   },
   {
+    "id": "inbetween",
+    "aliases": [
+      "inbetween-innovation-ltd"
+    ],
+    "file": "/company-logos/inbetween.png",
+    "website": "https://inbetween.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Finbetween.com&sz=128"
+  },
+  {
+    "id": "infytrix",
+    "aliases": [
+      "infytrix-ecom-pvt-ltd"
+    ],
+    "file": "/company-logos/infytrix.png",
+    "website": "https://infytrix.com",
+    "source": "https://infytrix.com/wp-content/uploads/2024/08/cropped-cropped-Untitled-1-192x192.png"
+  },
+  {
     "id": "interactive-brokers",
     "aliases": [
       "interactive-broker",
@@ -534,6 +797,15 @@
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fiongroup.com&sz=128"
   },
   {
+    "id": "iqlytics",
+    "aliases": [
+      "iqlytics-solutions-pvt-ltd"
+    ],
+    "file": "/company-logos/iqlytics.png",
+    "website": "https://iqlytics.in",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fiqlytics.in&sz=128"
+  },
+  {
     "id": "jaro",
     "aliases": [
       "jaro-education"
@@ -541,6 +813,15 @@
     "file": "/company-logos/jaro.png",
     "website": "https://jaroeducation.com",
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fjaroeducation.com&sz=128"
+  },
+  {
+    "id": "jeavio",
+    "aliases": [
+      "jeavio-india-pvt-ltd"
+    ],
+    "file": "/company-logos/jeavio.png",
+    "website": "https://jeavio.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fjeavio.com&sz=128"
   },
   {
     "id": "jpmorgan",
@@ -562,6 +843,15 @@
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fjsw.in&sz=128"
   },
   {
+    "id": "kalki",
+    "aliases": [
+      "kalki-fashion"
+    ],
+    "file": "/company-logos/kalki.jpg",
+    "website": "https://kalkifashion.com",
+    "source": "https://www.kalkifashion.com/cdn/shop/files/Fav_512.jpg?v=1753505124"
+  },
+  {
     "id": "kpmg",
     "aliases": [
       "kpmg"
@@ -578,6 +868,42 @@
     "file": "/company-logos/leadsquared.png",
     "website": "https://leadsquared.com",
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fleadsquared.com&sz=128"
+  },
+  {
+    "id": "lloyds-defence",
+    "aliases": [
+      "lloyds-advance-defence-systems"
+    ],
+    "file": "/company-logos/lloyds-defence.png",
+    "website": "https://lloydsdefence.in",
+    "source": "https://lloydsdefence.si/wp-content/uploads/2026/09/LADS-logo.png"
+  },
+  {
+    "id": "loginext",
+    "aliases": [
+      "loginext"
+    ],
+    "file": "/company-logos/loginext.png",
+    "website": "https://loginextsolutions.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Floginextsolutions.com&sz=128"
+  },
+  {
+    "id": "logisticsnow",
+    "aliases": [
+      "logisticsnow"
+    ],
+    "file": "/company-logos/logisticsnow.png",
+    "website": "https://logisticsnow.in",
+    "source": "https://logisticsnow.in/images/logo.png"
+  },
+  {
+    "id": "logixal",
+    "aliases": [
+      "logixal"
+    ],
+    "file": "/company-logos/logixal.png",
+    "website": "https://logixal.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Flogixal.com&sz=128"
   },
   {
     "id": "loylty",
@@ -616,6 +942,24 @@
     "file": "/company-logos/mahindra.png",
     "website": "https://mahindra.com",
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fmahindra.com&sz=128"
+  },
+  {
+    "id": "matrix-medicals",
+    "aliases": [
+      "matrix-medicals"
+    ],
+    "file": "/company-logos/matrix-medicals.png",
+    "website": "https://matrixmedicals.in",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fmatrixmedicals.in&sz=128"
+  },
+  {
+    "id": "mehery",
+    "aliases": [
+      "mehery-soccom-pvt-ltd"
+    ],
+    "file": "/company-logos/mehery.png",
+    "website": "https://mehery.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fmehery.com&sz=128"
   },
   {
     "id": "mindgate",
@@ -672,6 +1016,25 @@
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fnagarro.com&sz=128"
   },
   {
+    "id": "ncsi",
+    "aliases": [
+      "ncsi-technologies-india-private-limited",
+      "ncsi-technologies-india"
+    ],
+    "file": "/company-logos/ncsi.png",
+    "website": "https://ncs.co",
+    "source": "https://www.ncs.co/dam/jcr:68e48c73-c3bf-443b-bf66-cb5f4e8bc7fe/ncs_logo.2024-09-16-16-43-35.png"
+  },
+  {
+    "id": "neebal",
+    "aliases": [
+      "neebal-technology"
+    ],
+    "file": "/company-logos/neebal.png",
+    "website": "https://neebal.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fneebal.com&sz=128"
+  },
+  {
     "id": "nilkamal",
     "aliases": [
       "nilkamal"
@@ -691,6 +1054,15 @@
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fnouryon.com&sz=128"
   },
   {
+    "id": "novel-jewels",
+    "aliases": [
+      "novel-jewels-aditya-birla-jewellery"
+    ],
+    "file": "/company-logos/novel-jewels.png",
+    "website": "https://indriya.com",
+    "source": "https://www.indriya.com/etc.clientlibs/noveljewels/clientlibs/clientlib-site/resources/images/196.png"
+  },
+  {
     "id": "nsdl",
     "aliases": [
       "national-securities-depository-ltd"
@@ -698,6 +1070,15 @@
     "file": "/company-logos/nsdl.png",
     "website": "https://nsdl.com",
     "source": "https://www.google.com/s2/favicons?domain_url=https://nsdl.com&sz=128"
+  },
+  {
+    "id": "nstore",
+    "aliases": [
+      "nstore-retech-pvt-ltd"
+    ],
+    "file": "/company-logos/nstore.png",
+    "website": "https://nstore.in",
+    "source": "https://www.nstore.in/nStorev1/nslogo.png"
   },
   {
     "id": "nuvoco",
@@ -716,6 +1097,33 @@
     "file": "/company-logos/oberoi.png",
     "website": "https://oberoirealty.com",
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Foberoirealty.com&sz=128"
+  },
+  {
+    "id": "odex",
+    "aliases": [
+      "odex-india-solutions-pvt-ltd"
+    ],
+    "file": "/company-logos/odex.png",
+    "website": "https://odexglobal.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fodexglobal.com&sz=128"
+  },
+  {
+    "id": "omnenest",
+    "aliases": [
+      "omnenest-technologies"
+    ],
+    "file": "/company-logos/omnenest.png",
+    "website": "https://omnenest.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fomnenest.com&sz=128"
+  },
+  {
+    "id": "opus",
+    "aliases": [
+      "opus-technology"
+    ],
+    "file": "/company-logos/opus.png",
+    "website": "https://opustechglobal.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fopustechglobal.com&sz=128"
   },
   {
     "id": "oracle",
@@ -755,6 +1163,16 @@
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fpiramalpharma.com&sz=128"
   },
   {
+    "id": "pravaayu",
+    "aliases": [
+      "pravaayu",
+      "pravaayu-healthcare"
+    ],
+    "file": "/company-logos/pravaayu.png",
+    "website": "https://pravaayu.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fpravaayu.com&sz=128"
+  },
+  {
     "id": "purplle",
     "aliases": [
       "purplle"
@@ -762,6 +1180,24 @@
     "file": "/company-logos/purplle.svg",
     "website": "https://purplle.com",
     "source": "https://media6.ppl-media.com/mediafiles/ecomm/promo/1728010487_p-icon-square-appfirst-.svg"
+  },
+  {
+    "id": "quantanite",
+    "aliases": [
+      "quantanite"
+    ],
+    "file": "/company-logos/quantanite.png",
+    "website": "https://quantanite.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fquantanite.com&sz=128"
+  },
+  {
+    "id": "quantum-data-engines",
+    "aliases": [
+      "quantum-data-engines"
+    ],
+    "file": "/company-logos/quantum-data-engines.png",
+    "website": "https://quantumdataengines.com",
+    "source": "https://qde.ai/assets/img/brand/QDE_Logo.png"
   },
   {
     "id": "rapid7",
@@ -801,6 +1237,24 @@
     "background": "#12243a"
   },
   {
+    "id": "ripplehire",
+    "aliases": [
+      "ripplehire"
+    ],
+    "file": "/company-logos/ripplehire.png",
+    "website": "https://ripplehire.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fripplehire.com&sz=128"
+  },
+  {
+    "id": "rk-control",
+    "aliases": [
+      "r-k-control-instruments-pvt-ltd"
+    ],
+    "file": "/company-logos/rk-control.png",
+    "website": "https://rkcipl.co.in",
+    "source": "https://rkcipl.co.in/wp-content/uploads/2021/11/cropped-Asset-5ldpi-192x192.png"
+  },
+  {
     "id": "rsm",
     "aliases": [
       "rsm-astute-consulting"
@@ -828,6 +1282,33 @@
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fseclore.com&sz=128"
   },
   {
+    "id": "segumento",
+    "aliases": [
+      "segumento"
+    ],
+    "file": "/company-logos/segumento.png",
+    "website": "https://segumento.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fsegumento.com&sz=128"
+  },
+  {
+    "id": "senergy",
+    "aliases": [
+      "senergy-intellution-pvt-ltd"
+    ],
+    "file": "/company-logos/senergy.png",
+    "website": "https://keymanagementsystems.in",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fkeymanagementsystems.in&sz=128"
+  },
+  {
+    "id": "setu",
+    "aliases": [
+      "brokentusk-technologies-pvt-ltd"
+    ],
+    "file": "/company-logos/setu.png",
+    "website": "https://setu.co",
+    "source": "https://framerusercontent.com/images/mbFRne9qNTrOhiqc0h2DJuE0FDw.png"
+  },
+  {
     "id": "sharekhan",
     "aliases": [
       "sharekhan-limited"
@@ -835,6 +1316,15 @@
     "file": "/company-logos/sharekhan.png",
     "website": "https://sharekhan.com",
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fsharekhan.com&sz=128"
+  },
+  {
+    "id": "signpost",
+    "aliases": [
+      "signpost-india-pvt-ltd"
+    ],
+    "file": "/company-logos/signpost.png",
+    "website": "https://signpostindia.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fsignpostindia.com&sz=128"
   },
   {
     "id": "smfg",
@@ -864,6 +1354,15 @@
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fspglobal.com&sz=128"
   },
   {
+    "id": "spay",
+    "aliases": [
+      "spay-fintech-pvt-ltd"
+    ],
+    "file": "/company-logos/spay.png",
+    "website": "https://spay.live",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fspay.live&sz=128"
+  },
+  {
     "id": "stonex",
     "aliases": [
       "stonex"
@@ -873,6 +1372,33 @@
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fstonex.com&sz=128"
   },
   {
+    "id": "sumitomo",
+    "aliases": [
+      "sumitomo"
+    ],
+    "file": "/company-logos/sumitomo.png",
+    "website": "https://sumitomo.gr.jp",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fsumitomo.gr.jp&sz=128"
+  },
+  {
+    "id": "sunjewels",
+    "aliases": [
+      "sunjewels-private-limited"
+    ],
+    "file": "/company-logos/sunjewels.png",
+    "website": "https://sunjewels.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fsunjewels.com&sz=128"
+  },
+  {
+    "id": "sure-financial",
+    "aliases": [
+      "sure-financial"
+    ],
+    "file": "/company-logos/sure-financial.png",
+    "website": "https://sure.financial",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fsure.financial&sz=128"
+  },
+  {
     "id": "sutherland",
     "aliases": [
       "sutherland"
@@ -880,6 +1406,34 @@
     "file": "/company-logos/sutherland.png",
     "website": "https://sutherlandglobal.com",
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fsutherlandglobal.com&sz=128"
+  },
+  {
+    "id": "synergetics",
+    "aliases": [
+      "synergetics-information-technology-services-india-pvt-ltd",
+      "synergetics-it-services-india"
+    ],
+    "file": "/company-logos/synergetics.png",
+    "website": "https://synergetics-india.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fsynergetics-india.com&sz=128"
+  },
+  {
+    "id": "taabi",
+    "aliases": [
+      "taabi-mobility"
+    ],
+    "file": "/company-logos/taabi.png",
+    "website": "https://taabi.ai",
+    "source": "https://www.taabi.ai/assets/taabi-logo.png"
+  },
+  {
+    "id": "tata-motors-insurance",
+    "aliases": [
+      "tata-motors-insurance-broking-and-advisory-services-limited"
+    ],
+    "file": "/company-logos/tata-motors-insurance.png",
+    "website": "https://tatamotorsinsurancebrokers.com",
+    "source": "https://www.tatamotorsinsurancebrokers.com/assets/images/tata-logo-mobile.png"
   },
   {
     "id": "tata-power",
@@ -893,11 +1447,21 @@
   {
     "id": "tcs",
     "aliases": [
-      "tcs-ninja"
+      "tcs-ninja",
+      "tata-consultancy-services"
     ],
     "file": "/company-logos/tcs.png",
     "website": "https://tcs.com",
     "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Ftcs.com&sz=128"
+  },
+  {
+    "id": "tekgeminus",
+    "aliases": [
+      "tekgeminus-solutions-ltd"
+    ],
+    "file": "/company-logos/tekgeminus.png",
+    "website": "https://tekgeminus.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Ftekgeminus.com&sz=128"
   },
   {
     "id": "think360",
@@ -907,6 +1471,15 @@
     "file": "/company-logos/think360.png",
     "website": "https://think360.ai",
     "source": "https://think360.ai/wp-content/uploads/2023/06/Think-new-logo1.png"
+  },
+  {
+    "id": "toshniwal",
+    "aliases": [
+      "toshniwal-industries-pvt-ltd"
+    ],
+    "file": "/company-logos/toshniwal.png",
+    "website": "https://tipl.com",
+    "source": "https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Ftipl.com&sz=128"
   },
   {
     "id": "toyo",
@@ -920,11 +1493,21 @@
   {
     "id": "transbnk",
     "aliases": [
-      "transbnk-solutions"
+      "transbnk-solutions",
+      "transbnk-solutions-pvt-ltd-tbx"
     ],
     "file": "/company-logos/transbnk.webp",
     "website": "https://tbx.co.in",
     "source": "https://www.tbx.co.in/logo-new.webp"
+  },
+  {
+    "id": "transpure",
+    "aliases": [
+      "transpure-solutions-pvt-ltd"
+    ],
+    "file": "/company-logos/transpure.png",
+    "website": "https://tranzily.com",
+    "source": "https://tranzily.com/assets/img/logo.png"
   },
   {
     "id": "trent",

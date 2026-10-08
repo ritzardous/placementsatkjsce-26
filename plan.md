@@ -12,6 +12,7 @@
 - [x] Original single-file application migrated to React and cloud Firebase.
 - [x] Graduation year **2026 / AY 2025–26** implemented with the original dashboard functionality.
 - [x] Graduation year **2025 / AY 2024–25** added from the college report and two supplied email threads.
+- [x] Graduation year **2027 / AY 2026–27** added from the supplied ongoing email thread, with explicit LIVE/ongoing status, source date, and reviewed-update messaging. Preserve this behavior when adding the landing page and login flow.
 - [x] Both datasets published to Firestore with source references, validation, and reconciliation.
 - [x] Company logos added with uniform square containers, readable backgrounds, and initials fallbacks.
 - [x] New application deployed, as reported by the owner. Record the actual production hostname during implementation; do not assume the suggested Vercel project name was used.
@@ -44,7 +45,7 @@
 - Preserve links between areas:
   - A year-specific company statistics page links to that company's procedures and alumni contacts.
   - A procedure links back to the relevant year's company statistics when a sourced match exists.
-- Reserve future year support through configuration. Do not add a populated 2027 dashboard without source data and a separate implementation request.
+- Include Class of 2027 / AY 2026–27 as an ongoing season alongside the historical years. Preserve its live notice and source freshness details; future years require supplied data and an implementation request.
 
 ## 3. Phase 1 — Public landing page and Google-only access
 
@@ -88,7 +89,7 @@
 
 ## 4. Phase 2 — Authenticated home and year distinction
 
-- [ ] Add an authenticated home with year cards for 2025 and 2026 and a visually separate **Company Procedures** entry.
+- [ ] Add an authenticated home with year cards for 2025, 2026, and the ongoing 2027 season, plus a visually separate **Company Procedures** entry.
 - [ ] Each year card shows graduation year, academic-year label, and sourced coverage/status; do not assume every dataset is complete or final.
 - [ ] Keep the existing dashboard layout inside the selected year for familiarity.
 - [ ] Show the selected year prominently in the statistics header and provide an easy way to switch.

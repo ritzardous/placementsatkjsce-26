@@ -38,4 +38,8 @@ export const batch2025: BatchConfig = {
   year: 2025, registeredStudents: null, degreeScope: 'UG', ctcWeighting: 'selection',
   registrationSource: 'The supplied 2024–25 UG selected-students report does not state the number registered for placements. No denominator is assumed.',
 };
-export const batches: Record<number, BatchConfig> = { 2025: batch2025, 2026: batch2026 };
+export const batch2027: BatchConfig = {
+  year: 2027, registeredStudents: null, degreeScope: 'UG',
+  registrationSource: 'The supplied ongoing 2026–27 email thread does not state a registration total. No denominator is assumed.',
+};
+export const batches: Record<number, BatchConfig> = { 2025: batch2025, 2026: batch2026, 2027: batch2027 };

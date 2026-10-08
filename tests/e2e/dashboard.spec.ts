@@ -8,6 +8,30 @@ const payload = { metadata: dataset.metadata, statistics: buildStatistics(datase
 test.beforeEach(() => {
   if (process.env.E2E_FIREBASE !== 'true') throw new Error('Run npm run test:firebase for isolated seeded Firestore/Auth emulator tests.');
 });
+
+test('ongoing 2027 season stays explicit across routes, reload, refresh and year changes', async ({ page }) => {
+  await page.goto('/#2027/overview');
+  await expect(page.getByRole('heading', { name: /KJSCE '27/ })).toBeVisible();
+  await expect(page.locator('.live-notice')).toContainText('Placements ongoing');
+  await expect(page.locator('.live-notice')).toContainText('08 Oct 2026');
+  await expect(page.locator('.stat').filter({ hasText: 'Candidate selections recorded' }).locator('.stat-value')).toHaveText('121');
+  await expect(page.locator('.stat').filter({ hasText: 'Placement rate' }).locator('.stat-value')).toHaveText('—');
+  await page.getByRole('link', { name: 'Companies', exact: true }).click();
+  await expect(page).toHaveURL(/#2027\/companies/);
+  await page.getByRole('link', { name: 'Barclays', exact: true }).click();
+  await expect(page).toHaveURL(/#2027\/company\/barclays/);
+  await page.reload();
+  await expect(page.getByRole('heading', { name: 'Barclays', exact: true })).toBeVisible();
+  await expect(page.locator('.live-notice')).toBeVisible();
+  await page.getByRole('button', { name: 'Refresh latest published data' }).click();
+  await expect(page.getByRole('heading', { name: 'Barclays', exact: true })).toBeVisible();
+  await page.getByRole('combobox', { name: 'Placement year' }).selectOption('2025');
+  await expect(page.getByRole('heading', { name: /KJSCE '25/ })).toBeVisible();
+  await expect(page.locator('.live-notice')).toHaveCount(0);
+  await page.getByRole('combobox', { name: 'Placement year' }).selectOption('2026');
+  await expect(page.getByRole('heading', { name: /KJSCE '26/ })).toBeVisible();
+  await expect(page.locator('.live-badge')).toHaveCount(0);
+});
 test('year switching keeps 2025 links, refresh, missing data and campus filters isolated from 2026', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('heading', { name: /Placement Stats/ })).toBeVisible();

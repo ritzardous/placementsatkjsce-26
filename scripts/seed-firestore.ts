@@ -11,7 +11,9 @@ try {
   else {
     target = createAdminTarget();
     await stagePublication(target.db, p);
-    await activatePublication(target.db, p);
+    const expectedAt = process.argv.indexOf('--expected-version');
+    if (expectedAt >= 0 && !process.argv[expectedAt + 1]) throw new Error('Supply the exact current version ID after --expected-version.');
+    await activatePublication(target.db, p, expectedAt < 0 ? undefined : process.argv[expectedAt + 1]);
     await verifyPublication(target.db, p);
     console.log('Firestore migration published and reconciled. Re-running is safe and does not overwrite changed data.');
   }

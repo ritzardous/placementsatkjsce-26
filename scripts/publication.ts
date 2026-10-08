@@ -75,12 +75,16 @@ export async function verifyPublication(db: Firestore, p: Publication, requireAc
     if (manifest.data()?.activeVersion !== p.version) throw new Error('The verified dataset is not the active published version.');
   }
 }
-export async function activatePublication(db: Firestore, p: Publication) {
+export async function activatePublication(db: Firestore, p: Publication, expectedVersion?: string) {
+  if (expectedVersion !== undefined && !/^[a-f0-9]{64}$/.test(expectedVersion)) throw new Error('Expected version must be an explicit published SHA-256 version ID.');
   await verifyPublication(db, p, false);
   await db.runTransaction(async transaction => {
     const ref = db.doc(`batches/${p.batch.year}`);
     const previous = await transaction.get(ref);
-    if (previous.exists && previous.data()?.activeVersion !== p.version) throw new Error('A different version is active. Use a reviewed version migration rather than overwriting it.');
+    if (previous.exists && previous.data()?.activeVersion !== p.version) {
+      if (previous.data()?.activeVersion !== expectedVersion) throw new Error('A different version is active. Review it and pass --expected-version with its exact version ID before replacing it.');
+      transaction.update(ref, { activeVersion: p.version });
+    }
     if (!previous.exists) transaction.create(ref, { year: p.batch.year, activeVersion: p.version });
   });
 }

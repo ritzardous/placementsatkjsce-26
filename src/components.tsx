@@ -4,7 +4,7 @@ import { CompanyIdentity } from './CompanyIdentity';
 export const money = (value: number | null) => value === null ? '—' : `₹${value.toFixed(2)}L`;
 export const date = (value: string | null, full = false) => value ? new Date(value + 'T00:00:00').toLocaleDateString('en-GB', { day: '2-digit', month: 'short', ...(full ? { year: 'numeric' as const } : {}) }) : '—';
 export const academicYear = (year: number) => `${year - 1}–${String(year).slice(-2)}`;
-export const routeHref = (page: string, year = /^#2025(?:\/|$)/.test(location.hash) ? 2025 : 2026) => `${year === 2025 ? '#2025/' : '#'}${page}`;
+export const routeHref = (page: string, year = /^#(2025|2027)(?:\/|$)/.exec(location.hash)?.[1] ? Number(location.hash.slice(1, 5)) : 2026) => `${year === 2026 ? '#' : `#${year}/`}${page}`;
 export const companyHref = (key: string) => routeHref('company/' + encodeURIComponent(key));
 export function Tag({ children }: { children: ReactNode }) { return <span className="tag">{children}</span>; }
 export function Empty({ title = 'No matches', children }: { title?: string; children?: ReactNode }) {

@@ -48,5 +48,5 @@ test('2025 publication validates independently while default publication stays o
   assert.equal(p.dashboard.statistics.batch.year, 2025);
   assert.equal(p.dashboard.statistics.summary.selections, 360);
   assert.equal((await preparePublication()).batch.year, 2026);
-  await assert.rejects(preparePublication(2027), /Unsupported batch/);
+  await assert.rejects(preparePublication(2028), /Unsupported batch/);
 });
