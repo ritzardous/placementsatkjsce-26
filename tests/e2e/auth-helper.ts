@@ -10,5 +10,5 @@ export async function signInGoogle(page: Page, navigate = true) {
     const id = crypto.randomUUID();
     await signInWithCredential(getFirebase().auth, GoogleAuthProvider.credential(JSON.stringify({sub:id,email:id+'@example.test',email_verified:true,name:'Test Student'})));
   })()`);
-  await expect(page.getByRole('button', { name: 'Account', exact: true })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'My Account', exact: true })).toBeVisible();
 }
