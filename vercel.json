@@ -3,6 +3,11 @@
   "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "functions": {
+    "api/procedures.ts": {
+      "includeFiles": "functions/lib/**"
+    }
+  },
   "rewrites": [
     {
       "source": "/((?!api/|assets/).*)",
