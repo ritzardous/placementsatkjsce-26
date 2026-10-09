@@ -2,8 +2,8 @@ import type { IncomingMessage, ServerResponse } from 'node:http';
 import { cert, getApps, initializeApp, type App } from 'firebase-admin/app';
 import { getAuth } from 'firebase-admin/auth';
 import { getFirestore } from 'firebase-admin/firestore';
-import { HttpsError, authorize, saveDraft, submit, review, unpublish, vote, type Actor } from '../functions/lib/functions/src/service.js';
-import { deliverEmail } from '../functions/lib/functions/src/email.js';
+import { HttpsError, authorize, saveDraft, submit, review, unpublish, vote, type Actor } from './service.js';
+import { deliverEmail } from './email.js';
 
 let serverApp: App | undefined;
 export function configureProcedureApi(app: App) { serverApp = app; }
@@ -74,3 +74,4 @@ export default async function handler(req: Request, res: ServerResponse) {
     res.end(JSON.stringify({ error: { code, message: known ? cause.message : 'The community service could not complete the request. Retry or check its server configuration.' } }));
   }
 }
+

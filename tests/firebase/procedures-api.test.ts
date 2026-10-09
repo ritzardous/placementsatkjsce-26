@@ -6,7 +6,8 @@ import { getAuth as adminAuth } from 'firebase-admin/auth';
 import { getFirestore } from 'firebase-admin/firestore';
 import { initializeApp, deleteApp } from 'firebase/app';
 import { getAuth, connectAuthEmulator, GoogleAuthProvider, signInWithCredential } from 'firebase/auth';
-import handler, { configureProcedureApi } from '../../api/procedures.js';
+import handler from '../../api/procedures.mjs';
+import { configureProcedureApi } from '../../functions/lib/functions/src/http.js';
 import { initialProcedureDraft } from '../../shared/procedures.js';
 
 test('app API verifies Google tokens, rejects forged auth and enforces approval and voting through HTTP', async () => {
@@ -50,3 +51,4 @@ test('app API verifies Google tokens, rejects forged auth and enforces approval 
     await Promise.all(apps.map(app => deleteApp(app))); await deleteAdmin(admin);
   }
 });
+

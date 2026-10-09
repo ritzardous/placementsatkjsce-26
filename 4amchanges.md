@@ -74,7 +74,7 @@ The repository's `vercel.json` already keeps `/api/procedures` as a server endpo
 
 ## 5. Push the updated code and deploy it
 
-Environment variables alone are not enough: Vercel must receive the updated code, including **`api/procedures.ts`**, **`vercel.json`**, **`package.json`**, **`package-lock.json`**, **`functions/src/service.ts`**, **`functions/src/email.ts`**, **`shared`**, and the frontend changes.
+Environment variables alone are not enough: Vercel must receive the updated code, including **`api/procedures.mjs`**, **`vercel.json`**, **`package.json`**, **`package-lock.json`**, **`functions/src/service.ts`**, **`functions/src/email.ts`**, **`shared`**, and the frontend changes.
 
 Using **VS Code**:
 
@@ -132,3 +132,4 @@ Use your actual hosted URL, not localhost.
 4. Submit a new experience from another account and check the admin inbox.
 
 The API attempts email delivery after saving the submission. Email failure does not lose the submission. This setup has no automatic scheduled retry worker.
+

@@ -4,7 +4,7 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "functions": {
-    "api/procedures.ts": {
+    "api/procedures.mjs": {
       "includeFiles": "functions/lib/**"
     }
   },
