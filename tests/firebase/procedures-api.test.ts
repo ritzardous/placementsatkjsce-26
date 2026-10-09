@@ -15,6 +15,7 @@ test('app API verifies Google tokens, rejects forged auth and enforces approval 
   assert.equal(process.env.FIREBASE_AUTH_EMULATOR_HOST, '127.0.0.1:9099');
   const admin = adminApp({ projectId: 'demo-placementstats' }, 'http-api-test');
   configureProcedureApi(admin);
+  await getFirestore(admin).doc('procedureCompanies/barclays').set({ key: 'barclays', name: 'Barclays', years: [2026] });
   const server = createServer((req, res) => { void handler(req, res); });
   await new Promise<void>(resolve => server.listen(0, '127.0.0.1', resolve));
   const port = (server.address() as { port: number }).port;
@@ -36,7 +37,8 @@ test('app API verifies Google tokens, rejects forged auth and enforces approval 
     const author = await user(), moderator = await user('admin'), reader = await user();
     const id = crypto.randomUUID();
     const draft = { ...initialProcedureDraft(), companyKey: 'barclays', body: 'API beta test experience: I attended the aptitude and technical rounds. Practise arrays, SQL joins and explaining your project design before interviewing.' };
-    assert.equal((await call(author.token, 'saveProcedureDraft', { id, expectedVersion: 0, draft })).status, 200);
+    const saved = await call(author.token, 'saveProcedureDraft', { id, expectedVersion: 0, draft });
+    assert.equal(saved.status, 200, JSON.stringify(saved.body));
     assert.equal((await call(reader.token, 'saveProcedureDraft', { id, expectedVersion: 1, draft })).status, 403);
     assert.equal((await call(author.token, 'submitProcedure', { id, expectedVersion: 1 })).status, 200);
     assert.equal((await getFirestore(admin).doc(`procedurePosts/${id}`).get()).exists, false);

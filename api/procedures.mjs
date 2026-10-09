@@ -23,7 +23,11 @@ export default async function handler(req, res) {
     const missingModule = error.code === 'ERR_MODULE_NOT_FOUND'
       ? error.message.match(/Cannot find (?:package|module) '([^']+)'/)?.[1]
       : undefined;
-    res.end(JSON.stringify({ error: { code: 'unavailable', message: 'The community API could not load its server modules.', missingModule } }));
+    const startupError = error.code || error.name;
+    const startupDetail = /^(?:SyntaxError|ReferenceError)$/.test(error.name)
+      || /^ERR_(?:MODULE|PACKAGE|UNKNOWN_FILE_EXTENSION)/.test(error.code || '')
+      ? error.message.slice(0,500) : undefined;
+    res.end(JSON.stringify({ error: { code: 'unavailable', message: 'The community API could not load its server modules.', missingModule, startupError, startupDetail } }));
     return;
   }
   await implementation.default(req, res);
