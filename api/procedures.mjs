@@ -25,7 +25,7 @@ export default async function handler(req, res) {
       : undefined;
     const startupError = error.code || error.name;
     const startupDetail = /^(?:SyntaxError|ReferenceError)$/.test(error.name)
-      || /^ERR_(?:MODULE|PACKAGE|UNKNOWN_FILE_EXTENSION)/.test(error.code || '')
+      || /^ERR_(?:MODULE|PACKAGE|UNKNOWN_FILE_EXTENSION|REQUIRE_ESM)/.test(error.code || '')
       ? error.message.slice(0,500) : undefined;
     res.end(JSON.stringify({ error: { code: 'unavailable', message: 'The community API could not load its server modules.', missingModule, startupError, startupDetail } }));
     return;
