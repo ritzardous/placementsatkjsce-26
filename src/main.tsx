@@ -4,5 +4,6 @@ import App from './App';
 import './styles.css';
 import './migration.css';
 import './portal.css';
+import './procedures.css';
 
 createRoot(document.getElementById('root')!).render(<React.StrictMode><App /></React.StrictMode>);

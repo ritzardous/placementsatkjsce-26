@@ -8,6 +8,10 @@ coverage/
 playwright-report/
 test-results/
 artifacts/
+functions/lib/
+functions/.env*
+functions/.secret.local
+!functions/.env.example
 *.log
 .firebase/
 .emulator-data/

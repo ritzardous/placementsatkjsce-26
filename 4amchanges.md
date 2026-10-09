@@ -1,110 +1,134 @@
-# React + Firebase migration: setup and testing
+# Make the hosted site work on Vercel
 
-- Current scope: three placement years in React with cloud Firestore, a public landing, Google-only access, and separate statistics/community navigation. See [structural release setup and tests](docs/access-structure.md). Community forms, approvals and alumni profiles are upcoming.
-- The React development server runs on your laptop. Data and authentication run in Firebase. No local Express server, MongoDB, Functions, or database emulator is required to use the app.
-- Project: `placement-stats-kjsce`. Supplied public web configuration is already in ignored `.env`. `GOOGLE_APPLICATION_CREDENTIALS` points to the private JSON in Downloads, outside the repository.
-- Never put a private key into `VITE_*`: those variables become browser-visible. Public Firebase web configuration is expected to be browser-visible; security rules protect data.
+Follow **Steps 1–6 in order**. Use your existing Vercel project and Firebase project **`placement-stats-kjsce`**. Keep Firebase on Spark; no billing upgrade is needed.
 
-## 1. Finish cloud setup
+**Already completed:** live Firestore rules, ready indexes, 175 campus companies, and admin access for **`runasjha1@gmail.com`**. You do not need to repeat Firebase imports or role assignment.
 
-1. Firebase Console → Firestore Database: create the **default** database using Standard edition if absent. Choose the region carefully. Start in production mode; publish the repository rules below.
-2. Authentication → Sign-in method: enable **Google**, selecting a support email. The app no longer offers password login; audit existing users before changing other provider settings.
-3. Authentication → Settings → Authorized domains: add `localhost`, `127.0.0.1`, and your actual deployed hostname if absent. Google login is required to browse statistics and community destinations.
-4. Google Cloud Console → same project → IAM & Admin → IAM: find the principal matching the JSON's `client_email`. Grant **Cloud Datastore User** (`roles/datastore.user`) for import and **Firebase Rules Admin** (`roles/firebaserules.admin`) for rules. CLI deployment additionally needs **Service Usage Consumer** (`roles/serviceusage.serviceUsageConsumer`). Do not send the private key in chat. Allow time for IAM propagation.
-5. If an operation reports a disabled API, enable that reported API for this project. The app uses Firestore, Firebase Auth, and Firebase Rules.
+## 1. Download a fresh Firebase server key
 
-## 2. Publish and verify cloud data
+1. Open [Firebase → Service accounts](https://console.firebase.google.com/project/placement-stats-kjsce/settings/serviceaccounts/adminsdk).
+2. Confirm the selected project is **placement-stats-kjsce**.
+3. Click **Generate new private key**, then confirm **Generate key**.
+4. Save the downloaded `.json` file outside this GitHub repository, for example in Downloads.
+5. Open that file in VS Code or Notepad. You will copy its complete contents in Step 2.
 
-Run from the repository folder with Node.js 22.12 or newer:
+Use a fresh key instead of the old key that Firebase rejected. Keep the downloaded file private; do not commit it to GitHub or paste it into chat. [Firebase key setup instructions](https://firebase.google.com/docs/admin/setup).
 
-```powershell
-npm install
-npm run db:seed -- --dry-run
-npm run db:rules -- --project placement-stats-kjsce --allow-production
-npm run db:seed -- --project placement-stats-kjsce --allow-production
-npm run db:verify -- --project placement-stats-kjsce --allow-production
-```
+## 2. Add two server variables in Vercel
 
-- Rules publication uses the Admin SDK, backs up existing rules in ignored `artifacts/rules-backups`, and verifies the active rules. No Firebase CLI login is required for this command.
-- Import preserves private originals, stages checksummed public chunks, verifies every field, and activates the snapshot. Identical imports are safe to repeat. Changed records or a conflicting active version fail rather than being overwritten.
-- Expected: **100 announcements, 311 selections, 299 unique students, 82 companies**. Source-reported cumulative counter **310** remains separate from calculated selections.
-- Firestore should show `batches/2026`, a version with four public chunks, and a private `imports` snapshot. Browser writes to published statistics and reads of private originals are denied.
-- The dashboard uses document reads and needs no composite index. Index exemptions in `firestore.indexes.json` can be deployed later through the authenticated CLI.
+Open **Vercel Dashboard → your existing project → Settings → Environment Variables**.
 
-## 3. Run and manually test
+Add each row below. Select **Production** as the environment. These instructions deploy the production site; you can configure Preview separately later.
 
-```powershell
-npm run dev
-```
+| Variable name | Exact value to enter |
+| --- | --- |
+| `FIREBASE_PROJECT_ID` | `placement-stats-kjsce` |
+| `FIREBASE_SERVICE_ACCOUNT_JSON` | The **entire contents** of the JSON file downloaded in Step 1 |
 
-Open http://localhost:5173 and keep the terminal running.
+For `FIREBASE_SERVICE_ACCOUNT_JSON`:
 
-1. Public landing → Continue with Google → Home → Class of 2026. Overview: confirm counts above, highest CTC **54.88 LPA**, average approximately **9.31 LPA**, median **8 LPA**.
-2. Companies: search/sort, open Barclays, inspect history, candidates, roles, compensation, and source notes.
-3. Branches: compare branches, open detail, check links and filters.
-4. Candidates: search by name/roll/company/role, paginate, clear filters; all 311 selections must be reachable.
-5. Timeline/insights: distinguish source counters from calculated selections and unique students.
-6. Refresh company and branch hash URLs, test Back/Forward, repeat at mobile width.
-7. Auth: sign up with your real test email, verify email, sign out/in, reset password, and test Google. These create real Firebase accounts. Also confirm signed-out browsing works.
-8. Disconnect network and reload: check error and Retry. Reconnect and retry.
-9. DevTools Network: confirm Firebase requests and no Express `/api/v1` or port 3001 requests.
+1. In the downloaded file, press **Ctrl+A**, then **Ctrl+C**.
+2. Paste into Vercel's **Value** field. Include the opening `{` and closing `}`.
+3. Do not paste the filename or path. Do not add quotation marks around the whole JSON. Preserve the existing `\n` sequences inside its `private_key` value.
+4. Mark this variable **Sensitive** if the option is shown, then save.
 
-Optional browser smoke check while dev server runs:
+The names must be exactly as listed. Neither server variable should start with `VITE_`. The hosted server reads them; visitors must not receive the private key. [Vercel environment variable instructions](https://vercel.com/docs/environment-variables/managing-environment-variables).
 
-```powershell
-npx playwright install chromium
-node scripts/preview.mjs
-```
+**Checkpoint:** both names appear in Vercel's Production environment variables.
 
-Screenshots go to ignored `artifacts/`. This check needs the cloud import and rules working.
+## 3. Check the frontend variables and build settings
 
-## 4. Automated checks
+Stay in **Vercel → Settings → Environment Variables**. Keep or add these **Production** variables:
 
-```powershell
-npm test
-npm run build
-npm audit
-```
+| Variable name | Value |
+| --- | --- |
+| `VITE_FIREBASE_PROJECT_ID` | `placement-stats-kjsce` |
+| `VITE_FIREBASE_API_KEY` | Copy the same value from this repository's local `.env` |
+| `VITE_FIREBASE_AUTH_DOMAIN` | Copy the same value from the local `.env` |
+| `VITE_FIREBASE_APP_ID` | Copy the same value from the local `.env` |
+| `VITE_USE_FIREBASE_EMULATORS` | `false` |
 
-- Unit checks compare metrics against preserved legacy code and validate publication chunks.
-- `npm run test:firebase` runs isolated import, rules, and desktop/mobile browser integration tests with **test-only** emulators and a `demo-` project. It requires Java 21, Playwright Chromium, and free port 5173. This infrastructure is not the application's data source or a prerequisite for using cloud Firebase. CI is prepared for future GitHub setup.
-- Normal `.env` has `VITE_USE_FIREBASE_EMULATORS=false`. Never substitute a real project for the isolated demo project.
+If `VITE_FIREBASE_STORAGE_BUCKET` and `VITE_FIREBASE_MESSAGING_SENDER_ID` are already configured, keep their matching local `.env` values. Remove `VITE_LOCAL_BETA` if it exists. Do not copy the local `GOOGLE_APPLICATION_CREDENTIALS` path into Vercel.
 
-## Troubleshooting
+Then open the project's **Build and Deployment** settings and confirm:
 
-- Import **missing/insufficient permissions**: correct the service account's IAM roles in the correct project. Opening browser rules cannot fix trusted Admin permission failures.
-- Dashboard **permission-denied**: ensure rules publication succeeded and an active snapshot exists. Do not enable blanket public writes.
-- **Database not found**: create the default Firestore database.
-- Auth **operation-not-allowed**: enable the provider. **Unauthorized-domain**: add the browser hostname to Auth authorized domains.
-- **Port 5173 in use**: close the previous dev-server terminal.
-- Firebase CLI **401**: use `db:rules` for rules; configure CLI login for future index/hosting deployments separately.
+| Setting | Value |
+| --- | --- |
+| Framework preset | Vite |
+| Root directory | Repository root, not `src` or `functions` |
+| Build command | `npm run build` |
+| Output directory | `dist` |
+| Install command | `npm ci` (or the default npm install setting) |
 
-## Original migration verification (historical)
+The repository's `vercel.json` already keeps `/api/procedures` as a server endpoint. Do not replace its routing configuration with a rule that sends every request to `index.html`.
 
-The checks below describe the original migration. The new Google-only structural release is verified separately in [access-structure.md](docs/access-structure.md); its frontend and Firestore rules still need publishing together.
+## 4. Allow your hosted domain to use Google sign-in
 
-- React, Firebase configuration, trusted import/verification, security rules, optional Auth, and original dashboard routes are implemented.
-- TypeScript, all 38 unit/import/rules/browser checks, production build, and zero-vulnerability dependency audit pass. Integration tests use an isolated demo project; separate live-cloud smoke checks verify real-project operation.
-- IAM correction completed. Rules publication, cloud import, and full field/metric reconciliation succeeded against `placement-stats-kjsce`.
-- Every dashboard route passed live-cloud browser checks at desktop and mobile widths, without exceptions, Express requests, or horizontal overflow. Screenshots were reviewed.
-- Email/password sign-in was enabled and verified against cloud Auth, including persisted login after reload, sign-out, and signed-out statistics. The temporary test account was deleted. Google is enabled; complete an interactive Google login with your own account as part of the manual checklist.
-- `localhost` and `127.0.0.1` are authorized for local Auth. The current cloud smoke command `npm run auth:verify -- --project placement-stats-kjsce --allow-production` is read-only and checks public routing and anonymous Firestore denial after the new rules are published. Complete Google OAuth manually with your own account.
-- GitHub, Vercel, hosted deployment, and production login domains are deferred by request.
+1. In Vercel, find the **production site's domain**. Example: `your-site.vercel.app`.
+2. Open [Firebase Authentication settings](https://console.firebase.google.com/project/placement-stats-kjsce/authentication/settings).
+3. Find **Authorized domains** and click **Add domain**.
+4. Enter only the hostname, such as `your-site.vercel.app`. Do not include `https://`, a path, or a trailing slash.
+5. If you use a custom domain too, add that hostname as well. Keep existing domains.
 
-## 5. AY 2024–25 / class of 2025
+**Checkpoint:** every production hostname you will use appears in Authorized domains.
 
-- Use **Placement year** in the header, or open http://localhost:5173/#2025/overview. All company, branch, candidate, timeline, and insight links stay within the selected year. Original 2026 hash links continue to work.
-- Verified baseline: 360 final-report selections, 323 unique students, 129 normalized employer groups, 331 on-campus and 29 off-campus rows. Highest CTC is 51.72 LPA including off-campus; selection-weighted mean is approximately 8.63 LPA and median 7.50 LPA over 353 known compensation rows.
-- No registration total or source cumulative counter was supplied; placement rate and unplaced count remain unavailable. 77 selections are undated, 76 have no confirmed role, and seven have CTC marked ND. These are listed with report rows/pages in `docs/2025-data-audit.md`.
-- Test switching to 2025, selecting Candidates & Roles, and using **Campus status**: Off campus yields 29 rows, On campus yields 331. Search within that filter, follow a company link, refresh, and verify the year persists. Switch back to 2026 and confirm 311 selections and 299 students.
-- Check Barclays for conflicting report/email CTC, Google for the report's off-campus classification/PPO discrepancy, and Goldman Sachs for missing role/date. These disagreements/missing fields must remain visible.
-- Timeline and monthly charts include only confirmed dates; the cumulative dated series reaches 283 selections rather than inventing dates for all 360. Overall report CTC metrics use selection weighting; legacy 2026 remains announcement-weighted, so year comparisons need that context.
-- `npm run data:build-2025` regenerates the dataset from committed transcriptions. `db:seed` and `db:verify` accept `--year 2025`; omit the flag for 2026. Each year has its own immutable publication and activation manifest. Both are imported and verified in the cloud project.
+## 5. Push the updated code and deploy it
 
-## Class of 2027 / AY 2026–27 — ongoing season
+Environment variables alone are not enough: Vercel must receive the updated code, including **`api/procedures.ts`**, **`vercel.json`**, **`package.json`**, **`package-lock.json`**, **`functions/src/service.ts`**, **`functions/src/email.ts`**, **`shared`**, and the frontend changes.
 
-- Select **2026–27 · Class of 2027 · LIVE** or open `/#2027/overview`. The banner must show **Placements ongoing**, latest included email **8 October 2026**, and explain that updates are reviewed imports.
-- Baseline: **22 announcements, 121 selections, 121 distinct roll numbers, 19 companies, final TPO counter 121**. Latest declared result: **6 October 2026**. Missing registration total means no placement rate; three mixed-package announcements retain text rather than a guessed numerical CTC.
-- Data is published and reconciled in cloud Firestore. Redeploy the changed React frontend to make the year selector available on the deployed site.
-- Check Companies, company details, branches (including AI & DS/CCE/EXCP/RAI), candidates, timeline, insights, reload, and the refresh button. Switch back to 2025/2026 and confirm the live label disappears. Repeat on mobile.
-- Run `npm run data:build-2027`, `npm test`, and `npm run build`. For reviewed future updates, see [the source audit and publication steps](docs/2027-data-audit.md); Firebase seed/verify and cloud workflow now accept year 2027.
+Using **VS Code**:
+
+1. Open this repository and click **Source Control** in the left sidebar.
+2. Review the changed files and stage the app changes with **+**. Confirm that no private key or `.env` file is included.
+3. Enter **Enable hosted Company Procedures API** as the message and click **Commit**.
+4. Click **Sync Changes** or use **… → Push** to send the commit to GitHub. This checkout is currently on `main`; confirm that Vercel's production branch points to the branch receiving these changes.
+5. Open **Vercel → your project → Deployments**. Wait for the deployment for that new commit to finish and show **Ready** in **Production**.
+
+If the updated code was already pushed but you added variables afterward, select that latest production deployment → **… → Redeploy**. Redeploying an older commit will keep the older app code. Environment changes require a new deployment to take effect. [Vercel redeployment instructions](https://vercel.com/docs/project-configuration/project-settings).
+
+**Checkpoint:** the latest app commit is deployed to Production after the variables were saved.
+
+## 6. Test the hosted site
+
+Use your actual hosted URL, not localhost.
+
+1. Open `https://YOUR_SITE_HOST/api/procedures` in a browser. You should see JSON with **`POST required.`** and HTTP **405**. This is expected for opening it directly: it confirms the API route exists. It does not yet prove the private key works.
+2. Open the site's home page and sign in with a real Google account.
+3. Company Procedures → Contribute: choose a company, write an experience and click **Save now**. Confirm **Saved**, then reload and confirm the draft is still present. This checks the server credential and live Firestore writes.
+4. Click **Submit for review**. Confirm **Pending approval**.
+5. Sign out. Sign in with **`runasjha1@gmail.com`**. If that account was already signed in, sign out and back in first to refresh its admin role.
+6. Open **Review queue**, select the submission and click **Approve**.
+7. Sign in with a different reader account, find the approved experience and upvote/downvote it. The author cannot vote on their own post.
+
+**Done:** Google login, draft save/reload, submission, admin approval and reader voting all work on the hosted URL.
+
+## If a step fails
+
+| What you see | What to check |
+| --- | --- |
+| `/api/procedures` shows the website's HTML or returns 404 | Step 5 deployed old/missing code, the wrong root directory was selected, or routing replaced the API with `index.html`. |
+| Google reports an unauthorized domain | Add the exact hostname you are visiting in Step 4. |
+| Company list is empty or statistics fail only on the hosted site | Step 3 must use the same Firebase web values as local `.env`, with emulator mode `false`. |
+| Draft save reports service unavailable / HTTP 503 | Check the two server variables in Step 2. Re-paste the complete JSON if needed, then redeploy. In Vercel, inspect this deployment's Function/Runtime Logs for `/api/procedures`. |
+| Logs report insufficient Firestore or Authentication permissions | In Google Cloud IAM for `placement-stats-kjsce`, find the principal matching the key's `client_email`. Grant **Cloud Datastore User** (`roles/datastore.user`) and **Firebase Authentication Viewer** (`roles/firebaseauth.viewer`) if those permissions are missing. Do not change the client Firestore rules to allow writes. |
+| Review queue does not appear | Sign out and back in with exactly `runasjha1@gmail.com`; a different Google account is not the chosen admin. |
+| Vercel build fails | Open that deployment's Build Logs, check the first error and confirm the latest code and lockfile were pushed. |
+
+## Optional: enable admin email notifications later
+
+**Skip this section until Steps 1–6 work.** The review queue and pending badge already work without email.
+
+1. In Resend, verify a sending domain and create an API key.
+2. Add these **Production, server-only** environment variables in Vercel:
+
+| Variable | Value |
+| --- | --- |
+| `PROCEDURE_ADMIN_EMAILS` | `runasjha1@gmail.com` |
+| `PROCEDURE_EMAIL_FROM` | `Placement Stats <notifications@YOUR_VERIFIED_DOMAIN>` |
+| `PROCEDURE_APP_URL` | Your production origin, e.g. `https://your-site.vercel.app` |
+| `PROCEDURE_RESEND_API_KEY` | Your private Resend API key; mark Sensitive |
+
+3. Redeploy the latest app commit.
+4. Submit a new experience from another account and check the admin inbox.
+
+The API attempts email delivery after saving the submission. Email failure does not lose the submission. This setup has no automatic scheduled retry worker.

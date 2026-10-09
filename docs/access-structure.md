@@ -6,15 +6,17 @@ Implemented flow: **public landing → Google login → Home → placement year 
 - `#login`: Google login. Opening a protected deep link while signed out displays this screen without changing that link; after authentication the original destination opens.
 - `#home`: year choices and a separate Company Procedures entry.
 - `#statistics`: dedicated year chooser. Existing `#overview`, `#2025/...` and `#2027/...` routes remain supported after login.
-- `#procedures`: Browse. It stays empty until approved content exists.
-- `#procedures/contribute`: searchable directory of source-backed campus recruiters from all three batches, including the live season. Off-campus-only employers are excluded. Companies are joined only by their normalized source keys; shared logos do not merge subsidiaries. Forms and publication are upcoming.
-- `#alumni` and `#contributions`: explicit upcoming destinations; no fabricated profiles, procedures or submissions.
+- `#procedures`: approved experiences, indexed filters and voting; empty until content is approved.
+- `#procedures/contribute`: company search and Markdown editor, private draft autosave, attribution choice and submission for review. The catalog is seeded from source-backed campus recruiters across all batches; shared logos do not merge subsidiaries.
+- `#procedures/<postId>`: approved experience detail and votes. `#procedures/contribute?draft=<id>` resumes an owner's draft.
+- `#account`: account details, contributions, status and review feedback. `#contributions` redirects here; `#alumni` redirects to statistics while contacts remain upcoming.
+- `#admin/procedures`: admin-only review queue, immutable revision preview, approval/change request/rejection and unpublishing. See [beta activation](company-procedures-setup.md) for role assignment and notification emails.
 
 ## Access policy
 
 The shared Auth provider checks the Firebase session before protected pages mount. Only verified Google sessions qualify. Firebase browser session persistence handles reloads; logout unmounts protected pages and clears their React state. The repository also checks the session before its first Firestore read. No persistent offline dataset cache is introduced.
 
-The updated `firestore.rules` requires a verified Google sign-in token for active batch manifests, versions, chunks and owner profiles. Inactive versions, private imports, future community collections and client publication writes remain denied. A client route guard alone is insufficient: these rules must also be published.
+The updated `firestore.rules` requires a verified Google sign-in token for active batch manifests, versions, chunks and community reads. Owners/admins can read private submissions; readers can query only published experiences. The trusted app API performs all community mutations; clients cannot directly publish, adjust votes or grant roles. Inactive placement versions and imports remain private. A client route guard alone is insufficient: publish the rules and deploy the app API using the current setup guide.
 
 Read-only Firebase account audit on 8 October 2026 found **2 accounts, both with Google, 0 password-only accounts**. No users, roles, or provider settings were changed. Password UI has been removed. If a future account conflict occurs, link the Google credential to the existing account through an authenticated migration flow; do not delete the user or replace their UID. See [Firebase account linking](https://firebase.google.com/docs/auth/web/account-linking). Keep Email/Password provider changes separate from this release unless a fresh audit confirms no affected users.
 

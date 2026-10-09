@@ -7,7 +7,7 @@
     "node": ">=22.12"
   },
   "scripts": {
-    "dev": "vite --host 127.0.0.1",
+    "dev": "node scripts/dev-live.mjs",
     "dev:web": "vite --host 127.0.0.1",
     "typecheck": "tsc --noEmit",
     "build": "npm run typecheck && vite build",
@@ -15,20 +15,30 @@
     "db:seed": "tsx scripts/seed-firestore.ts",
     "db:verify": "tsx scripts/verify-firestore.ts",
     "auth:set-role": "tsx scripts/set-role.ts",
-    "test:firebase": "firebase emulators:exec --config firebase.test.json --only auth,firestore --project demo-placementstats \"node scripts/run-firebase-tests.mjs\"",
+    "test:firebase": "node scripts/test-firebase.mjs",
+    "build:functions": "npm --prefix functions run build",
+    "procedures:seed": "tsx scripts/seed-procedure-companies.ts",
     "cloud:firebase": "node scripts/cloud-firebase.mjs",
     "test": "tsx --test tests/*.test.ts",
     "test:e2e": "playwright test",
     "db:rules": "tsx scripts/deploy-rules.ts",
     "auth:verify": "tsx scripts/verify-auth.ts",
     "data:build-2025": "tsx scripts/build-2025-dataset.ts",
-    "data:build-2027": "tsx scripts/build-2027-dataset.ts"
+    "data:build-2027": "tsx scripts/build-2027-dataset.ts",
+    "dev:beta": "node scripts/dev-beta.mjs",
+    "procedures:deploy": "node scripts/deploy-procedures.mjs",
+    "procedures:verify": "tsx scripts/verify-procedures.ts",
+    "dev:api": "tsx watch scripts/dev-api.ts"
   },
   "dependencies": {
     "dotenv": "^18.0.6",
     "firebase": "^12.19.0",
+    "firebase-admin": "^14.5.0",
+    "firebase-functions": "^7.4.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
     "zod": "^4.6.5"
   },
   "devDependencies": {
@@ -38,7 +48,6 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
-    "firebase-admin": "^14.5.0",
     "firebase-tools": "^15.32.1",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",

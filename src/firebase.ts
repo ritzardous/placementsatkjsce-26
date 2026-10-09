@@ -1,6 +1,7 @@
 import { initializeApp, getApps, type FirebaseOptions } from 'firebase/app';
 import { connectAuthEmulator, getAuth } from 'firebase/auth';
 import { connectFirestoreEmulator, getFirestore } from 'firebase/firestore';
+import { connectFunctionsEmulator, getFunctions } from 'firebase/functions';
 
 let services: ReturnType<typeof initializeServices> | undefined;
 function initializeServices() {
@@ -21,11 +22,13 @@ function initializeServices() {
   const app = getApps().find(a => a.name === '[DEFAULT]') ?? initializeApp(config);
   const db = getFirestore(app);
   const auth = getAuth(app);
+  const functions = getFunctions(app, 'asia-south1');
   if (emulators) {
     connectFirestoreEmulator(db, '127.0.0.1', 8080);
     connectAuthEmulator(auth, 'http://127.0.0.1:9099', { disableWarnings: true });
+    connectFunctionsEmulator(functions, '127.0.0.1', 5001);
   }
-  return { app, db, auth };
+  return { app, db, auth, functions };
 }
 export function getFirebase() { return services ??= initializeServices(); }
 export function firebaseMessage(error: unknown) {

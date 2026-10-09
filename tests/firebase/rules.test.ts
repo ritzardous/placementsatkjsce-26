@@ -62,3 +62,39 @@ test('all clients, including admin claims, are denied publication/import writes'
   await assertFails(setDoc(doc(db, `batches/2026/versions/${version}/views/chunk-0000`), { payload: '{}' }));
   await assertFails(setDoc(doc(db, 'imports/forged'), { sourceHash: 'forged' }));
 });
+
+test('community snapshots are readable only when published; drafts, revisions and votes remain scoped', async () => {
+  await env.withSecurityRulesDisabled(async context => {
+    const db = context.firestore();
+    await setDoc(doc(db, 'procedureSubmissions/rules-private'), { ownerUid: 'rules-alice', status: 'pending', draft: { body: 'private' } });
+    await setDoc(doc(db, 'procedureSubmissions/rules-private/revisions/1'), { body: 'private revision' });
+    await setDoc(doc(db, 'procedurePosts/rules-public'), { published: true, body: 'approved' });
+    await setDoc(doc(db, 'procedurePosts/rules-hidden'), { published: false, body: 'withdrawn' });
+    await setDoc(doc(db, 'procedurePosts/rules-public/votes/rules-alice'), { value: 1 });
+    await setDoc(doc(db, 'procedureEmailOutbox/rules-event'), { to: 'private@example.test' });
+    await setDoc(doc(db, 'procedureModeration/rules-event'), { feedback: 'private review' });
+  });
+  const alice = env.authenticatedContext('rules-alice', googleClaims).firestore();
+  const bob = env.authenticatedContext('rules-bob', googleClaims).firestore();
+  const admin = env.authenticatedContext('rules-admin', { ...googleClaims, role: 'admin' }).firestore();
+  const guest = env.unauthenticatedContext().firestore();
+  await assertSucceeds(getDoc(doc(bob, 'procedurePosts/rules-public')));
+  await assertFails(getDoc(doc(guest, 'procedurePosts/rules-public')));
+  await assertFails(getDoc(doc(bob, 'procedurePosts/rules-hidden')));
+  await assertSucceeds(getDoc(doc(admin, 'procedurePosts/rules-hidden')));
+  await assertSucceeds(getDoc(doc(alice, 'procedureSubmissions/rules-private')));
+  await assertSucceeds(getDoc(doc(admin, 'procedureSubmissions/rules-private/revisions/1')));
+  await assertFails(getDoc(doc(bob, 'procedureSubmissions/rules-private')));
+  await assertFails(getDoc(doc(bob, 'procedureSubmissions/rules-private/revisions/1')));
+  await assertSucceeds(getDoc(doc(alice, 'procedurePosts/rules-public/votes/rules-alice')));
+  await assertFails(getDoc(doc(bob, 'procedurePosts/rules-public/votes/rules-alice')));
+  await assertFails(getDoc(doc(admin, 'procedureEmailOutbox/rules-event')));
+  await assertFails(getDoc(doc(bob, 'procedureModeration/rules-event')));
+  await assertSucceeds(getDoc(doc(admin, 'procedureModeration/rules-event')));
+  for (const db of [alice, bob, admin]) {
+    await assertFails(updateDoc(doc(db, 'procedureSubmissions/rules-private'), { status: 'approved' }));
+    await assertFails(updateDoc(doc(db, 'procedurePosts/rules-public'), { score: 999 }));
+    await assertFails(setDoc(doc(db, 'procedurePosts/rules-public/votes/rules-bob'), { value: 1 }));
+    await assertFails(setDoc(doc(db, 'procedureCompanies/forged-company'), { name: 'Forged' }));
+  }
+});

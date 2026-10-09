@@ -33,8 +33,28 @@ service cloud.firestore {
         && request.resource.data.displayName.size() <= 100;
       allow list, delete: if false;
     }
-    // Private source/import documents and all future community collections remain closed.
-    // Browser users (including admins) cannot publish or grant roles in this release.
+    function procedureAdmin() { return googleUser() && request.auth.token.role == 'admin'; }
+    match /procedureCompanies/{company} { allow read: if googleUser(); allow write: if false; }
+    match /procedurePreferences/{uid} { allow get: if googleUser() && request.auth.uid == uid; allow list, write: if false; }
+    match /procedureSubmissions/{id} {
+      allow read: if googleUser() && (resource.data.ownerUid == request.auth.uid || procedureAdmin());
+      allow write: if false;
+      match /revisions/{revision} {
+        allow read: if googleUser() && (get(/databases/$(database)/documents/procedureSubmissions/$(id)).data.ownerUid == request.auth.uid || procedureAdmin());
+        allow write: if false;
+      }
+    }
+    match /procedurePosts/{id} {
+      allow read: if googleUser() && (resource.data.published == true || procedureAdmin());
+      allow write: if false;
+      match /votes/{uid} {
+        allow read: if googleUser() && (uid == request.auth.uid || procedureAdmin())
+          && get(/databases/$(database)/documents/procedurePosts/$(id)).data.published == true;
+        allow write: if false;
+      }
+    }
+    match /procedureModeration/{eventId} { allow read: if procedureAdmin(); allow write: if false; }
+    // Imports, email delivery state, rate limits and role assignment stay private.
     match /{document=**} { allow read, write: if false; }
   }
 }
